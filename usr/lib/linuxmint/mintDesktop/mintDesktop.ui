@@ -667,8 +667,9 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkComboBox" id="combobox_colors">
+                          <object class="GtkComboBox" id="combobox_styles">
                             <property name="visible">True</property>
+                            <property name="active">0</property>
                           </object>
                           <packing>
                             <property name="position">1</property>
@@ -686,8 +687,9 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkComboBox" id="combobox_color">
+                          <object class="GtkComboBox" id="combobox_colors">
                             <property name="visible">True</property>
+                            <property name="active">0</property>
                           </object>
                           <packing>
                             <property name="position">3</property>
@@ -730,7 +732,7 @@
                     <child>
                       <object class="GtkHButtonBox" id="hbuttonbox2">
                         <property name="visible">True</property>
-                        <property name="spacing">3</property>
+                        <property name="spacing">2</property>
                         <property name="layout_style">end</property>
                         <child>
                           <object class="GtkButton" id="button1">
@@ -764,7 +766,7 @@
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
-                        <property name="padding">2</property>
+                        <property name="padding">5</property>
                         <property name="position">2</property>
                       </packing>
                     </child>

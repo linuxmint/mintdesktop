@@ -170,7 +170,28 @@ class MintDesktop:
         
         # terminal page
         self.init_checkbox("/desktop/linuxmint/terminal/show_fortunes", "checkbox_fortunes")
-
+		
+        # wallpaper page
+        styles = gtk.ListStore(str,str)
+        styles.append(["tile", _("Tile")])
+        styles.append(["zoom", _("Zoom")])
+        styles.append(["center", _("Center")])
+        styles.append(["scale", _("Scale")])
+        styles.append(["stretch", _("Stretch")])
+        self.get_widget("combobox_styles").set_model(styles)
+        cell = gtk.CellRendererText()
+        self.get_widget("combobox_styles").pack_start(cell, True)
+        self.get_widget("combobox_styles").add_attribute(cell, 'text', 1)
+        # wallpaper (gradients)
+        colors = gtk.ListStore(str,str)
+        colors.append(["solid", _("Solid colour")])
+        colors.append(["horizontal", _("Horizontal gradient")])
+        colors.append(["vertical", _("Vertical gradient")])
+        self.get_widget("combobox_colors").set_model(colors)
+        cell = gtk.CellRendererText()
+        self.get_widget("combobox_colors").pack_start(cell, True)
+        self.get_widget("combobox_colors").add_attribute(cell, 'text', 1)
+                
         iconSizes = gtk.ListStore(str, str)
         iconSizes.append([_("Small"), "small-toolbar"])
         iconSizes.append([_("Large"), "large-toolbar"])
@@ -194,7 +215,29 @@ class MintDesktop:
         self.init_combobox("/desktop/gnome/interface/toolbar_style", "combobox_toolicons")
 
         self.get_widget("main_window").show()
+        self.create_papers()
 
+    def create_papers(self):
+		''' Fill out the wallpaper section of mintDesktop '''
+		SIZE_X = 60 # how long it is
+		SIZE_Y = 120 # how wide it is
+		xdg_dirs = ['/usr/share/wallpapers/','/usr/share/backgrounds/']
+		images = gtk.ListStore(str,str,gtk.gdk.Pixbuf)
+		# recursively search xdg_dirs for images
+		for xdg_dir in xdg_dirs:
+			for root, dirs, files in os.walk(xdg_dir):
+				for f in files:
+					# construct full path name
+					full_path = os.path.join(root, f)
+					print full_path
+					try:
+						img = gtk.gdk.pixbuf_new_from_file_at_size(full_path, SIZE_X, SIZE_Y)
+						images.append([full_path, f, img])
+					except:
+						pass
+		self.get_widget("iconview_wallpaper").set_model(images)
+		self.get_widget("iconview_wallpaper").set_pixbuf_column(2)	
+			
     def about_callback(self, w):
         dlg = gtk.AboutDialog()
         dlg.set_title(_("About"))
