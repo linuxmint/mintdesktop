@@ -8,7 +8,6 @@ try:
     import pygtk
     pygtk.require("2.0")
     import gtk
-    import gtk.glade
     import gettext
     import gconf
 except Exception, detail:
@@ -64,8 +63,9 @@ class MintDesktop:
     ''' Create the UI '''
     def __init__(self):
         # load our glade ui file in
-        self.gladefile = '/usr/lib/linuxmint/mintDesktop/mintDesktop.glade'
-        self.wTree = gtk.glade.XML(self.gladefile, "main_window")
+        self.gladefile = '/usr/lib/linuxmint/mintDesktop/mintDesktop.ui'
+        self.wTree = gtk.Builder()
+        self.wTree.add_from_file(self.gladefile)
         self.get_widget("main_window").connect("destroy", gtk.main_quit)
 
         # say hi to gconf
@@ -230,7 +230,7 @@ class MintDesktop:
 
     ''' Saves typing self.get_widget all the time.... '''
     def get_widget(self, which):
-        return self.wTree.get_widget(which)
+        return self.wTree.get_object(which)
 
 
     ''' Initialise the CheckButton with a gconf value, then bind it with the gconf system '''
