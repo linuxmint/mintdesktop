@@ -79,7 +79,7 @@ class MintDesktop:
         side_gnome_windows = SidePage(1, _("Windows"), "gnome-windows")
         side_gnome_interface = SidePage(2, _("Interface"), "preferences-desktop")
         side_terminal = SidePage(3, _("Terminal"), "terminal")
-        
+        side_wallpaper = SidePage(4, _("Wallpaper"), "preferences-wallpaper")
         # Define which side-options apply to which desktop
         desktop = commands.getoutput("grep DESKTOP /etc/linuxmint/info | cut -f 2 -d \"=\"").lower()
         if desktop == "gnome":
@@ -91,7 +91,7 @@ class MintDesktop:
         elif desktop == "xfce":
             self.sidePages = [side_terminal]
         elif desktop == "fluxbox":
-            self.sidePages = [side_terminal]
+            self.sidePages = [side_terminal, side_wallpaper]
         else:
             self.sidePages = [side_terminal]
             
