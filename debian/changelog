@@ -1,3 +1,10 @@
+mintdesktop (3.3.7) rebecca; urgency=medium
+
+  * Depend on mintsystem
+  * Support Compiz out of the box
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 08 Nov 2014 17:54:29 +0100
+
 mintdesktop (3.3.6) qiana; urgency=medium
 
   * Simplified UI
