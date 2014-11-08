@@ -1,0 +1,10 @@
+#!/usr/bin/python
+
+import os, gi
+from gi.repository import Gio
+
+source = Gio.SettingsSchemaSource.get_default()
+if source.lookup('org.mate.session.required-components', True):
+    settings = Gio.Settings('org.mate.session.required-components')
+    settings.set_string('windowmanager', 'marco')
+    print "Window Manager switched to Marco"

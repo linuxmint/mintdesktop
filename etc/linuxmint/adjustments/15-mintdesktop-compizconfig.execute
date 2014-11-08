@@ -1,0 +1,20 @@
+#!/usr/bin/python
+
+import os
+from configobj import ConfigObj
+
+try:	
+	if not os.path.exists('/etc/compizconfig/config'):
+		os.system('echo "[general]\n" > /etc/compizconfig/config')
+
+	config = ConfigObj('/etc/compizconfig/config')
+	if 'general' in config:
+		general_settings = config['general']
+	else:
+		general_settings = {}
+	general_settings['backend'] = 'ini'
+	general_settings['plugin_list_autosort'] = 'true'
+	general_settings['profile'] = 'mint'
+	config.write()
+except Exception, detail:
+	print detail

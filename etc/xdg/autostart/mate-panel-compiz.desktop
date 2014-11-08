@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=MATE Panel Compiz
+Exec=/usr/bin/mate-panel-compiz-restart
+OnlyShowIn=MATE;
+NoDisplay=true
+X-MATE-Autostart-Phase=Application
+X-MATE-Autostart-Notify=true
+X-MATE-Bugzilla-Bugzilla=MATE
+X-MATE-Bugzilla-Product=mate-panel
+X-MATE-Bugzilla-Component=general
+X-MATE-Bugzilla-Version=1.8.1
+

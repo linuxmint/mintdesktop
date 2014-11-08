@@ -50,6 +50,7 @@ install: build
 	#$(MAKE) install DESTDIR=$(CURDIR)/debian/mintdisk
 	mkdir -p $(CURDIR)/debian/mintdesktop
 	cp -r $(CURDIR)/usr $(CURDIR)/debian/mintdesktop/
+	cp -r $(CURDIR)/etc $(CURDIR)/debian/mintdesktop/
 
 # Build architecture-independent files here.
 binary-indep: build install

@@ -96,10 +96,13 @@ class MintDesktop:
         side_interface = SidePage(2, _("Interface"), "preferences-desktop")
         side_terminal = SidePage(3, _("Terminal"), "terminal")
                 
-        if marco_mode:
-            self.sidePages = [side_desktop_options, side_windows, side_interface, side_terminal]
-        else:
-            self.sidePages = [side_desktop_options, side_interface, side_terminal]
+        if not marco_mode:
+        	self.builder.get_object("frame_marco1").hide()
+        	self.builder.get_object("frame_marco2").hide()
+
+        self.sidePages = [side_desktop_options, side_windows, side_interface, side_terminal]
+        #else:
+        #    self.sidePages = [side_desktop_options, side_interface, side_terminal]
                 
         # create the backing store for the side nav-view.                    
         theme = Gtk.IconTheme.get_default()
@@ -130,6 +133,7 @@ class MintDesktop:
         self.builder.get_object("label_context_menus").set_markup("<b>" + _("Context menus") + "</b>")
         self.builder.get_object("label_toolbars").set_markup("<b>" + _("Toolbars") + "</b>")
         self.builder.get_object("label_terminal").set_markup("<b>" + _("Terminal") + "</b>")
+        self.builder.get_object("label_wm").set_markup("<b>" + _("Window Manager") + "</b>")
 
         self.builder.get_object("caption_desktop_icons").set_markup("<small><i><span foreground=\"#555555\">" + _("Select the items you want to see on the desktop:") + "</span></i></small>")
 
@@ -145,6 +149,8 @@ class MintDesktop:
         self.builder.get_object("checkbox_fortunes").set_label(_("Show fortune cookies"))
 
         self.builder.get_object("label_layouts").set_text(_("Buttons layout:"))
+
+        self.builder.get_object("label_window_manager").set_text(_("Window manager:"))
 
         self.builder.get_object("checkbutton_menuicon").set_label(_("Show icons on menus"))
         self.builder.get_object("checkbutton_button_icons").set_label(_("Show icons on buttons"))
@@ -187,6 +193,14 @@ class MintDesktop:
         layouts.append([_("Mac style (Left)"), "close,minimize,maximize:"])
         self.builder.get_object("combo_wmlayout").set_model(layouts)
         self.init_combobox("org.mate.Marco.general", "button-layout", "combo_wmlayout")
+
+        # WMs..
+        wms = Gtk.ListStore(str, str)
+        wms.append([_("Marco (stable and reliable)"), "marco"])
+        wms.append([_("Compiz (impressive desktop effects)"), "compiz"])
+        self.builder.get_object("combo_wm").set_model(wms)
+        self.builder.get_object("combo_wm").set_tooltip_text(_("Log out and log back in for changes to take effect. If things go wrong, run 'mate-wm-recovery' to switch back to Marco."))
+        self.init_combobox("org.mate.session.required-components", "windowmanager", "combo_wm")
 
         # toolbar icon styles
         iconStyles = Gtk.ListStore(str, str)
