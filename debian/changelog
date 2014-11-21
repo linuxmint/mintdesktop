@@ -1,3 +1,9 @@
+mintdesktop (3.3.8) rebecca; urgency=medium
+
+  * Switch compiz profile from mint to custom (to allow user to modify settings)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 21 Nov 2014 12:28:02 +0100
+
 mintdesktop (3.3.7) rebecca; urgency=medium
 
   * Depend on mintsystem
