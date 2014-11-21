@@ -1,3 +1,9 @@
+mintdesktop (3.3.9) rebecca; urgency=medium
+
+  * Fixed mate-wm-recovery script
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 21 Nov 2014 13:27:35 +0100
+
 mintdesktop (3.3.8) rebecca; urgency=medium
 
   * Switch compiz profile from mint to custom (to allow user to modify settings)
