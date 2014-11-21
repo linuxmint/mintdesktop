@@ -1,0 +1,27 @@
+#!/usr/bin/python
+
+import os
+from configobj import ConfigObj
+
+settings_dir = os.path.expanduser("~/.config/compiz-1/compizconfig")
+config_file = os.path.join(settings_dir, "config")
+mint_profile = os.path.join(settings_dir, "mint.ini")
+custom_profile = os.path.join(settings_dir, "custom.ini")
+
+try:
+	# if the mint profile exists but the custom one doesn't, copy it over to create a custom profile
+	if os.path.exists(mint_profile) and (not os.path.exists(custom_profile)):
+		os.system("cp %s %s" % (mint_profile, custom_profile))
+
+	# if the profile is mint, switch it to custom.
+	if os.path.exists(config_file):
+		config = ConfigObj(config_file)
+		if 'general' in config:
+			general_settings = config['general']
+	
+			if general_settings['profile'] == 'mint':
+				general_settings['profile'] = 'custom'
+				config.write()
+
+except Exception, detail:
+	print detail
