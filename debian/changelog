@@ -1,3 +1,9 @@
+mintdesktop (3.4.0) rebecca; urgency=medium
+
+  * Added Xfce support
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 09 Dec 2014 16:48:00 +0000
+
 mintdesktop (3.3.9) rebecca; urgency=medium
 
   * Fixed mate-wm-recovery script
