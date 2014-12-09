@@ -75,6 +75,7 @@ class MintDesktop:
         value = widget.get_model()[act][1]
         if value == 'compiz':
             if not os.path.exists(self.xfce_compiz_path):
+                os.system('mkdir -p ~/.config/autostart/')
                 os.system('cp /usr/lib/linuxmint/mintDesktop/xfce-autostart-compiz.desktop %s' % self.xfce_compiz_path)
         elif value == 'xfwm':
             if os.path.exists(self.xfce_compiz_path):
