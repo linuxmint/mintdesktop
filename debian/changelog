@@ -1,3 +1,9 @@
+mintdesktop (3.4.1) rebecca; urgency=medium
+
+  * Fixed creating autostart file for Xfce when directory doesn't exist
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 09 Dec 2014 20:45:22 +0100
+
 mintdesktop (3.4.0) rebecca; urgency=medium
 
   * Added Xfce support
