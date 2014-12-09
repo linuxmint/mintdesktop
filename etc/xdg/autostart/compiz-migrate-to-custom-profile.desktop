@@ -2,7 +2,7 @@
 Type=Application
 Name=Migrate Compiz to Custom Profile
 Exec=/usr/bin/compiz-migrate-to-custom-profile
-OnlyShowIn=MATE;
+OnlyShowIn=MATE;XFCE;
 NoDisplay=true
 X-MATE-Autostart-Phase=Application
 X-MATE-Autostart-Notify=true

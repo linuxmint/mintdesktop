@@ -45,26 +45,42 @@ class MintDesktop:
         return settings.get_boolean(key)
     
     def init_checkbox(self, schema, key, name):
-        widget = self.builder.get_object(name)
-        value = self.get_bool(schema, key)
-        widget.set_active(value)
-        widget.connect("clicked", lambda x: self.set_bool(schema, key, x))       
+        source = Gio.SettingsSchemaSource.get_default()
+        if source.lookup(schema, True) != None:
+            widget = self.builder.get_object(name)
+            value = self.get_bool(schema, key)
+            widget.set_active(value)
+            widget.connect("clicked", lambda x: self.set_bool(schema, key, x))       
 
     def init_combobox(self, schema, key, name):
-        widget = self.builder.get_object(name)
-        conf = self.get_string(schema, key)
-        index = 0
-        for row in widget.get_model():
-            if(conf == row[1]):
-                widget.set_active(index)
-                break
-            index = index +1
-        widget.connect("changed", lambda x: self.combo_fallback(schema, key, x))
+        source = Gio.SettingsSchemaSource.get_default()
+        if source.lookup(schema, True) != None:
+            widget = self.builder.get_object(name)
+            conf = self.get_string(schema, key)
+            index = 0
+            for row in widget.get_model():
+                if(conf == row[1]):
+                    widget.set_active(index)
+                    break
+                index = index +1
+            widget.connect("changed", lambda x: self.combo_fallback(schema, key, x))
 
     def combo_fallback(self, schema, key, widget):
         act = widget.get_active()
         value = widget.get_model()[act]
         self.set_string(schema, key, value[1])
+
+    def combo_xfce_wm_changed(self, widget):
+        act = widget.get_active()
+        value = widget.get_model()[act][1]
+        if value == 'compiz':
+            if not os.path.exists(self.xfce_compiz_path):
+                os.system('cp /usr/lib/linuxmint/mintDesktop/xfce-autostart-compiz.desktop %s' % self.xfce_compiz_path)
+        elif value == 'xfwm':
+            if os.path.exists(self.xfce_compiz_path):
+                os.unlink(self.xfce_compiz_path)
+        else:
+            print "ERROR: unrecognized value '%s'" % value
 
     # Change pages
     def side_view_nav(self, param):
@@ -73,7 +89,7 @@ class MintDesktop:
             treePath = treePaths[0]
             index = int("%s" % treePath) #Hack to turn treePath into an int
             target = self.sidePages[index].notebook_index
-            self.builder.get_object("notebook1").set_current_page(index)
+            self.builder.get_object("notebook1").set_current_page(target)
 
     ''' Create the UI '''
     def __init__(self):
@@ -100,9 +116,18 @@ class MintDesktop:
         	self.builder.get_object("frame_marco1").hide()
         	self.builder.get_object("frame_marco2").hide()
 
-        self.sidePages = [side_desktop_options, side_windows, side_interface, side_terminal]
-        #else:
-        #    self.sidePages = [side_desktop_options, side_interface, side_terminal]
+        self.xfce = False
+        self.xfce_compiz_path = os.path.expanduser('~/.config/autostart/Compiz.desktop')
+        try:
+            if "xfce4" in os.environ['XDG_DATA_DIRS']:
+                self.xfce = True
+        except:
+            pass
+
+        if self.xfce:
+            self.sidePages = [side_windows, side_terminal]
+        else:
+            self.sidePages = [side_desktop_options, side_windows, side_interface, side_terminal]
                 
         # create the backing store for the side nav-view.                    
         theme = Gtk.IconTheme.get_default()
@@ -194,13 +219,27 @@ class MintDesktop:
         self.builder.get_object("combo_wmlayout").set_model(layouts)
         self.init_combobox("org.mate.Marco.general", "button-layout", "combo_wmlayout")
 
-        # WMs..
-        wms = Gtk.ListStore(str, str)
-        wms.append([_("Marco (stable and reliable)"), "marco"])
-        wms.append([_("Compiz (impressive desktop effects)"), "compiz"])
-        self.builder.get_object("combo_wm").set_model(wms)
-        self.builder.get_object("combo_wm").set_tooltip_text(_("Log out and log back in for changes to take effect. If things go wrong, run 'mate-wm-recovery' to switch back to Marco."))
-        self.init_combobox("org.mate.session.required-components", "windowmanager", "combo_wm")
+        if not self.xfce:
+            # WMs..
+            wms = Gtk.ListStore(str, str)
+            wms.append([_("Marco (stable and reliable)"), "marco"])
+            wms.append([_("Compiz (impressive desktop effects)"), "compiz"])
+            self.builder.get_object("combo_wm").set_model(wms)
+            self.builder.get_object("combo_wm").set_tooltip_text(_("Log out and log back in for changes to take effect. If things go wrong, run 'mate-wm-recovery' to switch back to Marco."))
+            self.init_combobox("org.mate.session.required-components", "windowmanager", "combo_wm")
+        else:
+            # WMs..
+            wms = Gtk.ListStore(str, str)
+            wms.append([_("Xfwm (stable and reliable)"), "xfwm"])
+            wms.append([_("Compiz (impressive desktop effects)"), "compiz"])
+            combo = self.builder.get_object("combo_wm")
+            combo.set_model(wms)
+            combo.set_tooltip_text(_("Log out and log back in for changes to take effect."))
+            if os.path.exists(self.xfce_compiz_path):
+                combo.set_active(1)
+            else:
+                combo.set_active(0)
+            combo.connect("changed", self.combo_xfce_wm_changed)
 
         # toolbar icon styles
         iconStyles = Gtk.ListStore(str, str)
