@@ -1,3 +1,9 @@
+mintdesktop (3.4.2) rafaela; urgency=medium
+
+  * Added copytex plugin to list of enabled Compiz plugins
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 20 Jun 2015 14:13:05 +0200
+
 mintdesktop (3.4.1) rebecca; urgency=medium
 
   * Fixed creating autostart file for Xfce when directory doesn't exist
