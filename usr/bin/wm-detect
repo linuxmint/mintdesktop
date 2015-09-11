@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+import sys, os, gettext, gi, signal, subprocess
+from gi.repository import Gtk, GdkPixbuf, Gdk, GObject
+from gi.repository import Gio
+
+if "XDG_CURRENT_DESKTOP" in os.environ:
+    current_desktop = os.environ["XDG_CURRENT_DESKTOP"]
+    print ("Desktop environment: %s" % current_desktop)
+
+# Kill all compositors/managers first
+wms = []
+p = subprocess.Popen(['ps', '-A'], stdout=subprocess.PIPE)
+out, err = p.communicate()
+for process in ['marco', 'metacity', 'xfwm4', 'compiz', 'openbox', 'compton']:
+    for line in out.splitlines():
+        pname = line.decode('utf-8').split()[-1]
+        if process in pname:
+            pid = int(line.split(None, 1)[0])
+            wms.append ("%s (%d)" % (pname, pid))
+
+print ("Window manager: %s" % " ".join(wms))
+
+display = Gdk.Display.get_default()
+screen = display.get_default_screen()
+if (screen.is_composited()):
+    print ("Compositing: enabled")
+else:
+    print ("Compositing: disabled")

@@ -3,9 +3,9 @@
 import os, gi
 from gi.repository import Gio
 
-source = Gio.SettingsSchemaSource.get_default()
-if source.lookup('org.mate.session.required-components', True):
-    settings = Gio.Settings('org.mate.session.required-components')
-    wm = settings.get_string('windowmanager')
-    if wm == 'compiz':
-        os.system('mate-panel --replace &')
+# source = Gio.SettingsSchemaSource.get_default()
+# if source.lookup('org.mate.session.required-components', True):
+#     settings = Gio.Settings('org.mate.session.required-components')
+#     wm = settings.get_string('windowmanager')
+#     if wm == 'compiz':
+#         os.system('mate-panel --replace &')

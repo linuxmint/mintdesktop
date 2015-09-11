@@ -1,0 +1,80 @@
+#!/usr/bin/env python3
+import sys, os, gettext, gi, signal, subprocess
+from gi.repository import Gtk, GdkPixbuf, Gdk, GObject
+from gi.repository import Gio
+
+# i18n
+gettext.install("mintdesktop", "/usr/share/linuxmint/locale")
+
+settings = Gio.Settings("com.linuxmint.desktop")
+
+# Detect which DE is running
+if "XDG_CURRENT_DESKTOP" not in os.environ:
+    print ("window-manager-launcher: XDG_CURRENT_DESKTOP is not set! Exiting..")
+    sys.exit(0)
+
+current_desktop = os.environ["XDG_CURRENT_DESKTOP"]
+
+if current_desktop not in ["MATE", "XFCE"]:
+    print ("Current desktop %s is not supported." % current_desktop)
+    sys.exit(0)
+
+if current_desktop == "MATE":
+    wm = settings.get_string("mate-window-manager")
+else:
+    wm = settings.get_string("xfce-window-manager")
+ 
+# Kill all compositors/managers first
+p = subprocess.Popen(['ps', '-A'], stdout=subprocess.PIPE)
+out, err = p.communicate()
+for process in ['compton', 'marco', 'metacity', 'xfwm4', 'openbox', 'compiz']:
+    for line in out.splitlines():
+        pname = line.decode('utf-8').split()[-1]
+        if process in pname:
+            pid = int(line.split(None, 1)[0])
+            print ("Killing pid %d (%s)" % (pid, pname))
+            os.kill(pid, signal.SIGKILL)
+
+if wm == "marco":
+    settings = Gio.Settings("org.mate.Marco.general")
+    settings.set_boolean("compositing-manager", False)
+    subprocess.Popen(["marco", "--no-composite", "--replace"])
+elif wm == "marco-composite":
+    settings = Gio.Settings("org.mate.Marco.general")
+    settings.set_boolean("compositing-manager", True)
+    subprocess.Popen(["marco", "--composite", "--replace"])
+elif wm == "marco-compton":
+    settings = Gio.Settings("org.mate.Marco.general")
+    settings.set_boolean("compositing-manager", False)
+    subprocess.Popen(["marco", "--no-composite", "--replace"])
+    subprocess.Popen(["compton"])
+elif wm == "xfwm4":
+    subprocess.Popen(["xfconf-query", "-c", "xfwm4", "-p", "/general/use_compositing", "--set", "true"])
+    subprocess.Popen(["xfwm4", "--compositor=off", "--replace"])
+elif wm == "xfwm4-composite":
+    subprocess.Popen(["xfconf-query", "-c", "xfwm4", "-p", "/general/use_compositing", "--set", "false"])
+    subprocess.Popen(["xfwm4", "--compositor=on", "--replace"])
+elif wm == "xfwm4-compton":
+    subprocess.Popen(["xfconf-query", "-c", "xfwm4", "-p", "/general/use_compositing", "--set", "false"])
+    subprocess.Popen(["xfwm4", "--compositor=off", "--replace"])
+    subprocess.Popen(["compton"])
+elif wm == "compiz":
+    subprocess.Popen(["compiz", "--replace"])
+elif wm == "metacity":
+    settings = Gio.Settings("org.gnome.metacity")
+    settings.set_boolean("compositing-manager", False)
+    subprocess.Popen(["metacity", "--replace"])
+elif wm == "metacity-composite":
+    settings = Gio.Settings("org.gnome.metacity")
+    settings.set_boolean("compositing-manager", True)
+    subprocess.Popen(["metacity", "--replace"])
+elif wm == "metacity-compton":
+    settings = Gio.Settings("org.gnome.metacity")
+    settings.set_boolean("compositing-manager", False)
+    subprocess.Popen(["metacity", "--replace"])
+    subprocess.Popen(["compton"])
+elif wm == "openbox":
+    subprocess.Popen(["openbox", "--replace"])
+elif wm == "openbox-compton":
+    subprocess.Popen(["openbox", "--replace"])
+    subprocess.Popen(["compton"])

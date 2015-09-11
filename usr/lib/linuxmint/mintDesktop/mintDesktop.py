@@ -1,23 +1,12 @@
 #!/usr/bin/env python
 
 import gi
- 
 from gi.repository import Gtk, GdkPixbuf, Gdk, GObject
 from gi.repository import Gio
-
-try:
-    import os
-    import commands
-    import sys
-    import string
-    import gettext    
-except Exception, detail:
-    print detail
-    sys.exit(1)
-
+import os, commands, sys, gettext, shutil
+from subprocess import Popen
 
 # i18n
-# TODO: Badly need to fix this - overuse of "The" etc.
 gettext.install("mintdesktop", "/usr/share/linuxmint/locale")
 
 class SidePage:
@@ -38,19 +27,19 @@ class MintDesktop:
 
     def set_bool(self, schema, key, value):
         settings = Gio.Settings.new(schema)
-        settings.set_boolean(key, value.get_active())        
-    
+        settings.set_boolean(key, value.get_active())
+
     def get_bool(self, schema, key):
         settings = Gio.Settings.new(schema)
         return settings.get_boolean(key)
-    
+
     def init_checkbox(self, schema, key, name):
         source = Gio.SettingsSchemaSource.get_default()
         if source.lookup(schema, True) != None:
             widget = self.builder.get_object(name)
             value = self.get_bool(schema, key)
             widget.set_active(value)
-            widget.connect("clicked", lambda x: self.set_bool(schema, key, x))       
+            widget.connect("clicked", lambda x: self.set_bool(schema, key, x))
 
     def init_combobox(self, schema, key, name):
         source = Gio.SettingsSchemaSource.get_default()
@@ -70,52 +59,87 @@ class MintDesktop:
         value = widget.get_model()[act]
         self.set_string(schema, key, value[1])
 
-    def combo_xfce_wm_changed(self, widget):
-        act = widget.get_active()
-        value = widget.get_model()[act][1]
-        if value == 'compiz':
-            if not os.path.exists(self.xfce_compiz_path):
-                os.system('mkdir -p ~/.config/autostart/')
-                os.system('cp /usr/lib/linuxmint/mintDesktop/xfce-autostart-compiz.desktop %s' % self.xfce_compiz_path)
-        elif value == 'xfwm':
-            if os.path.exists(self.xfce_compiz_path):
-                os.unlink(self.xfce_compiz_path)
-        else:
-            print "ERROR: unrecognized value '%s'" % value
+        # if value == 'compiz':
+        #     if not os.path.exists(self.xfce_compiz_path):
+        #         os.system('mkdir -p ~/.config/autostart/')
+        #         os.system('cp /usr/lib/linuxmint/mintDesktop/xfce-autostart-compiz.desktop %s' % self.xfce_compiz_path)
+        # elif value == 'xfwm':
+        #     if os.path.exists(self.xfce_compiz_path):
+        #         os.unlink(self.xfce_compiz_path)
+        # else:
+        #     print "ERROR: unrecognized value '%s'" % value
+
+
+# source = Gio.SettingsSchemaSource.get_default()
+# if source.lookup('org.mate.session.required-components', True):
+#     os.system('gsettings set org.mate.session.required-components windowmanager marco')
+#     print "Window Manager switched to Marco"
+
 
     # Change pages
     def side_view_nav(self, param):
-        treePaths = param.get_selected_items()        
+        treePaths = param.get_selected_items()
         if (len(treePaths) > 0):
             treePath = treePaths[0]
             index = int("%s" % treePath) #Hack to turn treePath into an int
             target = self.sidePages[index].notebook_index
             self.builder.get_object("notebook1").set_current_page(target)
 
+    def wm_changed (self, widget):
+        Popen(["window-manager-launcher"])
+        act = widget.get_active()
+        wm = widget.get_model()[act][1]
+        self.show_hide_options(wm)
+
+    def show_hide_options (self, wm):
+        self.builder.get_object("frame_marco").hide()
+        self.builder.get_object("frame_metacity").hide()
+        self.builder.get_object("frame_compiz").hide()
+        if "marco" in wm:
+            self.builder.get_object("frame_marco").show()
+        elif "metacity" in wm:
+            self.builder.get_object("frame_metacity").show()
+        elif "compiz" in wm and os.path.exists("/usr/bin/ccsm"):
+            self.builder.get_object("frame_compiz").show()
+            self.builder.get_object("compiz_reset_button").set_sensitive(os.path.exists(self.compiz_path))
+
+    def help_button_clicked (self, widget):
+        Popen(["xdg-open", "help:mintdesktop"])
+
+    def compiz_settings_button_clicked (self, widget):
+        Popen(["ccsm"])
+
+    def compiz_reset_button_clicked (self, widget):
+        if os.path.exists(self.compiz_path):
+            shutil.rmtree(self.compiz_path)
+        Popen(["compiz-reset-profile"])
+
+    def _on_key_released(self, window, event):
+        if event.keyval != Gdk.KEY_F1:
+            return
+        self.help_button_clicked(window)
+
+    def close_button_clicked (self, widget):
+        Gtk.main_quit()
+
     ''' Create the UI '''
     def __init__(self):
-        # Detect which WM is running
-        marco_mode = False
-        wm_info = commands.getoutput("wmctrl -m")        
-        if "Marco" in wm_info:
-            print "Marco WM detected"
-            marco_mode = True
 
         # load our glade ui file in
         self.builder = Gtk.Builder()
         self.builder.add_from_file('/usr/lib/linuxmint/mintDesktop/mintDesktop.ui')
-        self.window = self.builder.get_object( "main_window" )
-               
-        self.builder.get_object("main_window").connect("destroy", Gtk.main_quit)
-                      
+        self.window = self.builder.get_object("main_window")
+        self.window.connect("destroy", Gtk.main_quit)
+
         side_desktop_options = SidePage(0, _("Desktop"), "user-desktop")
         side_windows = SidePage(1, _("Windows"), "preferences-system-windows")
         side_interface = SidePage(2, _("Interface"), "preferences-desktop")
         side_terminal = SidePage(3, _("Terminal"), "terminal")
-                
-        if not marco_mode:
-        	self.builder.get_object("frame_marco1").hide()
-        	self.builder.get_object("frame_marco2").hide()
+
+        self.compiz_path = os.path.expanduser('~/.config/compiz-1')
+
+        wm_info = commands.getoutput("wmctrl -m")
+        self.show_hide_options(wm_info.lower())
 
         self.xfce = False
         self.xfce_compiz_path = os.path.expanduser('~/.config/autostart/Compiz.desktop')
@@ -129,16 +153,16 @@ class MintDesktop:
             self.sidePages = [side_windows, side_terminal]
         else:
             self.sidePages = [side_desktop_options, side_windows, side_interface, side_terminal]
-                
-        # create the backing store for the side nav-view.                    
+
+        # create the backing store for the side nav-view.
         theme = Gtk.IconTheme.get_default()
         self.store = Gtk.ListStore(str, GdkPixbuf.Pixbuf)
         for sidePage in self.sidePages:
-            img = theme.load_icon(sidePage.icon, 36, 0)                        
-            self.store.append([sidePage.name, img])       
-            
+            img = theme.load_icon(sidePage.icon, 36, 0)
+            self.store.append([sidePage.name, img])
+
         target = self.sidePages[0].notebook_index
-        self.builder.get_object("notebook1").set_current_page(target)                                            
+        self.builder.get_object("notebook1").set_current_page(target)
 
         # set up the side view - navigation.
         self.builder.get_object("side_view").set_text_column(0)
@@ -148,13 +172,16 @@ class MintDesktop:
         self.builder.get_object("side_view").connect("selection_changed", self.side_view_nav )
 
         # set up larger components.
-        self.builder.get_object("main_window").set_title("Desktop Settings")
-        self.builder.get_object("main_window").connect("destroy", Gtk.main_quit)
+        self.window.set_title("Desktop Settings")
+        self.window.connect("destroy", Gtk.main_quit)
 
         # i18n
         self.builder.get_object("label_desktop_icons").set_markup("<b>" + _("Desktop icons") + "</b>")
-        self.builder.get_object("label_performance").set_markup("<b>" + _("Performance") + "</b>")
-        self.builder.get_object("label_appearance").set_markup("<b>" + _("Appearance") + "</b>")
+        self.builder.get_object("label_marco").set_markup("<b>" + _("Marco settings") + "</b>")
+        self.builder.get_object("label_metacity").set_markup("<b>" + _("Metacity settings") + "</b>")
+        self.builder.get_object("label_compiz").set_markup("<b>" + _("Compiz settings") + "</b>")
+        self.builder.get_object("compiz_settings_button").set_label(_("Configure Compiz"))
+        self.builder.get_object("compiz_reset_button").set_label(_("Reset Compiz settings"))
         self.builder.get_object("label_icons").set_markup("<b>" + _("Icons") + "</b>")
         self.builder.get_object("label_context_menus").set_markup("<b>" + _("Context menus") + "</b>")
         self.builder.get_object("label_toolbars").set_markup("<b>" + _("Toolbars") + "</b>")
@@ -169,14 +196,14 @@ class MintDesktop:
         self.builder.get_object("checkbox_trash").set_label(_("Trash"))
         self.builder.get_object("checkbox_volumes").set_label(_("Mounted Volumes"))
 
-        self.builder.get_object("checkbutton_resources").set_label(_("Don't show window content while dragging them"))
-        self.builder.get_object("checkbox_compositing").set_label(_("Use compositing"))
-        self.builder.get_object("checkbutton_titlebar").set_label(_("Use system font in titlebar"))
+        self.builder.get_object("checkbutton_resources_marco").set_label(_("Don't show window content while dragging them"))
+        self.builder.get_object("checkbutton_titlebar_marco").set_label(_("Use system font in titlebar"))
+        self.builder.get_object("label_layouts_marco").set_text(_("Buttons layout:"))
+        self.builder.get_object("checkbutton_resources_metacity").set_label(_("Don't show window content while dragging them"))
+        self.builder.get_object("checkbutton_titlebar_metacity").set_label(_("Use system font in titlebar"))
+        self.builder.get_object("label_layouts_metacity").set_text(_("Buttons layout:"))
+
         self.builder.get_object("checkbox_fortunes").set_label(_("Show fortune cookies"))
-
-        self.builder.get_object("label_layouts").set_text(_("Buttons layout:"))
-
-        self.builder.get_object("label_window_manager").set_text(_("Window manager:"))
 
         self.builder.get_object("checkbutton_menuicon").set_label(_("Show icons on menus"))
         self.builder.get_object("checkbutton_button_icons").set_label(_("Show icons on buttons"))
@@ -186,6 +213,13 @@ class MintDesktop:
         self.builder.get_object("label_tool_icons").set_text(_("Buttons labels:"))
         self.builder.get_object("label_icon_size").set_text(_("Icon size:"))
 
+        self.builder.get_object("compiz_settings_button").connect("clicked", self.compiz_settings_button_clicked)
+        self.builder.get_object("compiz_reset_button").connect("clicked", self.compiz_reset_button_clicked)
+
+        # Ensure MATE loads the WM we set here
+        settings = Gio.Settings("org.mate.session.required-components")
+        settings.set_string("windowmanager", "mint-window-manager")
+
         # Desktop page
         self.init_checkbox("org.mate.caja.desktop", "computer-icon-visible", "checkbox_computer")
         self.init_checkbox("org.mate.caja.desktop", "home-icon-visible", "checkbox_home")
@@ -194,53 +228,72 @@ class MintDesktop:
         self.init_checkbox("org.mate.caja.desktop", "volumes-visible", "checkbox_volumes")
 
         # Window Manager page
-        self.init_checkbox("org.mate.Marco.general", "reduced-resources", "checkbutton_resources")
-        self.init_checkbox("org.mate.Marco.general", "compositing-manager", "checkbox_compositing")
-        self.init_checkbox("org.mate.Marco.general", "titlebar-uses-system-font", "checkbutton_titlebar")
+        layouts = Gtk.ListStore(str, str)
+        layouts.append([_("Traditional style (Right)"), "menu:minimize,maximize,close"])
+        layouts.append([_("Mac style (Left)"), "close,minimize,maximize:"])
+
+        self.init_checkbox("org.mate.Marco.general", "reduced-resources", "checkbutton_resources_marco")
+        self.init_checkbox("org.mate.Marco.general", "titlebar-uses-system-font", "checkbutton_titlebar_marco")
+        self.builder.get_object("combo_wmlayout_marco").set_model(layouts)
+        self.init_combobox("org.mate.Marco.general", "button-layout", "combo_wmlayout_marco")
+
+        self.init_checkbox("org.gnome.metacity", "reduced-resources", "checkbutton_resources_metacity")
+        self.init_checkbox("org.gnome.desktop.wm.preferences", "titlebar-uses-system-font", "checkbutton_titlebar_metacity")
+        self.builder.get_object("combo_wmlayout_metacity").set_model(layouts)
+        self.init_combobox("org.gnome.desktop.wm.preferences", "button-layout", "combo_wmlayout_metacity")
 
         # interface page
         self.init_checkbox("org.mate.interface", "menus-have-icons", "checkbutton_menuicon")
         self.init_checkbox("org.mate.interface", "show-input-method-menu","checkbutton_im_menu")
         self.init_checkbox("org.mate.interface", "show-unicode-menu", "checkbutton_unicode")
         self.init_checkbox("org.mate.interface", "buttons-have-icons", "checkbutton_button_icons")
-        
-        # terminal page
-        self.init_checkbox("com.linuxmint.terminal", "show-fortunes", "checkbox_fortunes")
-
         iconSizes = Gtk.ListStore(str, str)
         iconSizes.append([_("Small"), "small-toolbar"])
         iconSizes.append([_("Large"), "large-toolbar"])
         self.builder.get_object("combobox_icon_size").set_model(iconSizes)
         self.init_combobox("org.mate.interface", "toolbar-icons-size", "combobox_icon_size")
 
-        # Metacity button layouts..
-        layouts = Gtk.ListStore(str, str)
-        layouts.append([_("Traditional style (Right)"), "menu:minimize,maximize,close"])
-        layouts.append([_("Mac style (Left)"), "close,minimize,maximize:"])
-        self.builder.get_object("combo_wmlayout").set_model(layouts)
-        self.init_combobox("org.mate.Marco.general", "button-layout", "combo_wmlayout")
+        # terminal page
+        self.init_checkbox("com.linuxmint.terminal", "show-fortunes", "checkbox_fortunes")
 
-        if not self.xfce:
-            # WMs..
-            wms = Gtk.ListStore(str, str)
-            wms.append([_("Marco (stable and reliable)"), "marco"])
-            wms.append([_("Compiz (impressive desktop effects)"), "compiz"])
-            self.builder.get_object("combo_wm").set_model(wms)
-            self.builder.get_object("combo_wm").set_tooltip_text(_("Log out and log back in for changes to take effect. If things go wrong, run 'mate-wm-recovery' to switch back to Marco."))
-            self.init_combobox("org.mate.session.required-components", "windowmanager", "combo_wm")
-        else:
-            # WMs..
-            wms = Gtk.ListStore(str, str)
-            wms.append([_("Xfwm (stable and reliable)"), "xfwm"])
-            wms.append([_("Compiz (impressive desktop effects)"), "compiz"])
-            combo = self.builder.get_object("combo_wm")
-            combo.set_model(wms)
-            combo.set_tooltip_text(_("Log out and log back in for changes to take effect."))
-            if os.path.exists(self.xfce_compiz_path):
-                combo.set_active(1)
+        if "XDG_CURRENT_DESKTOP" in os.environ:
+            current_desktop = os.environ["XDG_CURRENT_DESKTOP"]
+            if current_desktop == "MATE":
+                wm_key = "mate-window-manager"
             else:
-                combo.set_active(0)
-            combo.connect("changed", self.combo_xfce_wm_changed)
+                wm_key = "xfce-window-manager"
+            print wm_key
+            settings = Gio.Settings("com.linuxmint.desktop")
+            wm = settings.get_string(wm_key)
+            wms = Gtk.ListStore(str, str)
+            compton = os.path.exists("/usr/bin/compton")
+            if os.path.exists("/usr/bin/marco"):
+                wms.append([_("Marco"), "marco"])
+                wms.append([_("Marco + Compositing"), "marco-composite"])
+                if compton:
+                    wms.append([_("Marco + Compton"), "marco-compton"])
+            if os.path.exists("/usr/bin/metacity"):
+                wms.append([_("Metacity"), "metacity"])
+                wms.append([_("Metacity + Compositing"), "metacity-composite"])
+                if compton:
+                    wms.append([_("Metacity + Compton"), "metacity-compton"])
+            if os.path.exists("/usr/bin/xfwm4"):
+                wms.append([_("Xfwm4"), "xfwm4"])
+                wms.append([_("Xfwm4 + Compositing"), "xfwm4-composite"])
+                if compton:
+                    wms.append([_("Xfwm4 + Compton"), "xfwm4-compton"])
+            if os.path.exists("/usr/bin/openbox"):
+                wms.append([_("Openbox"), "openbox"])
+                if compton:
+                    wms.append([_("Openbox + Compton"), "openbox-compton"])
+            if os.path.exists("/usr/bin/compiz"):
+                wms.append([_("Compiz"), "compiz"])
+
+            # WMs..
+            self.builder.get_object("combo_wm").set_model(wms)
+            self.builder.get_object("combo_wm").set_tooltip_text(_("Click on the help button for more information about window managers.\nUse the 'wm-recovery' command to switch back to the default window manager.\nUse the 'wm-detect' command to check which window manager is running."))
+            self.init_combobox("com.linuxmint.desktop", wm_key, "combo_wm")
+            self.builder.get_object("combo_wm").connect("changed", self.wm_changed)
 
         # toolbar icon styles
         iconStyles = Gtk.ListStore(str, str)
@@ -251,9 +304,12 @@ class MintDesktop:
         self.builder.get_object("combobox_toolicons").set_model(iconStyles)
         self.init_combobox("org.mate.interface", "toolbar-style", "combobox_toolicons")
 
-        self.builder.get_object("main_window").show()       
+        self.builder.get_object("help_button").connect("clicked", self.help_button_clicked)
+        self.builder.get_object("close_button").connect("clicked", self.close_button_clicked)
 
-    
+        self.window.show()
+        self.window.connect("key-release-event", self._on_key_released)
+
 if __name__ == "__main__":
     MintDesktop()
     Gtk.main()
