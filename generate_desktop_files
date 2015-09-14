@@ -3,7 +3,7 @@
 DOMAIN = "mintdesktop"
 PATH = "/usr/share/linuxmint/locale"
 
-import os, gettext, sys
+import os, gettext, sys, commands
 sys.path.append('/usr/lib/linuxmint/common')
 import additionalfiles
 
@@ -23,4 +23,21 @@ OnlyShowIn=MATE;XFCE;
 """
 
 additionalfiles.generate(DOMAIN, PATH, "usr/share/applications/mintDesktop.desktop", prefix, _("Desktop Settings"), _("Fine-tune desktop settings"), suffix)
+
+locales = []
+cur_dir = os.getcwd()
+os.chdir("/usr/share/linuxmint/locale")
+lines = commands.getoutput("find */LC_MESSAGES/mintdesktop.mo")
+for line in lines.split("\n"):
+    line = line.strip().split("/")[0]
+    locales.append(line)
+os.chdir(cur_dir)
+
+for locale in locales:
+    os.system("mkdir -p usr/share/help/%s/mintdesktop/" % locale)
+    os.system("msgunfmt /usr/share/linuxmint/locale/%s/LC_MESSAGES/mintdesktop.mo > /tmp/%s.po" % (locale, locale))
+    os.system("xml2po -p /tmp/%s.po -o usr/share/help/%s/mintdesktop/index.page usr/share/help/C/mintdesktop/index.page" % (locale, locale))
+    os.system("xml2po -p /tmp/%s.po -o usr/share/help/%s/mintdesktop/wms.page usr/share/help/C/mintdesktop/wms.page" % (locale, locale))
+    os.system("xml2po -p /tmp/%s.po -o usr/share/help/%s/mintdesktop/compositing.page usr/share/help/C/mintdesktop/compositing.page" % (locale, locale))
+    os.system("cp usr/share/help/C/mintdesktop/legal.xml usr/share/help/%s/mintdesktop/" % locale)
 
