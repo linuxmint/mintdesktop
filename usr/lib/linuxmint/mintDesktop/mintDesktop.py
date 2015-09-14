@@ -59,17 +59,6 @@ class MintDesktop:
         value = widget.get_model()[act]
         self.set_string(schema, key, value[1])
 
-        # if value == 'compiz':
-        #     if not os.path.exists(self.xfce_compiz_path):
-        #         os.system('mkdir -p ~/.config/autostart/')
-        #         os.system('cp /usr/lib/linuxmint/mintDesktop/xfce-autostart-compiz.desktop %s' % self.xfce_compiz_path)
-        # elif value == 'xfwm':
-        #     if os.path.exists(self.xfce_compiz_path):
-        #         os.unlink(self.xfce_compiz_path)
-        # else:
-        #     print "ERROR: unrecognized value '%s'" % value
-
-
     # Change pages
     def side_view_nav(self, param):
         treePaths = param.get_selected_items()
@@ -136,7 +125,6 @@ class MintDesktop:
         self.show_hide_options(wm_info.lower())
 
         self.xfce = False
-        self.xfce_compiz_path = os.path.expanduser('~/.config/autostart/Compiz.desktop')
         try:
             if "xfce4" in os.environ['XDG_DATA_DIRS']:
                 self.xfce = True
@@ -215,6 +203,12 @@ class MintDesktop:
         if source.lookup('org.mate.session.required-components', True):
             settings = Gio.Settings("org.mate.session.required-components")
             settings.set_string("windowmanager", "mint-window-manager")
+
+        # Ensure Xfce loads the WM we set here
+        legacy_xfce_path = os.path.expanduser('~/.config/autostart/Compiz.desktop')
+        if os.path.exists(legacy_xfce_path):
+            os.unlink(legacy_xfce_path)
+        os.system('cp /usr/share/mintdesktop/xfce-autostart-wm.desktop ~/.config/autostart/')
 
         # Desktop page
         self.init_checkbox("org.mate.caja.desktop", "computer-icon-visible", "checkbox_computer")

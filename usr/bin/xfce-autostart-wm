@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+import sys, os, gettext, gi, signal, subprocess
+from gi.repository import Gtk, GdkPixbuf, Gdk, GObject
+from gi.repository import Gio
+
+# i18n
+gettext.install("mintdesktop", "/usr/share/linuxmint/locale")
+
+settings = Gio.Settings("com.linuxmint.desktop")
+
+# Detect which DE is running
+if "XDG_CURRENT_DESKTOP" not in os.environ:
+    print ("window-manager-launcher: XDG_CURRENT_DESKTOP is not set! Exiting..")
+    sys.exit(0)
+
+current_desktop = os.environ["XDG_CURRENT_DESKTOP"]
+
+if current_desktop not in ["XFCE"]:
+    print ("Current desktop %s is not supported." % current_desktop)
+    sys.exit(0)
+
+wm = settings.get_string("xfce-window-manager")
+
+if wm in ["xfwm4", "xfwm4-composite"]:
+    # do nothing, xfce already starts xfwm4 by default and the compositing setting is already set by mintdesktop
+    pass
+elif wm == "xfwm4-compton":
+    # start compton in addition to the already running xfwm4
+    subprocess.Popen(["compton"])
+else:
+    # kill xfwm4 and start the selected wm
+    subprocess.Popen(["window-manager-launcher"])
