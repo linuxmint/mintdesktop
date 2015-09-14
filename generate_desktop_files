@@ -17,9 +17,9 @@ Icon=user-desktop
 Terminal=false
 Type=Application
 Encoding=UTF-8
-Categories=GNOME;GTK;Settings;DesktopSettings;
+Categories=GNOME;GTK;Settings;DesktopSettings;XFCE;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
 StartupNotify=false
-OnlyShowIn=MATE;
+OnlyShowIn=MATE;XFCE;
 """
 
 additionalfiles.generate(DOMAIN, PATH, "usr/share/applications/mintDesktop.desktop", prefix, _("Desktop Settings"), _("Fine-tune desktop settings"), suffix)
