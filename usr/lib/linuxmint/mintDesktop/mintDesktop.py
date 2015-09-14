@@ -70,12 +70,6 @@ class MintDesktop:
         #     print "ERROR: unrecognized value '%s'" % value
 
 
-# source = Gio.SettingsSchemaSource.get_default()
-# if source.lookup('org.mate.session.required-components', True):
-#     os.system('gsettings set org.mate.session.required-components windowmanager marco')
-#     print "Window Manager switched to Marco"
-
-
     # Change pages
     def side_view_nav(self, param):
         treePaths = param.get_selected_items()
@@ -217,8 +211,10 @@ class MintDesktop:
         self.builder.get_object("compiz_reset_button").connect("clicked", self.compiz_reset_button_clicked)
 
         # Ensure MATE loads the WM we set here
-        settings = Gio.Settings("org.mate.session.required-components")
-        settings.set_string("windowmanager", "mint-window-manager")
+        source = Gio.SettingsSchemaSource.get_default()
+        if source.lookup('org.mate.session.required-components', True):
+            settings = Gio.Settings("org.mate.session.required-components")
+            settings.set_string("windowmanager", "mint-window-manager")
 
         # Desktop page
         self.init_checkbox("org.mate.caja.desktop", "computer-icon-visible", "checkbox_computer")
