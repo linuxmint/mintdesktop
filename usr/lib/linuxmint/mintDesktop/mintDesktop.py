@@ -154,7 +154,7 @@ class MintDesktop:
         self.builder.get_object("side_view").connect("selection_changed", self.side_view_nav )
 
         # set up larger components.
-        self.window.set_title("Desktop Settings")
+        self.window.set_title(_("Desktop Settings"))
         self.window.connect("destroy", Gtk.main_quit)
 
         # i18n
