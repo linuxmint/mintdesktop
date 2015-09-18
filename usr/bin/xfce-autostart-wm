@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 import sys, os, gettext, gi, signal, subprocess
 from gi.repository import Gtk, GdkPixbuf, Gdk, GObject
 from gi.repository import Gio

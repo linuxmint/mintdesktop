@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python2
 
 import gi
 from gi.repository import Gtk, GdkPixbuf, Gdk, GObject
