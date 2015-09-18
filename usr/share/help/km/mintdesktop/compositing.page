@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="compositing">
+
+   <info>
+    <link type="guide" xref="index#windows"/>
+    <credit type="author">
+      <name>Linux Mint</name>
+      <email>root@linuxmint.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+  </info>
+
+  <title>Pros and cons of compositing</title>
+
+  <section id="pros">
+    <title>Advantages</title>
+    <list>
+      <item>
+        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+      </item>
+      <item>
+        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+      </item>
+    </list>
+  </section>
+
+  <section id="cons">
+    <title>Disadvantages</title>
+
+    <list>
+      <item>
+        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+      </item>
+      <item>
+        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+      </item>
+    </list>
+  </section>
+
+</page>

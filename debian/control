@@ -9,4 +9,4 @@ Package: mintdesktop
 Architecture: all
 Depends: python (>= 2.4), python (<< 3), mint-info, mintsystem, wmctrl, compiz, compiz-gnome, compiz-plugins, compiz-plugins-default, compizconfig-settings-manager, python-configobj, dconf-cli
 Description: Desktop configuration tool
- Configures some aspects of the desktop. 
+ Configures some aspects of the desktop.
