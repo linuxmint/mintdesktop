@@ -87,6 +87,8 @@ selection-fill-color='#2f2f4f4f'
 [plugins/core]
 hsize=4
 active-plugins=['core', 'composite', 'opengl', 'compiztoolbox', 'copytex', 'decor', 'imgpng', 'cube', 'gnomecompat', 'regex', 'rotate', 'move', 'resize', 'grid', 'commands', 'staticswitcher', 'animation', 'expo', 'wobbly']
+focus-prevention-level=1
+focus-prevention-match='!(class=Polkit-gnome-authentication-agent-1) & !(class=MintMenu.py)'
 
 [plugins/shift]
 ground-color1='#b3b3b3cc'
