@@ -7,6 +7,6 @@ Standards-Version: 3.9.5
 
 Package: mintdesktop
 Architecture: all
-Depends: python2.7, python3, mint-info, mintsystem, wmctrl, compiz, compiz-gnome, compiz-plugins, compiz-plugins-default, compizconfig-settings-manager, python-configobj, dconf-cli
+Depends: python2.7, python3, mint-info, mintsystem, wmctrl, python-configobj, dconf-cli
 Description: Desktop configuration tool
  Configures some aspects of the desktop.
