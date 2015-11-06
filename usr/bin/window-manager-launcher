@@ -47,7 +47,7 @@ elif wm == "marco-compton":
     settings = Gio.Settings("org.mate.Marco.general")
     settings.set_boolean("compositing-manager", False)
     subprocess.Popen(["marco", "--no-composite", "--replace"])
-    subprocess.Popen(["compton"])
+    subprocess.Popen(["compton", "--backend", "glx", "--vsync", "opengl-swc"])
 elif wm == "xfwm4":
     subprocess.Popen(["xfconf-query", "-c", "xfwm4", "-p", "/general/use_compositing", "--set", "true"])
     subprocess.Popen(["xfwm4", "--compositor=off", "--replace"])
@@ -57,7 +57,7 @@ elif wm == "xfwm4-composite":
 elif wm == "xfwm4-compton":
     subprocess.Popen(["xfconf-query", "-c", "xfwm4", "-p", "/general/use_compositing", "--set", "false"])
     subprocess.Popen(["xfwm4", "--compositor=off", "--replace"])
-    subprocess.Popen(["compton"])
+    subprocess.Popen(["compton", "--backend", "glx", "--vsync", "opengl-swc"])
 elif wm == "compiz":
     subprocess.Popen(["compiz", "--replace"])
 elif wm == "metacity":
@@ -72,9 +72,9 @@ elif wm == "metacity-compton":
     settings = Gio.Settings("org.gnome.metacity")
     settings.set_boolean("compositing-manager", False)
     subprocess.Popen(["metacity", "--replace"])
-    subprocess.Popen(["compton"])
+    subprocess.Popen(["compton", "--backend", "glx", "--vsync", "opengl-swc"])
 elif wm == "openbox":
     subprocess.Popen(["openbox", "--replace"])
 elif wm == "openbox-compton":
     subprocess.Popen(["openbox", "--replace"])
-    subprocess.Popen(["compton"])
+    subprocess.Popen(["compton", "--backend", "glx", "--vsync", "opengl-swc"])
