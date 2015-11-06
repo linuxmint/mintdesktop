@@ -12,29 +12,29 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>Sommittelun hyödyt ja haitat</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>Edut</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>Parempi tuntuma ja ulkoasu: Ikkunoiden animaatiot, varjot ja läpinäkyvyys.</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>Parempi tuki moderneille sovelluksille: Asiakaspuolen koristeet GTK+ 3:ssa ovat paremmin tuettuja sommittelua käyttävissä ikkunoinninhallintaohjelmissa.</p>
       </item>
     </list>
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>Haitat</title>
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>GPU-renderöinti: Näytönohjaimesta ja ajureista riippuen GPU:lla renderöinti (verrattuna CPU-renderöintiin) voi johtaa kuvan häiriöihin tai repeilyefektiin.</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>Resurssien käyttö: Sommittelu vaatii enemmän resursseja. Tämä voi johtaa heikompaan suorituskykyyn tai vähentää akkukestoa kannettavissa tietokoneissa.</p>
       </item>
     </list>
   </section>

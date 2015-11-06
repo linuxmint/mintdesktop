@@ -12,43 +12,43 @@
 
   </info>
 
-  <title>Overview of some window managers</title>
+  <title>Zenbait leiho-kudeatzaileri buruzko informazioa</title>
 
-  <p>Here's a description of some of the window managers available.</p>
+  <p>Erabilgarri dauden zenbait leiho-kudeatzaileren deskribapena dago hemen.</p>
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco is the default window manager for the MATE desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Marco MATE mahaigain ingurunearen leiho-kudeatzaile lehenetsia da. Oso egonkor eta fidagarria da. Konposizioarekin edo gabe exekutatu daiteke.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Metacity</title>
-    <p>Metacity was the default window manager for the GNOME 2 desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Metacity GNOME 2 mahaigain ingurunearen leiho-kudeatzaile lehenetsia zen. Oso egonkor eta fidagarria da. Konposizioarekin edo gabe exekutatu daiteke.</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Xfwm4</title>
-    <p>Xfwm4 is the default window manager for the Xfce desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Xfwm4 Xfce mahaigain ingurunearen leiho-kudeatzaile lehenetsia da. Oso egonkorra eta fidagarria da. Konposizioarekin edo gabe exekutatu daiteke.</p>
     <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Compiz</title>
-    <p>Compiz is a very impressive window manager, very configurable and full of amazing effects and animations. It is however the least reliable and the least stable.</p>
-    <p>Compiz is installed by default in Linux Mint. Note: It is not available in LMDE.</p>
+    <p>Compiz mahaigain ingurune txundigarria da, oso konfiguragarria da eta sekulako efektu eta animazioak ditu, baina ez da oso egonkorra eta fidagarria.</p>
+    <p>Compiz instalatatuta dago modu lehenetsian Linux Minten. Oharra: Ez dago erabilgarri LMDEn.</p>
   </section>
 
   <section id="pros">
     <title>Compton</title>
-    <p>Compton is a compositing manager. It can be used in combination with windows managers such as Marco, Metacity or Xfwm4. In Xfce, using Xfwm4+Compton is known to reduce screen tearing.</p>
+    <p>Compton konposizio-kudeatzailea da. Marco, Metacity edo Xfwm4 bezalako leiho-kudeatzaileekin batera erabil daiteke. Xfce-n ezaguna da Xfwm4+Compton erabilita pantaila urraketak gutxitzen direla.</p>
     <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Openbox</title>
-    <p>Openbox is a fast and light-weight window manager.</p>
+    <p>Openbox leiho-kudeatzaile azkar eta arina da.</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>
 

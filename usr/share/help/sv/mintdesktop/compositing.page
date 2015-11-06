@@ -12,29 +12,29 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>För- och nackdelar med skrivbordseffekter</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>Fördelar</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>Bättre utseende &amp; känsla: Fönster-animationer, skuggor och transparens.</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>Bättre stöd för moderna applikationer: För dekorationer på klientsidan ger GTK3 ett bättre stöd åt fönsterhanterare som stöder skrivbordseffekter.</p>
       </item>
     </list>
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>Nackdelar</title>
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>GPU rendering: Beroende på grafikkort och grafikdrivrutiner kan rendering med GPU, istället för CPU, resultera i bildstörningar som artefakter och visuella felaktigheter (tearing).</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>Resursanvändning: Skrivbordseffekter kräver mer systemresurser. Detta kan innebära sämre prestanda eller reducerad batteridrift för laptoppar.</p>
       </item>
     </list>
   </section>

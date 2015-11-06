@@ -4,7 +4,7 @@
    <info>
     <link type="guide" xref="index#windows"/>
     <credit type="author">
-      <name>Linux Mint</name>
+      <name>Линукс Минт</name>
       <email>root@linuxmint.com</email>
     </credit>
 
@@ -12,43 +12,43 @@
 
   </info>
 
-  <title>Overview of some window managers</title>
+  <title>Преглед на мениджърите на прозорци</title>
 
-  <p>Here's a description of some of the window managers available.</p>
+  <p>Тук е описанието на някои мениджъри на прозорци.</p>
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco is the default window manager for the MATE desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Marco е стандартния мениджър на графичната среда MATE. Той е много стабилен и надежден. Може да работи с или без композиране.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Metacity</title>
-    <p>Metacity was the default window manager for the GNOME 2 desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Metacity беше стандартния мениджър на графичната среда GNOME 2. Той е много стабилен и надежден. Може да работи с или без композиране.</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Xfwm4</title>
-    <p>Xfwm4 is the default window manager for the Xfce desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Xfwm4 е стандартния мениджър на прозорци на  графичната среда Xfce. Той е много стабилен и надежден. Той може да работи със или без композиране.</p>
     <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Compiz</title>
-    <p>Compiz is a very impressive window manager, very configurable and full of amazing effects and animations. It is however the least reliable and the least stable.</p>
-    <p>Compiz is installed by default in Linux Mint. Note: It is not available in LMDE.</p>
+    <p>Compiz е много впечатляващ мениджър на прозорци, с много настройки и е пълен с ефекти и анимации. Той не е чак толкова стабилен и сигурен.</p>
+    <p>Compiz е инсталиран по подразбиране в Линукс Минт. Бележка: Не е наличен в LMDE</p>
   </section>
 
   <section id="pros">
     <title>Compton</title>
-    <p>Compton is a compositing manager. It can be used in combination with windows managers such as Marco, Metacity or Xfwm4. In Xfce, using Xfwm4+Compton is known to reduce screen tearing.</p>
+    <p>Compton е мениджър za композиране. Той може да бъде използван заедно с мениджърите на прозорци, като Marco, Metacity или Xfwm4. В Xfce, е известно че използването на Xfwm4+Compton намалява трептенето на екрана.</p>
     <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Openbox</title>
-    <p>Openbox is a fast and light-weight window manager.</p>
+    <p>Openbox е бърз и лек мениджър на прозорци</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>
 

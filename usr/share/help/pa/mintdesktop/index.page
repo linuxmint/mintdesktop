@@ -12,12 +12,12 @@
 
   </info>
 
-  <title>ਡੈਸਕਟਾਪ ਸੈਟਿੰਗ</title>
+  <title>ਡੈਸਕਟਾਪ ਸੈਟਿੰਗਸ</title>
 
 	<p>Welcome to Desktop Settings.</p>
 
   <section id="windows" style="2column">
-    <title>ਵਿੰਡੋ</title>
+    <title>ਖਿੜਕੀਆਂ</title>
 	<p>The Windows section lets you choose a window manager.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>

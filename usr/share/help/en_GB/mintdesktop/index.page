@@ -24,7 +24,7 @@
 	<list>
 		<item><p>Windows borders, title bars and window buttons</p></item>
 		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>Composition (shadows, animations, effects, GPU rendering)</p></item>
 	</list>
 	</note>
 

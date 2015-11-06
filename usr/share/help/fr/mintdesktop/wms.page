@@ -12,43 +12,43 @@
 
   </info>
 
-  <title>Overview of some window managers</title>
+  <title>Aperçu de quelques gestionnaires de fenêtres</title>
 
-  <p>Here's a description of some of the window managers available.</p>
+  <p>Voici un aperçu de quelques gestionnaires de fenêtres.</p>
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco is the default window manager for the MATE desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Marco est le gestionnaire de fenêtres par défaut de l'environnement de bureau MATE. Il est très stable et très fiable. Il peut fonctionner avec ou sans composition.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Metacity</title>
-    <p>Metacity was the default window manager for the GNOME 2 desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Metacity était le gestionnaire de fenêtres par défaut de l'environnement de bureau GNOME 2. Il est très stable et très fiable. Il peut fonctionner avec ou sans composition.</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Xfwm4</title>
-    <p>Xfwm4 is the default window manager for the Xfce desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Xfwm4 est le gestionnaire de fenêtres par défaut de l'environnement de bureau Xfce. Il est très stable et très fiable. Il peut fonctionner avec ou sans composition.</p>
     <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Compiz</title>
-    <p>Compiz is a very impressive window manager, very configurable and full of amazing effects and animations. It is however the least reliable and the least stable.</p>
-    <p>Compiz is installed by default in Linux Mint. Note: It is not available in LMDE.</p>
+    <p>Compiz est un superbe gestionnaire de fenêtres. Il est très configurable et dotés d'une multitude d'effets extrêmement impressionnants. Il est toutefois aussi le mois stable et le moins fiable.</p>
+    <p>Compiz est installé par défaut dans Linux Mint. Note: Il n'est toutefois pas disponible sous LMDE.</p>
   </section>
 
   <section id="pros">
     <title>Compton</title>
-    <p>Compton is a compositing manager. It can be used in combination with windows managers such as Marco, Metacity or Xfwm4. In Xfce, using Xfwm4+Compton is known to reduce screen tearing.</p>
+    <p>Compton est un gestionnaire de composition. Il peut être utilisé en complément de gestionnaires de fenêtres tels que Marco; Metacity ou Xfwm4. Sous Xfce, l'utilisation de Xfwm4+Compton est connue pour réduire les effets de déchirement (screen-tearing).</p>
     <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Openbox</title>
-    <p>Openbox is a fast and light-weight window manager.</p>
+    <p>Openbox est un gestionnaire de fenêtres rapide et léger.</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>
 

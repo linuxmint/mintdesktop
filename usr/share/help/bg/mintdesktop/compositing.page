@@ -4,7 +4,7 @@
    <info>
     <link type="guide" xref="index#windows"/>
     <credit type="author">
-      <name>Linux Mint</name>
+      <name>Линукс Минт</name>
       <email>root@linuxmint.com</email>
     </credit>
 
@@ -12,29 +12,29 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>Плюсове и минуси на композирането</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>Предимства</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>По-добър вид&amp; и стил на анимациите на прозорците, сенките и прозрачността.</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>По добра работа с модерни приложения: Декорациите в GTK3 имат по-добра поддръжка на композираните мениджъри на прозорци.</p>
       </item>
     </list>
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>Недостатъци</title>
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>Рендиране на графичния процесор: Според видео картата и драйверите, Рендирането с графичната карта (за разлика от процесора) може да доведе до артефакти и трептене на екрана.</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>Използване на ресурси: Композирането изисква повече ресурси. Това може да доведе до по-ниска производителност или до по-ниска издържливост на батериите на лаптопите.</p>
       </item>
     </list>
   </section>

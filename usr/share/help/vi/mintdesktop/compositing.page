@@ -12,29 +12,29 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>Ưu khuyết điểm của tổ hợp</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>Ưu điểm</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>Cảm nhận tốt hơn: Hoạt hoạ, đổ bóng và trong suốt cho cửa sổ.</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>Hỗ trợ ứng dụng hiện đại tốt hơn: Phần trang trí phía khách trong GTK3 được hỗ trợ tốt hơn với trình quản lý cửa sổ được tổ hợp.</p>
       </item>
     </list>
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>Khuyết điểm</title>
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>Kết xuất GPU: Tuỳ thuộc vào bo mạch đồ hoạ và trình điều khiển của bạn, kết xuất với GPU (thay vì CPU) có thể dẫn đến dấu vết thị giác hoặc tình trạng xé màn hình.</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>Sử dụng tài nguyên: Tổ hợp yêu cầu nhiều tài nguyên hơn. Kết quả là hiệu năng chậm hơn và giảm thời lượng pin trên máy tính xách tay.</p>
       </item>
     </list>
   </section>

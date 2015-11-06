@@ -14,17 +14,17 @@
 
   <title>Definições do ambiente de trabalho</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>Bem-vindo às definições do Ambiente de Trabalho.</p>
 
   <section id="windows" style="2column">
     <title>Janelas</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>A secção Janelas permitir-lhe-á escolher o gestor de janelas.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>Bordas, barras e botões das janelas</p></item>
+		<item><p>Eventos de janelas (mover, ajuste de tamanho e foco de janelas)</p></item>
+		<item><p>Composição (sombras, animações, efeitos, e renderização)</p></item>
 	</list>
 	</note>
 
@@ -33,8 +33,8 @@
   <section id="terminal" style="2column">
     <title>Terminal</title>
     <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>If this option is enabled, each time you open a terminal, a little animal appears and says some randomly picked humoristic message.</p>
-    <note><p>Some people might find some of the messages offensive (that's why this option is disabled by default). Please note that these messages are not authored by Linux Mint.</p></note>
+    <p>Se essa opção estiver activada, cada vez que abrir o terminal, um pequeno animal aparece e mostra uma mensagem humorística aleatória.</p>
+    <note><p>Algumas pessoas podem achar algumas das mensagens ofensivas (é por isso que esta opção está desactivada por defeito). Por favor, note que estas mensagens não são de autoria do Linux Mint.</p></note>
   </section>
 
 </page>

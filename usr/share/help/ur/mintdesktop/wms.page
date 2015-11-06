@@ -4,7 +4,7 @@
    <info>
     <link type="guide" xref="index#windows"/>
     <credit type="author">
-      <name>Linux Mint</name>
+      <name>لنکس منٹ</name>
       <email>root@linuxmint.com</email>
     </credit>
 
@@ -12,18 +12,18 @@
 
   </info>
 
-  <title>Overview of some window managers</title>
+  <title>کچھ ونڈو منتظمین کا جائزہ</title>
 
   <p>Here's a description of some of the window managers available.</p>
 
   <section id="pros">
-    <title>Marco</title>
+    <title>میکرو</title>
     <p>Marco is the default window manager for the MATE desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
-    <title>Metacity</title>
+    <title>میٹاسٹی</title>
     <p>Metacity was the default window manager for the GNOME 2 desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>

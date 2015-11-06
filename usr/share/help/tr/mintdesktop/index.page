@@ -14,17 +14,17 @@
 
   <title>Masaüstü Ayarları</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>Masaüstü Ayarlarına Hoşgeldiniz.</p>
 
   <section id="windows" style="2column">
     <title>Pencereler</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>Pencerler bölümü, pencere yöneticisi seçmenize olanak sağlar.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>Pencere kenarlıkları, başlık çubuğu ve pencere düğmeleri</p></item>
+		<item><p>Pencere olayları (taşıma, yeniden boyutlandırma, pencere odaklama)</p></item>
+		<item><p>Görüntü birleştirme - Compositing (gölgeler, animasyonlar, etkiler, GPU işleme)</p></item>
 	</list>
 	</note>
 
@@ -33,8 +33,8 @@
   <section id="terminal" style="2column">
     <title>Uçbirim</title>
     <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>If this option is enabled, each time you open a terminal, a little animal appears and says some randomly picked humoristic message.</p>
-    <note><p>Some people might find some of the messages offensive (that's why this option is disabled by default). Please note that these messages are not authored by Linux Mint.</p></note>
+    <p>Eğer bu seçenek etkinse, uçbirimi her açtığınızda, küçük bir hayvan imgesi ve rastgele seçilmiş bir esprili mesaj görüntülenir.</p>
+    <note><p>Bazı eleştiri mesajları ile karşılaşabilirsiniz (belirli bir özellik neden varsayılan olarak pasif gibi...). Bu tarz mesajların Linux Mint tarafından yazılmadığını unutmayınız.</p></note>
   </section>
 
 </page>

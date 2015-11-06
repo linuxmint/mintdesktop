@@ -4,7 +4,7 @@
    <info>
     <link type="guide" xref="index#windows"/>
     <credit type="author">
-      <name>Linux Mint</name>
+      <name>리눅스 민트</name>
       <email>root@linuxmint.com</email>
     </credit>
 
@@ -12,29 +12,29 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>컴포지팅 모드의 장단점</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>장점</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>보기 좋다: 창 애니메이션, 그림자 효과, 투명 효과.</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>최신 어플리케이션 지원이 더 좋다: GTK3의 사용자 꾸미기가 컴포지팅 창 관리자에서 훨씬 더 잘 지원됩니다.</p>
       </item>
     </list>
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>단점</title>
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>GPU 렌더링: 사용 중이신 그래픽 카드나 드라이버에 따라, GPU 렌더링을 사용하면 (CPU 반대로) 잔상이나 테어링 현상이 생길 수 있습니다.</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>리소스 사용: 컴포지팅은 더 많은 리소스를 요구합니다. 그래서 성능 저하가 생기거나 랩탑 컴퓨터의 배터리가 빨리 달 수 있습니다.</p>
       </item>
     </list>
   </section>

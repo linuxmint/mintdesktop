@@ -12,43 +12,43 @@
 
   </info>
 
-  <title>Overview of some window managers</title>
+  <title>Khái quát một vài trình quản lý cửa sổ</title>
 
-  <p>Here's a description of some of the window managers available.</p>
+  <p>Đây là mô tả của một vài trình quản lý cửa sổ sẵn có</p>
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco is the default window manager for the MATE desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Marco là trình quản lý cửa sổ mặc định cho môi trường làm việc MATE. Nó rất ổn định và chắc chắn. Nó có thể chạy với tổ hợp hoặc không.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Metacity</title>
-    <p>Metacity was the default window manager for the GNOME 2 desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Metacity là trình quản lý cửa sổ mặc định cho môi trường làm việc GNOME 2. Nó rất ổn định và chắc chắn. Nó có thể chạy với tổ hợp hoặc không.</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Xfwm4</title>
-    <p>Xfwm4 is the default window manager for the Xfce desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Xfwm4 là trình quản lý cửa sổ mặc định cho môi trường làm việc Xfce. Nó rất ổn định và chắc chắn. Nó có thể chạy với tổ hợp hoặc không.</p>
     <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Compiz</title>
-    <p>Compiz is a very impressive window manager, very configurable and full of amazing effects and animations. It is however the least reliable and the least stable.</p>
-    <p>Compiz is installed by default in Linux Mint. Note: It is not available in LMDE.</p>
+    <p>Compiz là một trình quản lý cửa sổ rất ấn tượng, tính cấu hình cao và đầy những hiệu ứng và hoạt hoạ tuyệt vời. Tuy nhiên nó cũng ít ổn định và ít chắc chắn nhất.</p>
+    <p>Compiz được cài mặc định trên Linux Mint. Lưu ý: nó không có trong LMDE.</p>
   </section>
 
   <section id="pros">
     <title>Compton</title>
-    <p>Compton is a compositing manager. It can be used in combination with windows managers such as Marco, Metacity or Xfwm4. In Xfce, using Xfwm4+Compton is known to reduce screen tearing.</p>
+    <p>Compton là một trình quản lý tổ hợp. Nó có thể dùng kết hợp với những trình quản lý cửa sổ như là Marco, Metacity hoặc Xfwm4. Trong Xfce, sử dụng Xfwm4+Compton được biết rằng sẽ hạn chế tình trạng xé màn hình.</p>
     <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Openbox</title>
-    <p>Openbox is a fast and light-weight window manager.</p>
+    <p>Openbox là một trình quản lý cửa sổ nhanh và gọn nhẹ.</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>
 

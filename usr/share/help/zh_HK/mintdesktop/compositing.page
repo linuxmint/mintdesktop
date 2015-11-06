@@ -12,29 +12,29 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>Compositing 的優點與缺點</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>優點</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>更好的外觀與質感：視窗動畫、陰影與透明感。</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>更好的現代應用程式支援：特效合成 (compositing) 視窗管理員提供更好的用戶端 GTK3 裝飾支援。</p>
       </item>
     </list>
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>缺點</title>
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>GPU 渲染：取決於你的顯示卡與其驅動程式，使用 GPU (而非 CPU) 執行渲染，可能導致視覺假影或畫面撕裂。</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>資源使用量：特效合成 (compositing) 需要更多資源。這可能導致效能緩慢，或降低手提電腦的電池續航力。</p>
       </item>
     </list>
   </section>

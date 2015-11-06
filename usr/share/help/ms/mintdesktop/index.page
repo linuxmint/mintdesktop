@@ -14,17 +14,17 @@
 
   <title>Tetapan Desktop</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>Selamat datang ke Tetapan Desktop</p>
 
   <section id="windows" style="2column">
     <title>Tetingkap</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>Seksyen Tetingkap membolehkan ada memilih pengurus tetingkap.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>Sempadan Tetingkap, bar tajuk dan butang tetingkap</p></item>
+		<item><p>Aktiviti Tetingkap (bergerak, mengubah saiz, fokus tetingkap)</p></item>
+		<item><p>Penggubahan (bayang-bayang, animasi, efek, pemaparan GPU)</p></item>
 	</list>
 	</note>
 
@@ -33,8 +33,8 @@
   <section id="terminal" style="2column">
     <title>Terminal</title>
     <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>If this option is enabled, each time you open a terminal, a little animal appears and says some randomly picked humoristic message.</p>
-    <note><p>Some people might find some of the messages offensive (that's why this option is disabled by default). Please note that these messages are not authored by Linux Mint.</p></note>
+    <p>Jika pilihan ini diaktifkan, setiap kali anda buka terminal, satu binatang kecil muncul dan berkata mesej lawak yang dipilih secara rawak.</p>
+    <note><p>Sesetengah orang  mungkin terjumpa mesej yang agak menyinggung hati (sebab itu pilihan ini dimatikan secara lalai). Sila ambil nota yang mesej-mesej ini tidak dikarang oleh Linux Mint.</p></note>
   </section>
 
 </page>

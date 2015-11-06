@@ -12,29 +12,29 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>Prós e contras de complementos.</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>Vantagens</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>Visão clara &amp; aparência: Animações de janela, sombras e transparência.</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>Melhor suporte para aplicações modernas: Client-side decorações em GTK3 são melhores suportadas por complementos de gerenciadores de janelas.</p>
       </item>
     </list>
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>Desvantagens</title>
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>GPU renderização: Depende da placa de vídeo e seus respectivos drivers, renderização com GPU (como oposto a CPU) pode resultar em artefatos visuais ou rasgo na tela.</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>Utilização de recursos: Composição requer mais recursos. Isto pode resultar negativamente no desempenho ou reduzir a autonomia da bateria em computadores portáteis.</p>
       </item>
     </list>
   </section>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="compositing">
+
+   <info>
+    <link type="guide" xref="index#windows"/>
+    <credit type="author">
+      <name>Linux Mint</name>
+      <email>root@linuxmint.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+  </info>
+
+  <title>Композицияни қўллашда фойда ва зарар</title>
+
+  <section id="pros">
+    <title>Қулайликлар</title>
+    <list>
+      <item>
+        <p>Қулай кўриниш &amp; сезиш: Ойналар анимацияси, кўланкалар ва шаффофлик.</p>
+      </item>
+      <item>
+        <p>Замонавий иловалар учун қўллаб-қувватлаш яхшироқ: GTK3 да мижоз томонидан яратилган кўринишлар композит ойна менежерларида яхши қўллаб-қувватланган.</p>
+      </item>
+    </list>
+  </section>
+
+  <section id="cons">
+    <title>Ноқулайликлар</title>
+
+    <list>
+      <item>
+        <p>GPU рендеринг: график карта ва у учун ўрнатилган драйверлар қандайлигига қараб GPU билан рендеринг визуал муаммоларга ёки экранни бузилишига олиб келиши мумкин.</p>
+      </item>
+      <item>
+        <p>Ресурсларга талаб: Композиция кўпроқ ресурс талаб қилади. У ноутбук туридаги компьютерларда батарея қувватини тез тугашига ва компьютерни секин ишлашига сабаб бўлиши мумкин.</p>
+      </item>
+    </list>
+  </section>
+
+</page>

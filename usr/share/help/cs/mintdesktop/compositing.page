@@ -12,29 +12,29 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>Výhody a nevýhody rozvržení oken</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>Výhody</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>Lepší vzhled &amp; dojem: Animace oken, stíny a průhlednost.</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>Lepší podpora pro moderní aplikace: Uživatelské dekorace v GTK 3 jsou lépe podporovány správci oken s rozvržením</p>
       </item>
     </list>
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>Nevýhody</title>
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>Vykreslování pomocí GPU: V závislosti na Vaší grafické kartě a ovladačích, vykreslování pomocí GPU (oproti CPU) může způsobit chybné vykreslování, či trhání obrazu.</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>Nárok na zdroje: Rozvržení vyžaduje více prostředků. Výsledkem tedy může být menší výkon, či snížená výdrž baterií u přenosných počítačů</p>
       </item>
     </list>
   </section>

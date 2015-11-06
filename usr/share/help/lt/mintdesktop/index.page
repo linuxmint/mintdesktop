@@ -12,19 +12,19 @@
 
   </info>
 
-  <title>Darbastalio nustatymai</title>
+  <title>Darbalaukio nustatymai</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>Sveiki atvykę į darbalaukio nustatymus.</p>
 
   <section id="windows" style="2column">
     <title>Langai</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>Langų sekcija leidžia jums pasirinkti langų tvarkytuvę.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>Langų kraštus, antračių juostas ir lango mygtukus</p></item>
+		<item><p>Lango įvykius (perkėlimą, dydžio keitimą, langų fokusavimą)</p></item>
+		<item><p>Kompozicionavimą (šešėlius, animacijas, efektus, vaizdo plokštės perdavimą)</p></item>
 	</list>
 	</note>
 
@@ -33,8 +33,8 @@
   <section id="terminal" style="2column">
     <title>Terminalas</title>
     <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>If this option is enabled, each time you open a terminal, a little animal appears and says some randomly picked humoristic message.</p>
-    <note><p>Some people might find some of the messages offensive (that's why this option is disabled by default). Please note that these messages are not authored by Linux Mint.</p></note>
+    <p>Jeigu ši parinktis įjungta, kas kartą jums atvėrus terminalą, pasirodys mažas gyvūnėlis ir pasakys kažkokį atsitiktinai išrinktą humoristinį pranešimą.</p>
+    <note><p>Kai kurie žmonės gali palaikyti kai kuriuos pranešimus įžeidžiančiais (štai kodėl pagal numatymą, ši parinktis yra išjungta). Prašome pastebėti, kad šiuos pranešimus nėra sukūrusi Linux Mint.</p></note>
   </section>
 
 </page>

@@ -14,17 +14,17 @@
 
   <title>Bureaubladinstellingen</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>Welkom bij Werkomgeving-instellingen.</p>
 
   <section id="windows" style="2column">
     <title>Vensters</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>Het onderdeel Vensters stelt u in staat om een vensterbeheerder te kiezen.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>Vensterranden, titelbalken en vensterknoppen</p></item>
+		<item><p>Venstergebeurtenissen (verplaatsen, herschalen, scherpstellen op vensters)</p></item>
+		<item><p>Beeldsamenstelling (schaduwen, animaties, effecten, GPU-weergave)</p></item>
 	</list>
 	</note>
 
@@ -33,8 +33,8 @@
   <section id="terminal" style="2column">
     <title>Terminalvenster</title>
     <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>If this option is enabled, each time you open a terminal, a little animal appears and says some randomly picked humoristic message.</p>
-    <note><p>Some people might find some of the messages offensive (that's why this option is disabled by default). Please note that these messages are not authored by Linux Mint.</p></note>
+    <p>Indien deze optie is ingeschakeld, zal er telkens wanneer u een terminalvenster opent, een klein diertje verschijnen dat een willekeurige grappige boodschap zegt.</p>
+    <note><p>Sommige mensen zouden aanstoot kunnen nemen aan sommige boodschappen (daarom is deze optie standaard uitgeschakeld). De boodschappen zijn niet gemaakt door Linux Mint.</p></note>
   </section>
 
 </page>

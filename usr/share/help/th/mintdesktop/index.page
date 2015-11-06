@@ -14,7 +14,7 @@
 
   <title>การตั้งค่าพื้นโต๊ะ</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>ยินดีต้อนรับสู่ 'ค่าตั้งพื้นโต๊ะ'</p>
 
   <section id="windows" style="2column">
     <title>หน้าต่าง</title>
@@ -22,7 +22,7 @@
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
+		<item><p>ขอบของหน้าต่าง, แถบชื่อเรื่อง, ปุ่มหน้าต่าง</p></item>
 		<item><p>Window events (moving, resizing, focusing windows)</p></item>
 		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
 	</list>

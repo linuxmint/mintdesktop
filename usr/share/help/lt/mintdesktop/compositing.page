@@ -12,29 +12,29 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>Argumentai už ir prieš kompozicionavimą</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>Privalumai</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>Geresnė išvaizda ir turinys: Langų animacijos, šešėliai ir permatomumas.</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>Geresnis šiuolaikinių programų palaikymas: GTK3 kliento pusės dekoracijos yra geriau palaikomos kompozicionuojamų langų tvarkytuvių.</p>
       </item>
     </list>
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>Trūkumai</title>
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>Vaizdo plokštės atvaizdavimas: Priklausomai nuo jūsų grafikos plokštės ir jūsų tvarkyklių, atvaizdavimas per vaizdo plokštę (priešingai nei per procesorių) gali sukelti vizualius artefaktus ir ekrano perskyrimą.</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>Išteklių naudojimas: Kompozicionavimas reikalauja daugiau išteklių. Tai nešiojamuose kompiuteriuose gali sąlygoti mažesnį našumą ir didesnį baterijos įkrovos išnaudojimą.</p>
       </item>
     </list>
   </section>

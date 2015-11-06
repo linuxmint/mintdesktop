@@ -4,7 +4,7 @@
   <info>
 
     <credit type="author">
-      <name>Linux Mint</name>
+      <name>리눅스 민트</name>
       <email>root@linuxmint.com</email>
     </credit>
 
@@ -12,19 +12,19 @@
 
   </info>
 
-  <title>데스크탑 설정</title>
+  <title>데스크톱 설정</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>데스크톱 설정에 오신 것을 환영합니다.</p>
 
   <section id="windows" style="2column">
     <title>창</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>창 섹션에서 창 관리자를 선택하시면 됩니다.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>창 경계, 제목 표시줄과 창 버튼</p></item>
+		<item><p>창 동작 (이동, 크기 조절, 창 포커싱)</p></item>
+		<item><p>컴포지팅 (그림자, 애니메이션, 효과, GPU 렌더링)</p></item>
 	</list>
 	</note>
 
@@ -33,8 +33,8 @@
   <section id="terminal" style="2column">
     <title>터미널</title>
     <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>If this option is enabled, each time you open a terminal, a little animal appears and says some randomly picked humoristic message.</p>
-    <note><p>Some people might find some of the messages offensive (that's why this option is disabled by default). Please note that these messages are not authored by Linux Mint.</p></note>
+    <p>이 옵션을 실행하면, 매 번 터미널을 열 때마다, 작은 동물이 나타나서 유머러스한 메시지를 전합니다.</p>
+    <note><p>개중 몇몇 메시지들 때문에 기분이 상할 수도 있습니다 (그래서 이 옵션을 기본으로 설정하지 않았습니다). 이 메시지들은 리눅스 민트에서 만들지 않았음을 알려드립니다.</p></note>
   </section>
 
 </page>

@@ -36,7 +36,7 @@
 
   <section id="pros">
     <title>Compiz</title>
-    <p>Compiz is a very impressive window manager, very configurable and full of amazing effects and animations. It is however the least reliable and the least stable.</p>
+    <p>Compiz is a very impressive window manager, very configurable and full of amazing effects and animations. However, it is the least reliable and the least stable.</p>
     <p>Compiz is installed by default in Linux Mint. Note: It is not available in LMDE.</p>
   </section>
 

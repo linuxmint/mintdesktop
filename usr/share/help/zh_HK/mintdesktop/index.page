@@ -14,17 +14,17 @@
 
   <title>桌面設定</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>歡迎來到桌面設定。</p>
 
   <section id="windows" style="2column">
     <title>視窗</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>此視窗作業階段讓你選擇視窗管理員。</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>視窗邊框、標題列與視窗按鈕</p></item>
+		<item><p>視窗事件 (移動、重新調整大小、聚焦視窗)</p></item>
+		<item><p>特效合成 (compositing) (陰影、動畫、效果、GPU 渲染)</p></item>
 	</list>
 	</note>
 
@@ -33,8 +33,8 @@
   <section id="terminal" style="2column">
     <title>終端機</title>
     <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>If this option is enabled, each time you open a terminal, a little animal appears and says some randomly picked humoristic message.</p>
-    <note><p>Some people might find some of the messages offensive (that's why this option is disabled by default). Please note that these messages are not authored by Linux Mint.</p></note>
+    <p>若啟用此選項，每次你開啟終端機，都會有小動物出現並說些隨機挑選的幽默訊息。</p>
+    <note><p>有些人可能會被特定訊息冒犯 (這也是此選項被預設停用的原因)。請注意，這些訊息並非由 Linux Mint 撰寫。</p></note>
   </section>
 
 </page>

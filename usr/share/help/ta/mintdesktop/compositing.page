@@ -4,7 +4,7 @@
    <info>
     <link type="guide" xref="index#windows"/>
     <credit type="author">
-      <name>Linux Mint</name>
+      <name>லினக்ஸ் மின்ட்</name>
       <email>root@linuxmint.com</email>
     </credit>
 
@@ -15,7 +15,7 @@
   <title>Pros and cons of compositing</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>நன்மைகள்</title>
     <list>
       <item>
         <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
@@ -27,7 +27,7 @@
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>தீமைகள்</title>
 
     <list>
       <item>

@@ -12,29 +12,29 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>A kompozitálás előnyei és hátrányai</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>Előnyök</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>Jobb felhasználói élmény, ablak animációk, árnyékok és átlátszóság.</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>Jobb támogatás a modern alkalmazásokhoz: Kliens oldali ablakdekorációk támogatása jobb a kompozitáló ablakkezelőkben.</p>
       </item>
     </list>
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>Hátrányok</title>
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>GPU leképzés: A grafikus kártyától és a illesztőprogramtól függően a GPU leképzés (a CPU leképzéssel ellentétben) hibás megjelenést és kép szétesését okozhatja.</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>Erőforrás felhasználás: A kompozitálás több erőforrást igényel. Ez rosszabb teljesítményt és laptopon rövidebb akkumulátoros üzemidőt okozhat.</p>
       </item>
     </list>
   </section>

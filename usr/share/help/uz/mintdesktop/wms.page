@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="wms">
+
+   <info>
+    <link type="guide" xref="index#windows"/>
+    <credit type="author">
+      <name>Linux Mint</name>
+      <email>root@linuxmint.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+  </info>
+
+  <title>Баъзи ойна менежерларини қараб чиқиш</title>
+
+  <p>Баъзи мавжуд ойна менежерларининг тавсифи</p>
+
+  <section id="pros">
+    <title>Marco</title>
+    <p>Marco MATE иш столи муҳити учун ноошкор (default) аниқланган ойна менежеридир. У жуда турғун ва уни ишлатиш жуда осон.</p>
+    <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
+  </section>
+
+  <section id="pros">
+    <title>Metacity</title>
+    <p>Metacity  GNOME 2 иш столи муҳитида ноошкор (default) тайинланган ойна менежери эди.</p>
+    <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
+  </section>
+
+  <section id="pros">
+    <title>Xfwm4</title>
+    <p>Xfwm4 Xfce иш столи учун ноошкор (default) тайинланган ойна менежеридир. У жуда турғун ва уни ишлатиш жуда осон.</p>
+    <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
+  </section>
+
+  <section id="pros">
+    <title>Compiz</title>
+    <p>Compiz жуда эътиборга лойиқ ойна менежеридир. Уни созлаш жуда осон ва у кўпгина қизиқ ҳамда анимацион эффектларга бой. Лекин у унчалик турғун эмас ва қўллашда ҳам ноқулайроқ.</p>
+    <p>Compiz Linux Mint да ноошкор (default) ҳолда ўрнатилган. Изоҳ: уни LMDE да ишлатиб бўлмайди.</p>
+  </section>
+
+  <section id="pros">
+    <title>Compton</title>
+    <p>Compton композит менежердир. Уни Marco, Metacity ёки Xfwm4 ойна менежерлари билан биргаликда ишлатиш мумкин. Xfce да Xfwm4+Compton бирлиги экранни ишдан чиқариш ҳолати кузатилган.</p>
+    <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
+  </section>
+
+  <section id="pros">
+    <title>Openbox</title>
+    <p>Openbox тез ва енгил ойна менежеридир.</p>
+    <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
+  </section>
+
+</page>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="index">
+
+  <info>
+
+    <credit type="author">
+      <name>Linux Mint</name>
+      <email>root@linuxmint.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+  </info>
+
+  <title>Иш столи созламалари</title>
+
+	<p>Иш столи созламаларига хуш келибсиз.</p>
+
+  <section id="windows" style="2column">
+    <title>Ойналар</title>
+	<p>Ойналар бўлими ойна менежерини танлашингизга имкон беради.</p>
+
+	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
+	<list>
+		<item><p>Ойналар четлари, номлаш қисми ва ойна тугмалари</p></item>
+		<item><p>Ойналар билан содир бўлувчи ҳодисалар (кўчириш, ўлчамини ўзгартириш, ойнани мослаш)</p></item>
+		<item><p>Қўшимча хусусиятлар (соя бериш, анимация, турли эффектлар, GPU рендеринг)</p></item>
+	</list>
+	</note>
+
+  </section>
+
+  <section id="terminal" style="2column">
+    <title>Терминал</title>
+    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
+    <p>Агар ушбу амал ёқилган бўлса, хар сафар терминални ишга туширганингизда қандайдир кичкина ҳайвонча пайдо бўлиб эҳтимолий танланган латифаларни айтиб туради.</p>
+    <note><p>Баъзиларга бу латифалар ёқмаслиги мумкин. Шунинг учун у ноошкор (default) ҳолда ўчирилган. Эътибор беринг, уларга Linux Mint муаллиф эмас.</p></note>
+  </section>
+
+</page>

@@ -4,7 +4,7 @@
   <info>
 
     <credit type="author">
-      <name>Linux Mint</name>
+      <name>ሊነክስ ሚንት</name>
       <email>root@linuxmint.com</email>
     </credit>
 
@@ -14,15 +14,15 @@
 
   <title>የዴስክቶፕ አቀማመጥ</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>እንኳን ደህና መጡ ወደ ዴስክቶፕ ማሰናጃ</p>
 
   <section id="windows" style="2column">
     <title>መስኮቶች</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>የ መስኮት ክፍል መምረጥ ያስችሎታል የ መስኮት አስተዳዳሪ</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
+		<item><p>የ መስኮቶች ድንበሮች: የ አርእስት መደርደሪያ እና የ መስኮት ቁልፎች</p></item>
 		<item><p>Window events (moving, resizing, focusing windows)</p></item>
 		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
 	</list>

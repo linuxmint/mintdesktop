@@ -14,17 +14,17 @@
 
   <title>Configuració de l'escriptori</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>Benvingut a Configuració d'Escriptori.</p>
 
   <section id="windows" style="2column">
     <title>Finestres</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>La secció de Finestres li permet triar un gestor de finestres.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>Vores de finestra, barres de títol i botons de finestra</p></item>
+		<item><p>Events de finestres (moure, canviar la mida, assignar el focus)</p></item>
+		<item><p>Composició (ombres, animacions, efectes, processament de GPU)</p></item>
 	</list>
 	</note>
 
@@ -33,8 +33,8 @@
   <section id="terminal" style="2column">
     <title>Terminal</title>
     <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>If this option is enabled, each time you open a terminal, a little animal appears and says some randomly picked humoristic message.</p>
-    <note><p>Some people might find some of the messages offensive (that's why this option is disabled by default). Please note that these messages are not authored by Linux Mint.</p></note>
+    <p>Si activeu aquesta opció, cada cop que obriu un terminal, apareixerà un animaló i dirà algun missatge humorístic triat a l'atzar.</p>
+    <note><p>Algunes persones poden trobar alguns dels missatges ofensius (per això aquesta opció està desactivada per defecte). Recordeu que aquests missatges no estan escrits per Linux Mint.</p></note>
   </section>
 
 </page>

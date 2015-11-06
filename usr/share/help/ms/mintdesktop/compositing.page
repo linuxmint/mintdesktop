@@ -12,29 +12,29 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>Kebaikan dan keburukan penggubahan</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>Kelebihan</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>Kelihatan lebih baik &amp; feel: Animasi tetingkap, bayang-bayang dan ketelusan.</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>Sokongan applikasi moden yang lebih baik: Dekorasi Client-side dalam GTK3 adalah lebih baik disokong oleh pengurus tetingkap yang digubah.</p>
       </item>
     </list>
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>Keburukan</title>
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>Pemaparan GPU: Bergantung pada kad grafik and drivers anda, pemaparang dengan GPU (berbanding dengan CPU) boleh menyebabkan visual artifak atau skrin terkoyak.</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>Penggunaan sumber: Penggubahan memerlukan lebih sumber. Ini boleh menyebabkan prestasi lebih lambat atau kurang autonomi bateri pada komputer riba.</p>
       </item>
     </list>
   </section>

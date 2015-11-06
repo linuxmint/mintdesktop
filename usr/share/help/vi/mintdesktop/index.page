@@ -14,17 +14,17 @@
 
   <title>Thiết lập Màn hình làm việc</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>Chào mừng bạn đến với Thiết đặt Màn hình làm việc.</p>
 
   <section id="windows" style="2column">
     <title>Cửa sổ</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>Khu vực Cửa sổ cho phép bạn chọn trình quản lý của sổ.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>Khung viền, thanh tiêu đề và các nút nhấn cửa sổ</p></item>
+		<item><p>Sự kiện cửa sổ (di chuyển, định cỡ, tiêu điểm)</p></item>
+		<item><p>Tổ hợp (bóng, hoạt hoạ, hiệu hứng, kết xuất GPU)</p></item>
 	</list>
 	</note>
 
@@ -33,8 +33,8 @@
   <section id="terminal" style="2column">
     <title>Trình dòng lệnh</title>
     <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>If this option is enabled, each time you open a terminal, a little animal appears and says some randomly picked humoristic message.</p>
-    <note><p>Some people might find some of the messages offensive (that's why this option is disabled by default). Please note that these messages are not authored by Linux Mint.</p></note>
+    <p>Nếu tuỳ chọn này bật, mỗi khi bạn mở trình dòng lệnh sẽ có một con vật nhỏ hiện ra và nói thông điệp gì đó rất hài hước được chọn ngẫu nhiên.</p>
+    <note><p>Có người thấy một số thông điệp này chướng mắt (đó là lý do tuỳ chọn này mặc định là tắt). Xin lưu ý rằng những thông điệp này không phải do Linux Mint tạo ra.</p></note>
   </section>
 
 </page>

@@ -12,29 +12,29 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>Pros i contres de la composició</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>Avantatges</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>Millor aparença: animació de finestres, ombres i transparències.</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>Millor suport per a aplicacions modernes: els gestors de finestres amb composició donen millor suport a la decoració del costat del client en GTK3.</p>
       </item>
     </list>
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>Desavantatges</title>
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>Processament de GPU: depenent de la targeta gràfica i els seus controladors, la representació amb la GPU (a diferència de la CPU) pot donar lloc a artefactes visuals o discontinuïtats en la imatge.</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>Ús de recursos: la composició requereix més recursos. Això pot resultar en un rendiment més lent o reduir l'autonomia de la bateria en els ordinadors portàtils.</p>
       </item>
     </list>
   </section>

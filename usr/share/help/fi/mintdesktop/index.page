@@ -14,17 +14,17 @@
 
   <title>Työpöydän asetukset</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>Tervetuloa työpöydän asetuksiin.</p>
 
   <section id="windows" style="2column">
     <title>Ikkunat</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>Ikkunat-osiossa voi valita käytettävän ikkunoinninhallinnan.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>Ikkunoiden reunuksista, otsikkopalkista ja ikkunoiden painikkeista</p></item>
+		<item><p>Ikkunoinnin tapahtumista (liikuttaminen, koon muuttaminen, ikkunan kohdistaminen)</p></item>
+		<item><p>Sommittelusta (varjot, animaatiot, efektit, GPU-piirtäminen)</p></item>
 	</list>
 	</note>
 
@@ -33,8 +33,8 @@
   <section id="terminal" style="2column">
     <title>Pääte</title>
     <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>If this option is enabled, each time you open a terminal, a little animal appears and says some randomly picked humoristic message.</p>
-    <note><p>Some people might find some of the messages offensive (that's why this option is disabled by default). Please note that these messages are not authored by Linux Mint.</p></note>
+    <p>Jos sallit tämä asetus on valittu, aina terminaalin avautuessa ilmestyy pieni eläin, joka sanoo jonkin humoristisen viestin.</p>
+    <note><p>Jotkut voivat pitää joitain viestejä loukkaavina (tästä syystä valinta on oletuksena pois päältä). Mitkään viesteistä eivät ole Linux Mintin laatimia.</p></note>
   </section>
 
 </page>

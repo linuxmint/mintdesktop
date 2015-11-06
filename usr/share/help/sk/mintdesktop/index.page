@@ -14,17 +14,17 @@
 
   <title>Nastavenia plochy</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>Vitajte v nastaveniach pracovnej plochy.</p>
 
   <section id="windows" style="2column">
     <title>Okná</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>Sekcia okná vám umožní zvoliť správcu okien.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>Rámy okien, záhlavie, tlačidlá okien</p></item>
+		<item><p>Udalosti oknien (presúvanie, zmena veľkosti, zmena aktívneho okna)</p></item>
+		<item><p>Compozícia (tiene, animácie, efekty, GPU renderovanie)</p></item>
 	</list>
 	</note>
 
@@ -33,8 +33,8 @@
   <section id="terminal" style="2column">
     <title>Terminál</title>
     <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>If this option is enabled, each time you open a terminal, a little animal appears and says some randomly picked humoristic message.</p>
-    <note><p>Some people might find some of the messages offensive (that's why this option is disabled by default). Please note that these messages are not authored by Linux Mint.</p></note>
+    <p>Ak je táto možnosť povolená, vždy ak otvoríte terminál, sa objaví malé zviera a povie náhodne vybranú, vtipnú hlášku,</p>
+    <note><p>Niektorí ľudia môžu považovať niektoré správy za urážlivé (preto je táto možnosť v predvolenom stave vypnutá). Prosím berte na vedomie, že tieto správy nie sú napísané Linuxom Mint.</p></note>
   </section>
 
 </page>
