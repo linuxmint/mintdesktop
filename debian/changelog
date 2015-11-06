@@ -1,3 +1,23 @@
+mintdesktop (3.4.3) rosa; urgency=medium
+
+  * Improved support for multiple window managers
+  * Removed compiz migration (obsolete now)
+  * Pot and desktop file
+  * Only interact with MATE settings if they are present
+  * Fixed Xfce initialization
+  * localized help
+  * Fixed string not localized
+  * Added l10n help
+  * Cleaned up shebangs
+  * [darealshinji] Update Debian packaging
+  * Fixed compiz prevention level for mintMenu
+  * Don't restart mate-panel when using compiz (this seems ok now that we're using the dconf backend)
+  * Don't depend on compiz
+  * Specify the GLX backend and vsync mode when invoking Compton
+  * Updated help and desktop files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 06 Nov 2015 16:37:28 +0000
+
 mintdesktop (3.4.2) rafaela; urgency=medium
 
   * Added copytex plugin to list of enabled Compiz plugins
