@@ -208,6 +208,7 @@ class MintDesktop:
         legacy_xfce_path = os.path.expanduser('~/.config/autostart/Compiz.desktop')
         if os.path.exists(legacy_xfce_path):
             os.unlink(legacy_xfce_path)
+        os.system('mkdir -p ~/.config/autostart/')
         os.system('cp /usr/share/mintdesktop/xfce-autostart-wm.desktop ~/.config/autostart/')
 
         # Desktop page
