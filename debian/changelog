@@ -1,3 +1,10 @@
+mintdesktop (3.4.4) rosa; urgency=medium
+
+  [ monsta ]
+  * make Xfce hack work when no local autostart dir exists
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 04 Jan 2016 11:10:23 +0000
+
 mintdesktop (3.4.3) rosa; urgency=medium
 
   * Improved support for multiple window managers
