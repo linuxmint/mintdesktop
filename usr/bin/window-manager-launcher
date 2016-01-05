@@ -49,10 +49,10 @@ elif wm == "marco-compton":
     subprocess.Popen(["marco", "--no-composite", "--replace"])
     subprocess.Popen(["compton", "--backend", "glx", "--vsync", "opengl-swc"])
 elif wm == "xfwm4":
-    subprocess.Popen(["xfconf-query", "-c", "xfwm4", "-p", "/general/use_compositing", "--set", "true"])
+    subprocess.Popen(["xfconf-query", "-c", "xfwm4", "-p", "/general/use_compositing", "--set", "false"])
     subprocess.Popen(["xfwm4", "--compositor=off", "--replace"])
 elif wm == "xfwm4-composite":
-    subprocess.Popen(["xfconf-query", "-c", "xfwm4", "-p", "/general/use_compositing", "--set", "false"])
+    subprocess.Popen(["xfconf-query", "-c", "xfwm4", "-p", "/general/use_compositing", "--set", "true"])
     subprocess.Popen(["xfwm4", "--compositor=on", "--replace"])
 elif wm == "xfwm4-compton":
     subprocess.Popen(["xfconf-query", "-c", "xfwm4", "-p", "/general/use_compositing", "--set", "false"])
