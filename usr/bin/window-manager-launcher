@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import sys, os, gettext, gi, signal, subprocess
+import sys, os, gettext, gi, signal, subprocess, time
 from gi.repository import Gtk, GdkPixbuf, Gdk, GObject
 from gi.repository import Gio
 
@@ -27,13 +27,20 @@ else:
 # Kill all compositors/managers first
 p = subprocess.Popen(['ps', '-A'], stdout=subprocess.PIPE)
 out, err = p.communicate()
-for process in ['compton', 'marco', 'metacity', 'xfwm4', 'openbox', 'compiz']:
+processes_found = False
+for process in ['compton']:
     for line in out.splitlines():
         pname = line.decode('utf-8').split()[-1]
         if process in pname:
             pid = int(line.split(None, 1)[0])
             print ("Killing pid %d (%s)" % (pid, pname))
             os.kill(pid, signal.SIGKILL)
+            processes_found = True
+
+if (processes_found):
+    # avoid race conditions before launching new WMs
+    print ("Waiting 2 seconds...")
+    time.sleep(2)
 
 if wm == "marco":
     settings = Gio.Settings("org.mate.Marco.general")
@@ -47,6 +54,7 @@ elif wm == "marco-compton":
     settings = Gio.Settings("org.mate.Marco.general")
     settings.set_boolean("compositing-manager", False)
     subprocess.Popen(["marco", "--no-composite", "--replace"])
+    time.sleep(2)
     subprocess.Popen(["compton", "--backend", "glx", "--vsync", "opengl-swc"])
 elif wm == "xfwm4":
     subprocess.Popen(["xfconf-query", "-c", "xfwm4", "-p", "/general/use_compositing", "--set", "false"])
@@ -57,6 +65,7 @@ elif wm == "xfwm4-composite":
 elif wm == "xfwm4-compton":
     subprocess.Popen(["xfconf-query", "-c", "xfwm4", "-p", "/general/use_compositing", "--set", "false"])
     subprocess.Popen(["xfwm4", "--compositor=off", "--replace"])
+    time.sleep(2)
     subprocess.Popen(["compton", "--backend", "glx", "--vsync", "opengl-swc"])
 elif wm == "compiz":
     subprocess.Popen(["compiz", "--replace"])
@@ -72,9 +81,11 @@ elif wm == "metacity-compton":
     settings = Gio.Settings("org.gnome.metacity")
     settings.set_boolean("compositing-manager", False)
     subprocess.Popen(["metacity", "--replace"])
+    time.sleep(2)
     subprocess.Popen(["compton", "--backend", "glx", "--vsync", "opengl-swc"])
 elif wm == "openbox":
     subprocess.Popen(["openbox", "--replace"])
 elif wm == "openbox-compton":
     subprocess.Popen(["openbox", "--replace"])
+    time.sleep(2)
     subprocess.Popen(["compton", "--backend", "glx", "--vsync", "opengl-swc"])
