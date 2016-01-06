@@ -25,7 +25,7 @@ else:
     wm = settings.get_string("xfce-window-manager")
  
 # Kill all compositors/managers first
-p = subprocess.Popen(['ps', '-A'], stdout=subprocess.PIPE)
+p = subprocess.Popen(['ps', '-u', str(os.getuid())], stdout=subprocess.PIPE)
 out, err = p.communicate()
 processes_found = False
 for process in ['compton']:

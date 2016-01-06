@@ -7,9 +7,8 @@ if "XDG_CURRENT_DESKTOP" in os.environ:
     current_desktop = os.environ["XDG_CURRENT_DESKTOP"]
     print ("Desktop environment: %s" % current_desktop)
 
-# Kill all compositors/managers first
 wms = []
-p = subprocess.Popen(['ps', '-A'], stdout=subprocess.PIPE)
+p = subprocess.Popen(['ps', '-u', str(os.getuid())], stdout=subprocess.PIPE)
 out, err = p.communicate()
 for process in ['marco', 'metacity', 'xfwm4', 'compiz', 'openbox', 'compton']:
     for line in out.splitlines():
