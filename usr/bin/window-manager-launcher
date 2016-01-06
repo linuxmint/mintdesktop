@@ -34,7 +34,10 @@ for process in ['compton']:
         if process in pname:
             pid = int(line.split(None, 1)[0])
             print ("Killing pid %d (%s)" % (pid, pname))
-            os.kill(pid, signal.SIGKILL)
+            try:
+                os.kill(pid, signal.SIGKILL)
+            except Exception as e:
+                print ("Failed to kill process %d (%s): %s" % (pid, pname, e))
             processes_found = True
 
 if (processes_found):
