@@ -1,3 +1,10 @@
+mintdesktop (3.4.6) rosa; urgency=medium
+
+  * WM tools: Restrict process detection to processes owned by the current user.
+  * Don't crash when failing to kill Compton
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 06 Jan 2016 18:09:11 +0000
+
 mintdesktop (3.4.5) rosa; urgency=medium
 
   * Xfwm4: Fixed enabling/disabling composition
