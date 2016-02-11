@@ -1,3 +1,13 @@
+mintdesktop (3.4.7) sarah; urgency=medium
+
+  [ monsta ]
+  * properly clean up old .desktop file from /etc
+
+  [ Clement Lefebvre ]
+  * UI: Removed notebook border
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 11 Feb 2016 10:30:34 +0000
+
 mintdesktop (3.4.6) rosa; urgency=medium
 
   * WM tools: Restrict process detection to processes owned by the current user.
