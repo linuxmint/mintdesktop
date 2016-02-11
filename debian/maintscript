@@ -1,0 +1,2 @@
+rm_conffile /etc/xdg/autostart/compiz-migrate-to-custom-profile.desktop 3.4.7~
+
