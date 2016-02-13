@@ -5,7 +5,7 @@ from gi.repository import Gio
 from subprocess import Popen
 
 settings = Gio.Settings("com.linuxmint.desktop")
-settings.set_string ("mate-window-manager", "marco")
-settings.set_string ("xfce-window-manager", "xfwm4")
+settings.set_string("mate-window-manager", "marco")
+settings.set_string("xfce-window-manager", "xfwm4")
 
-Popen (["window-manager-launcher"])
+Popen(["window-manager-launcher"])

@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-import os, gi
+import os
+import gi
 from gi.repository import Gio
 
 source = Gio.SettingsSchemaSource.get_default()

@@ -3,5 +3,3 @@
 import os
 
 os.system("/usr/lib/linuxmint/mintDesktop/mintDesktop.py")
-
-
