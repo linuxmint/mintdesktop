@@ -1,19 +1,25 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 
+import os
+import subprocess
+import gettext
+import shutil
 import gi
-from gi.repository import Gtk, GdkPixbuf, Gdk, GObject
+from gi.repository import Gtk, GdkPixbuf, Gdk
 from gi.repository import Gio
-import os, commands, sys, gettext, shutil
 from subprocess import Popen
 
 # i18n
 gettext.install("mintdesktop", "/usr/share/linuxmint/locale")
 
+
 class SidePage:
+
     def __init__(self, notebook_index, name, icon):
         self.notebook_index = notebook_index
         self.name = name
         self.icon = icon
+
 
 class MintDesktop:
 
@@ -51,7 +57,7 @@ class MintDesktop:
                 if(conf == row[1]):
                     widget.set_active(index)
                     break
-                index = index +1
+                index = index + 1
             widget.connect("changed", lambda x: self.combo_fallback(schema, key, x))
 
     def combo_fallback(self, schema, key, widget):
@@ -68,13 +74,13 @@ class MintDesktop:
             target = self.sidePages[index].notebook_index
             self.builder.get_object("notebook1").set_current_page(target)
 
-    def wm_changed (self, widget):
+    def wm_changed(self, widget):
         Popen(["window-manager-launcher"])
         act = widget.get_active()
         wm = widget.get_model()[act][1]
         self.show_hide_options(wm)
 
-    def show_hide_options (self, wm):
+    def show_hide_options(self, wm):
         self.builder.get_object("frame_marco").hide()
         self.builder.get_object("frame_metacity").hide()
         self.builder.get_object("frame_compiz").hide()
@@ -86,13 +92,13 @@ class MintDesktop:
             self.builder.get_object("frame_compiz").show()
             self.builder.get_object("compiz_reset_button").set_sensitive(os.path.exists(self.compiz_path))
 
-    def help_button_clicked (self, widget):
+    def help_button_clicked(self, widget):
         Popen(["xdg-open", "help:mintdesktop"])
 
-    def compiz_settings_button_clicked (self, widget):
+    def compiz_settings_button_clicked(self, widget):
         Popen(["ccsm"])
 
-    def compiz_reset_button_clicked (self, widget):
+    def compiz_reset_button_clicked(self, widget):
         if os.path.exists(self.compiz_path):
             shutil.rmtree(self.compiz_path)
         Popen(["compiz-reset-profile"])
@@ -102,10 +108,11 @@ class MintDesktop:
             return
         self.help_button_clicked(window)
 
-    def close_button_clicked (self, widget):
+    def close_button_clicked(self, widget):
         Gtk.main_quit()
 
     ''' Create the UI '''
+
     def __init__(self):
 
         # load our glade ui file in
@@ -121,7 +128,7 @@ class MintDesktop:
 
         self.compiz_path = os.path.expanduser('~/.config/compiz-1')
 
-        wm_info = commands.getoutput("wmctrl -m")
+        wm_info = subprocess.getoutput("wmctrl -m")
         self.show_hide_options(wm_info.lower())
 
         self.xfce = False
@@ -151,7 +158,7 @@ class MintDesktop:
         self.builder.get_object("side_view").set_pixbuf_column(1)
         self.builder.get_object("side_view").set_model(self.store)
         self.builder.get_object("side_view").select_path(Gtk.TreePath.new_first())
-        self.builder.get_object("side_view").connect("selection_changed", self.side_view_nav )
+        self.builder.get_object("side_view").connect("selection_changed", self.side_view_nav)
 
         # set up larger components.
         self.window.set_title(_("Desktop Settings"))
@@ -235,7 +242,7 @@ class MintDesktop:
 
         # interface page
         self.init_checkbox("org.mate.interface", "menus-have-icons", "checkbutton_menuicon")
-        self.init_checkbox("org.mate.interface", "show-input-method-menu","checkbutton_im_menu")
+        self.init_checkbox("org.mate.interface", "show-input-method-menu", "checkbutton_im_menu")
         self.init_checkbox("org.mate.interface", "show-unicode-menu", "checkbutton_unicode")
         self.init_checkbox("org.mate.interface", "buttons-have-icons", "checkbutton_button_icons")
         iconSizes = Gtk.ListStore(str, str)
@@ -253,7 +260,7 @@ class MintDesktop:
                 wm_key = "mate-window-manager"
             else:
                 wm_key = "xfce-window-manager"
-            print wm_key
+            print(wm_key)
             settings = Gio.Settings("com.linuxmint.desktop")
             wm = settings.get_string(wm_key)
             wms = Gtk.ListStore(str, str)

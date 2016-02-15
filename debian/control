@@ -2,11 +2,16 @@ Source: mintdesktop
 Section: admin
 Priority: optional
 Maintainer: Clement Lefebvre <root@linuxmint.com>
-Build-Depends: debhelper (>= 9), python
+Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.5
 
 Package: mintdesktop
 Architecture: all
-Depends: python2.7, python3, mint-info, mintsystem, wmctrl, python-configobj, dconf-cli
+Depends: python3 (>= 3.3),
+         mint-info,
+         mintsystem,
+         wmctrl,
+         python3-configobj,
+         dconf-cli
 Description: Desktop configuration tool
  Configures some aspects of the desktop.

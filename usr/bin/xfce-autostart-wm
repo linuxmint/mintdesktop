@@ -1,6 +1,10 @@
 #!/usr/bin/python3
-import sys, os, gettext, gi, signal, subprocess
-from gi.repository import Gtk, GdkPixbuf, Gdk, GObject
+
+import sys
+import os
+import gettext
+import subprocess
+import gi
 from gi.repository import Gio
 
 # i18n

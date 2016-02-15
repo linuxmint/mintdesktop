@@ -1,6 +1,12 @@
 #!/usr/bin/python3
-import sys, os, gettext, gi, signal, subprocess, time
-from gi.repository import Gtk, GdkPixbuf, Gdk, GObject
+
+import sys
+import os
+import gettext
+import signal
+import subprocess
+import time
+import gi
 from gi.repository import Gio
 
 # i18n
@@ -23,7 +29,7 @@ if current_desktop == "MATE":
     wm = settings.get_string("mate-window-manager")
 else:
     wm = settings.get_string("xfce-window-manager")
- 
+
 # Kill all compositors/managers first
 p = subprocess.Popen(['ps', '-u', str(os.getuid())], stdout=subprocess.PIPE)
 out, err = p.communicate()
