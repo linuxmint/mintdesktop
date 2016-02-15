@@ -11,7 +11,8 @@ Depends: python3 (>= 3.3),
          mint-info,
          mintsystem,
          wmctrl,
-         python3-configobj,
+         python2.7,
+         python-configobj,
          dconf-cli
 Description: Desktop configuration tool
  Configures some aspects of the desktop.
