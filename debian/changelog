@@ -1,3 +1,14 @@
+mintdesktop (3.4.8) sarah; urgency=medium
+
+  [ Daniel Alley ]
+  * full convert to python3 + pep8 formatting
+  * update debian/control, remove dh_python from rules
+
+  [ Clement Lefebvre ]
+  * Depend on python2.7 and python-configobj (needed by etc/linuxmint/adjustments/15-mintdesktop-compizconfig.execute)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 19 Feb 2016 11:54:29 +0000
+
 mintdesktop (3.4.7) sarah; urgency=medium
 
   [ monsta ]
