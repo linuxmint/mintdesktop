@@ -117,7 +117,7 @@ class MintDesktop:
 
         # load our glade ui file in
         self.builder = Gtk.Builder()
-        self.builder.add_from_file('/usr/lib/linuxmint/mintDesktop/mintDesktop.ui')
+        self.builder.add_from_file('/usr/share/linuxmint/mintDesktop/mintDesktop.ui')
         self.window = self.builder.get_object("main_window")
         self.window.connect("destroy", Gtk.main_quit)
 
