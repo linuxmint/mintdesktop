@@ -117,7 +117,7 @@ class MintDesktop:
 
         # load our glade ui file in
         self.builder = Gtk.Builder()
-        self.builder.add_from_file('/usr/lib/linuxmint/mintDesktop/mintDesktop.ui')
+        self.builder.add_from_file('/usr/share/linuxmint/mintdesktop/main.ui')
         self.window = self.builder.get_object("main_window")
         self.window.connect("destroy", Gtk.main_quit)
 
@@ -216,7 +216,7 @@ class MintDesktop:
         if os.path.exists(legacy_xfce_path):
             os.unlink(legacy_xfce_path)
         os.system('mkdir -p ~/.config/autostart/')
-        os.system('cp /usr/share/mintdesktop/xfce-autostart-wm.desktop ~/.config/autostart/')
+        os.system('cp /usr/share/linuxmint/mintdesktop/xfce-autostart-wm.desktop ~/.config/autostart/')
 
         # Desktop page
         self.init_checkbox("org.mate.caja.desktop", "computer-icon-visible", "checkbox_computer")

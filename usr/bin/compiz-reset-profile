@@ -1,5 +1,5 @@
 #!/bin/bash
 
 killall ccsm
-cat /usr/share/mintdesktop/mint.dconf | dconf load /org/compiz/profiles/mint/
+cat /usr/share/linuxmint/mintdesktop/mint.dconf | dconf load /org/compiz/profiles/mint/
 window-manager-launcher
