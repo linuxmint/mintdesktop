@@ -31,7 +31,7 @@
 
     <list>
       <item>
-        <p>Redare GPU: În funcție de placa grafică și driverele tale, redarea cu GPU (spre deosebire de CPU) poate duce la artefacte vizuale sau „rupere” de ecran.</p>
+        <p>Redare GPU: În funcție de placa grafică și drivere, redarea cu GPU (spre deosebire de CPU) poate duce la artefacte vizuale sau „rupere” de ecran.</p>
       </item>
       <item>
         <p>Utilizarea resurselor: Compunerea necesită mai multe resurse. Acest lucru poate duce la performanță mai redusă sau la reducerea autonomiei bateriei la laptopuri.</p>

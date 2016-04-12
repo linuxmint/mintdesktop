@@ -25,7 +25,7 @@ StartupNotify=false
 OnlyShowIn=MATE;XFCE;
 """
 
-additionalfiles.generate(DOMAIN, PATH, "usr/share/applications/mintDesktop.desktop", prefix, _("Desktop Settings"), _("Fine-tune desktop settings"), suffix)
+additionalfiles.generate(DOMAIN, PATH, "usr/share/applications/mintdesktop.desktop", prefix, _("Desktop Settings"), _("Fine-tune desktop settings"), suffix)
 
 locales = []
 cur_dir = os.getcwd()

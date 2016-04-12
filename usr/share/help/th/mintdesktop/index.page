@@ -18,12 +18,12 @@
 
   <section id="windows" style="2column">
     <title>หน้าต่าง</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>ส่วนของ หน้าต่าง จะให้คุณเลือกตัวจัดการหน้าต่าง</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
 		<item><p>ขอบของหน้าต่าง, แถบชื่อเรื่อง, ปุ่มหน้าต่าง</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
+		<item><p>ความเคลื่อนไหวเกี่ยวกับหน้าต่าง (ย้าย, ปรับขนาด, แสดงแบบอย่างเดียว)</p></item>
 		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
 	</list>
 	</note>

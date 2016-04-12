@@ -31,10 +31,10 @@
 
     <list>
       <item>
-        <p>Rendering GPU: Dipende dalla scheda grafica a dai driver, effettuare il rendering con la GPU (invece che con la CPU) può produrre risultati indesiderati o screen tearing.</p>
+        <p>Rendering GPU: Dipende dalla scheda grafica a dai driver; effettuare il rendering con la GPU (invece che con la CPU) può produrre risultati indesiderati o screen tearing.</p>
       </item>
       <item>
-        <p>Utilizzo di risorse: il composing richiede più risorse. Ciò potrebbe produrre una diminuzione delle performance o un aumento del consumo della batteria sui computer portatili.</p>
+        <p>Utilizzo di risorse: il composing richiede più risorse. Ciò potrebbe produrre una diminuzione delle prestazioni o maggior consumo della batteria sui computer portatili.</p>
       </item>
     </list>
   </section>

@@ -12,29 +12,29 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>Плюси і мінуси композитінгу</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>Переваги</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>Краще вигляд: анімації вікон, тіні і прозорість.</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>Покращена підтримка сучасних додатків: ефекти GTK3 краще підтримуються композитними віконними менеджерами.</p>
       </item>
     </list>
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>Недоліки</title>
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>Рендеринг GPU: Залежно від вашої відеокарти і драйверів, рендеринг з GPU (на відміну від CPU) може призвести до візуальних артефактів або розривів екрану.</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>Використання ресурсів: композітінг вимагає більше ресурсів. Це може призвести до зниження продуктивності або зниження автономності батареї на портативних комп'ютерах.</p>
       </item>
     </list>
   </section>
