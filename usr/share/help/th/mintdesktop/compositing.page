@@ -18,7 +18,7 @@
     <title>ข้อดี</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>ความรู้สึกและมุมมองที่ดีขึ้น: การเคลื่อนไหวหน้าต่าง เงา และความโปร่งใส</p>
       </item>
       <item>
         <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>

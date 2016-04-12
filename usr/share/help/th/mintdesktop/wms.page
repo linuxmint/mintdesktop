@@ -12,7 +12,7 @@
 
   </info>
 
-  <title>Overview of some window managers</title>
+  <title>ภาพรวมของตัวจัดการหน้าต่างบางตัว</title>
 
   <p>ที่นี่มีคำแนะนำบางอย่างเกี่ยวกับตัวจัดการหน้าต่างที่ใช้ได้</p>
 
@@ -48,7 +48,7 @@
 
   <section id="pros">
     <title>Openbox</title>
-    <p>Openbox is a fast and light-weight window manager.</p>
+    <p>Openbox คือตัวจัดการหน้าต่างที่ทำงานได้รวดเร็วและทำงานอย่างง่าย</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>
 

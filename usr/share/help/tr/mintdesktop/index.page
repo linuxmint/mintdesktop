@@ -18,7 +18,7 @@
 
   <section id="windows" style="2column">
     <title>Pencereler</title>
-	<p>Pencerler bölümü, pencere yöneticisi seçmenize olanak sağlar.</p>
+	<p>Pencereler bölümü, pencere yöneticisi seçmenize olanak sağlar.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>

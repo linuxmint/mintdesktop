@@ -2,4 +2,4 @@
 
 import os
 
-os.system("/usr/lib/linuxmint/mintDesktop/mintDesktop.py")
+os.system("/usr/lib/linuxmint/mintdesktop/mintdesktop.py")
