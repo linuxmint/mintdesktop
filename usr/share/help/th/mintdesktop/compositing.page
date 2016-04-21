@@ -12,7 +12,7 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>ข้อดีและข้อเสียของการจัดองค์ประกอบหน้าต่าง</title>
 
   <section id="pros">
     <title>ข้อดี</title>
@@ -21,7 +21,7 @@
         <p>ความรู้สึกและมุมมองที่ดีขึ้น: การเคลื่อนไหวหน้าต่าง เงา และความโปร่งใส</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>รองรับโปรแกรมใหม่ ๆ ได้ดีกว่า: โปรแกรมจัดการหน้าต่างที่มีการจัดองค์ประกอบของหน้าต่างจะรองรับชุดตกแต่งฝั่งไคลเอนต์ที่อยู่ใน GTK3 ได้ดีกว่า</p>
       </item>
     </list>
   </section>
@@ -31,10 +31,10 @@
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>การแสดงผล GPU: ขึ้นอยู่กับกราฟิกการ์ดและไดรเวอร์ต่าง ๆ ของคุณ ที่ใช้แสดงผลสิ่งต่าง ๆ ถ้าหากแสดงผลโดยใช้ GPU (เมื่อเทียบกับการแสดงผลโดยใช้ CPU แล้ว) อาจทำให้ภาพที่แสดงมีจุดรบกวนได้ หรืออาจทำให้ภาพแตกได้</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>การใช้ทรัพยากร: การจัดองค์ประกอบต้องใช้ทรัพยากรเพิ่ม อาจส่งผลให้ประสิทธิภาพในการทำงานน้อยลง หรืออายุการใช้งานของแบตเตอรี่สั้นลงบนคอมพิวเตอร์แล็ปท็อป</p>
       </item>
     </list>
   </section>

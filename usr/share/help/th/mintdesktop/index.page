@@ -24,7 +24,7 @@
 	<list>
 		<item><p>ขอบของหน้าต่าง, แถบชื่อเรื่อง, ปุ่มหน้าต่าง</p></item>
 		<item><p>ความเคลื่อนไหวเกี่ยวกับหน้าต่าง (ย้าย, ปรับขนาด, แสดงแบบอย่างเดียว)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>การจัดองค์ประกอบ (เงา แอนิเมชัน เอฟเฟกต์ การแสดงผล GPU)</p></item>
 	</list>
 	</note>
 
@@ -33,8 +33,8 @@
   <section id="terminal" style="2column">
     <title>เทอร์มินัล</title>
     <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>If this option is enabled, each time you open a terminal, a little animal appears and says some randomly picked humoristic message.</p>
-    <note><p>Some people might find some of the messages offensive (that's why this option is disabled by default). Please note that these messages are not authored by Linux Mint.</p></note>
+    <p>ถ้าตัวเลือกนี้ถูกเปิดใช้งาน ในแต่ละครั้งที่คุณเปิดเทอร์มินัล จะมีภาพสัตว์ขนาดเล็กปรากฏขึ้นบนหน้าจอ และจะสุ่มพูดประโยคตลกๆ ออกมา</p>
+    <note><p>บางคนคิดว่าประโยคบางประโยคอาจดูไม่น่าฟัง (เนื่องจากว่าตัวเลือกนี้ถูกปิดใช้งานโดยปริยาย) กรุณาจำไว้ว่าประโยคเหล่านี้ไม่ได้มาจากทีมงานของ Linux Mint</p></note>
   </section>
 
 </page>

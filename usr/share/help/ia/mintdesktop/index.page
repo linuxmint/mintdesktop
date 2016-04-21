@@ -14,17 +14,17 @@
 
   <title>Preferentias de Scriptorio</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>Benvenite al configurationes del scriptorio</p>
 
   <section id="windows" style="2column">
     <title>Fenestras</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>Le section Fenestras lassa te eliger un gerente de fenestra.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>Le bordos del fenestras, le barras del titulo e le buttones del fenestras</p></item>
+		<item><p>Le eventos del fenestras (movimento, re-dimensionamento, focalisation del fenestras)</p></item>
+		<item><p>Le composition (umbras, animationes, effectos, rendition del GPU)</p></item>
 	</list>
 	</note>
 
@@ -33,8 +33,8 @@
   <section id="terminal" style="2column">
     <title>Terminal</title>
     <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>If this option is enabled, each time you open a terminal, a little animal appears and says some randomly picked humoristic message.</p>
-    <note><p>Some people might find some of the messages offensive (that's why this option is disabled by default). Please note that these messages are not authored by Linux Mint.</p></note>
+    <p>Si ce option es activate, cata vice tu aperi un terminal, un parve animal appare e dice alcun message humorose extrahite in modo casual.</p>
+    <note><p>Alcunes pote trovar alcun del messages malsonante (i.e. le ration ce option es normalmente disactivate).</p></note>
   </section>
 
 </page>

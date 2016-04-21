@@ -12,19 +12,19 @@
 
   </info>
 
-  <title>Overview of some window managers</title>
+  <title>penampakan keseluruhan dari beberapa pengaturan jendela</title>
 
-  <p>Here's a description of some of the window managers available.</p>
+  <p>Ini adalah uraian dari beberapa pengaturan jendela yang tersedia</p>
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco is the default window manager for the MATE desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Marco adalah pengaturan jendela baku dari tampilan desktop MATE. Sangat stabil dan dapat di andalkan. Bisa berjalan dengan atau tanpa komposisi tambahan.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Metacity</title>
-    <p>Metacity adalah window manager baku untuk destop GNOME 2. Metacity sangat stabil dan tepercaya. Metacity bisa dijalankan tanpa dikomposisi.</p>
+    <p>Metacity adalah window manager baku untuk destop GNOME 2. Metacity sangat stabil dan dapat di andalkan. Metacity bisa dijalankan dengan atau tanpa dikomposisi tambahan.</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>
 
@@ -48,7 +48,7 @@
 
   <section id="pros">
     <title>Openbox</title>
-    <p>Openbox is a fast and light-weight window manager.</p>
+    <p>Openbox adalah window manager yang cepat dan ringan.</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>
 

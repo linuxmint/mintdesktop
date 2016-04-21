@@ -15,7 +15,7 @@
   <title>Pros and cons of compositing</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>Vorteile</title>
     <list>
       <item>
         <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
@@ -27,7 +27,7 @@
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>Nachteile</title>
 
     <list>
       <item>

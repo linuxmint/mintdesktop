@@ -18,31 +18,31 @@
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco is the default window manager for the MATE desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Marco คือโปรแกรมจัดการหน้าต่างปริยายสำหรับสภาพแวดล้อมพื้นโต๊ะของ MATE ซึ่งมีความเสถียรและทำงานได้อย่างน่าไว้ใจมาก สามารถทำงานโดยที่จะจัดองค์ประกอบของหน้าต่างหรือไม่ก็ได้</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Metacity</title>
-    <p>Metacity was the default window manager for the GNOME 2 desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Metacity คือโปรแกรมจัดการหน้าต่างปริยายสำหรับสภาพแวดล้อมพื้นโต๊ะ GNOME 2 ซึ่งมีความเสถียรและทำงานได้อย่างน่าไว้ใจมาก สามารถทำงานโดยที่จะจัดองค์ประกอบของหน้าต่างหรือไม่ก็ได้</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Xfwm4</title>
-    <p>Xfwm4 is the default window manager for the Xfce desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Xfwm4 คือโปรแกรมจัดการหน้าต่างปริยายสำหรับสภาพแวดล้อมพื้นโต๊ะ Xfce ซึ่งมีความเสถียรและทำงานได้อย่างน่าไว้ใจมาก สามารถทำงานโดยที่จะจัดองค์ประกอบของหน้าต่างหรือไม่ก็ได้</p>
     <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Compiz</title>
-    <p>Compiz is a very impressive window manager, very configurable and full of amazing effects and animations. It is however the least reliable and the least stable.</p>
+    <p>Compiz เป็นโปรแกรมจัดการหน้าต่างที่น่าทึ่งมาก สามารถปรับแต่งได้หลากหลาย โดยมีเอฟเฟกต์และแอนิเมชันให้เลือกได้มากมาย แต่ความเสถียรและความน่าไว้ใจในการทำงานมีค่อนข้างน้อย</p>
     <p>Linux Mint จะติดตั้ง Compiz มาให้โดยปริยาย คำเตือน: ไม่สามารถใช้ใน LMDE ได้</p>
   </section>
 
   <section id="pros">
     <title>Compton</title>
-    <p>Compton is a compositing manager. It can be used in combination with windows managers such as Marco, Metacity or Xfwm4. In Xfce, using Xfwm4+Compton is known to reduce screen tearing.</p>
+    <p>Compton คือโปรแกรมจัดการองค์ประกอบ ใช้ในการทำงานร่วมกับโปรแกรมจัดการหน้าต่าง เช่น Macro Metacity หรือ Xfwm4 ถ้าเป็น Xfce การใช้ Xfwm4+Compton จะช่วยไม่ให้เกิดภาพบนหน้าจอแตกได้</p>
     <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
   </section>
 
