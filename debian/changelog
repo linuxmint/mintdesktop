@@ -1,3 +1,16 @@
+mintdesktop (3.4.9) sarah; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Moved .ui file to /usr/share
+  * Updated generated files
+
+  [ Daniel Alley ]
+  * Renamed folders from camelCase to lowercase
+  * Replaced deprecated GtkVBox / GtkHBox widgets with GtkBox
+  * Replaced deprecated GtkVButtonBox / GtkHButtonBox widgets with GtkButtonBox
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 21 Apr 2016 17:16:06 +0100
+
 mintdesktop (3.4.8) sarah; urgency=medium
 
   [ Daniel Alley ]
