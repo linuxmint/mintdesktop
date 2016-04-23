@@ -24,7 +24,7 @@
 	<list>
 		<item><p>視窗邊框、標題列與視窗按鈕</p></item>
 		<item><p>視窗事件 (移動、重新調整大小、聚焦視窗)</p></item>
-		<item><p>特效合成 (compositing) (陰影、動畫、效果、GPU 渲染)</p></item>
+		<item><p>特效合成 (Compositing) (陰影、動畫、效果、GPU 彩現)</p></item>
 	</list>
 	</note>
 

@@ -4,7 +4,7 @@
   <info>
 
     <credit type="author">
-      <name>लिनक्स मिंट</name>
+      <name>Linux Mint</name>
       <email>root@linuxmint.com</email>
     </credit>
 
@@ -12,12 +12,12 @@
 
   </info>
 
-  <title>डेस्कटॉप रचना</title>
+  <title>Desktop Settings</title>
 
 	<p>Welcome to Desktop Settings.</p>
 
   <section id="windows" style="2column">
-    <title>विंडोज</title>
+    <title>Windows</title>
 	<p>The Windows section lets you choose a window manager.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
@@ -31,7 +31,7 @@
   </section>
 
   <section id="terminal" style="2column">
-    <title>टर्मिनल</title>
+    <title>Terminal</title>
     <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
     <p>If this option is enabled, each time you open a terminal, a little animal appears and says some randomly picked humoristic message.</p>
     <note><p>Some people might find some of the messages offensive (that's why this option is disabled by default). Please note that these messages are not authored by Linux Mint.</p></note>

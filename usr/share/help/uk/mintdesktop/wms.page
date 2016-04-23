@@ -12,43 +12,43 @@
 
   </info>
 
-  <title>Огляд деяких віконних менеджерів</title>
+  <title>Огляд деяких керівників вікон</title>
 
-  <p>Опис деяких з наявних віконних менеджерів.</p>
+  <p>Опис деяких з наявних керівників вікон.</p>
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco стандартний віконний менеджер для середовища MATE. Він дуже стабільний і дуже надійний. Він може працювати з або без композітінга.</p>
+    <p>Marco стандартний керівник вікон для середовища MATE. Він дуже стабільний і дуже надійний. Він може працювати з або без композитингу.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Metacity</title>
-    <p>Metacity був стандартним віконним менеджером для середовища GNOME 2. Він дуже стабільний і дуже надійний. Він може працювати з або без композітінга.</p>
+    <p>Metacity був стандартним керівником вікон для середовища GNOME 2. Він дуже стабільний і дуже надійний. Він може працювати з або без композитингу.</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Xfwm4</title>
-    <p>Xfwm4 це стандартний віконний менеджер для середовища Xfce. Він дуже стабільний і дуже надійний. Він може працювати з або без композітінга.</p>
+    <p>Xfwm4 це стандартний керівник вікон для середовища Xfce. Він дуже стабільний і дуже надійний. Він може працювати з або без композитингу.</p>
     <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Compiz</title>
-    <p>Compiz дуже вражаючий віконний менеджер, дуже добре налаштовується і повен дивовижних ефектів і анімації. Він є, однак, найменш надійним і найменш стабільним.</p>
-    <p>Compiz встановлено за умовчанням в Linux Mint. Примітка: Він не доступний в LMDE.</p>
+    <p>Compiz дуже вражаючий керівник вікон, дуже добре налаштовується і повен дивовижних ефектів та анімації. Він є, однак, найменш надійним і найменш стабільним.</p>
+    <p>Compiz встановлено типово в Linux Mint. Нотатка: Він не доступний в LMDE.</p>
   </section>
 
   <section id="pros">
     <title>Compton</title>
-    <p>Compton композитний менеджер. Він може бути використаний в поєднанні з віконними менеджерами, такими як Marco, Metacity або Xfwm4. У Xfce, використовуючи xfwm4+Compton, відомо, про можливі розриви екрану.</p>
+    <p>Compton композитний керівник. Він може бути використаний у поєднанні з керівниками вікон, такими як Marco, Metacity або Xfwm4. У Xfce, використовуючи xfwm4+Compton, відомо, про можливі розриви екрану.</p>
     <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Openbox</title>
-    <p>Openbox швидкий і легкий віконний менеджер.</p>
+    <p>Openbox швидкий і легкий керівник вікон.</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>
 

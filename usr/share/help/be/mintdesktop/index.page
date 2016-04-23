@@ -14,17 +14,17 @@
 
   <title>Настáўленні стала</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>Вітаем у настáўленнях стала.</p>
 
   <section id="windows" style="2column">
     <title>Вокны</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>Раздзел "Вокны" дазваляе выбраць кіраўнік вокнаў.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>Межы, загалоўкі і кнопкі вокнаў</p></item>
+		<item><p>Ваконныя падзеі (перасоўванне, маштабаванне, змена фокуса)</p></item>
+		<item><p>Кампазітынг (цені, анімацыі, эфекты, ужыванне GPU)</p></item>
 	</list>
 	</note>
 

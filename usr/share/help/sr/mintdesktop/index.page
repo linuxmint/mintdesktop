@@ -4,7 +4,7 @@
   <info>
 
     <credit type="author">
-      <name>Linux Mint</name>
+      <name>Линукс Минт</name>
       <email>root@linuxmint.com</email>
     </credit>
 
@@ -14,17 +14,17 @@
 
   <title>Поставке радне површи</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>Добро дошли у подешавања радне површи.</p>
 
   <section id="windows" style="2column">
     <title>Прозори</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>У одељку прозора можете изабрати управника прозора.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>Ивице прозора, насловне траке и дугмад прозора</p></item>
+		<item><p>Догађаје прозора (премештање, промену величине, фокусрање прозора)</p></item>
+		<item><p>Слагање (сенке, анимације, ефекте, исцртавање графичког процесора)</p></item>
 	</list>
 	</note>
 
@@ -33,8 +33,8 @@
   <section id="terminal" style="2column">
     <title>Терминал</title>
     <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>If this option is enabled, each time you open a terminal, a little animal appears and says some randomly picked humoristic message.</p>
-    <note><p>Some people might find some of the messages offensive (that's why this option is disabled by default). Please note that these messages are not authored by Linux Mint.</p></note>
+    <p>Ако је ова опција укључена, сваки пут када будете отворили терминал, појавиће се мала животињка која ће изговорити неку случајно изабрану вицкасту поруку.</p>
+    <note><p>Неке од ових порука могу бити увредљиве некоме (због тога је ова опција унапред искључена). Знајте да ове поруке немају овлашћење Линукс Минта.</p></note>
   </section>
 
 </page>

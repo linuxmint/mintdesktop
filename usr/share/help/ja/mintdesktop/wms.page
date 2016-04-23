@@ -18,7 +18,7 @@
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco is the default window manager for the MATE desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>MarcoはMATEデスクトップ環境の標準ウインドウマネージャです 非常に安定し信頼できます コンポジットなしでもありでも使えます</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
