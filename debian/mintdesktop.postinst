@@ -3,9 +3,9 @@
 import os
 
 try:
-	path = '/etc/xdg/autostart/compiz-migrate-to-custom-profile.desktop.desktop'
-	if os.path.exists(path):
-		print ("Removing obsolete '%s'" % path)
-		os.unlink(path)
+    path = '/etc/xdg/autostart/compiz-migrate-to-custom-profile.desktop.desktop'
+    if os.path.exists(path):
+        print ("Removing obsolete '%s'" % path)
+        os.unlink(path)
 except:
-	pass
+    pass
