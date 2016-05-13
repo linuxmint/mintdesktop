@@ -1,3 +1,10 @@
+mintdesktop (3.5.0) sarah; urgency=medium
+
+  [ Daniel Alley ]
+  * Convert some stragglers to Python 3
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 13 May 2016 10:31:26 +0100
+
 mintdesktop (3.4.9) sarah; urgency=medium
 
   [ Clement Lefebvre ]
