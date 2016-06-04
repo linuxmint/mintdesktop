@@ -1,3 +1,9 @@
+mintdesktop (3.5.1) sarah; urgency=medium
+
+  * Update compizconfig adjustment
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 04 Jun 2016 19:27:44 +0100
+
 mintdesktop (3.5.0) sarah; urgency=medium
 
   [ Daniel Alley ]
