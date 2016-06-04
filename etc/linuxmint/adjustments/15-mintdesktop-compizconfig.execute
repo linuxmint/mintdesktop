@@ -5,16 +5,18 @@ from configobj import ConfigObj
 
 try:
     if not os.path.exists('/etc/compizconfig/config'):
-        os.system('echo "[general]\n" > /etc/compizconfig/config')
+        os.system('touch /etc/compizconfig/config')
 
     config = ConfigObj('/etc/compizconfig/config')
-    if 'general' in config:
-        general_settings = config['general']
-    else:
-        general_settings = {}
-    general_settings['backend'] = 'gsettings'
-    general_settings['plugin_list_autosort'] = 'true'
-    general_settings['profile'] = 'mint'
+
+    for profile in ['general', 'general_mate']:
+        if profile not in config:
+            config[profile] = {}
+        config[profile]['backend'] = 'gsettings'
+        config[profile]['integration'] = 'false'
+        config[profile]['plugin_list_autosort'] = 'true'
+        config[profile]['profile'] = 'mint'
+
     config.write()
 except Exception as detail:
     print(detail)
