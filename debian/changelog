@@ -1,3 +1,9 @@
+mintdesktop (3.5.2) sarah; urgency=medium
+
+  * Removed version field in xfce-autostart-wm.desktop
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 06 Jun 2016 11:15:40 +0100
+
 mintdesktop (3.5.1) sarah; urgency=medium
 
   * Update compizconfig adjustment
