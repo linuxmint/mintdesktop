@@ -287,6 +287,8 @@ class MintDesktop:
                     wms.append([_("Openbox + Compton"), "openbox-compton"])
             if os.path.exists("/usr/bin/compiz"):
                 wms.append([_("Compiz"), "compiz"])
+            if os.path.exists("/usr/bin/awesome"):
+                wms.append([_("Awesome"), "awesome"])
 
             # WMs..
             self.builder.get_object("combo_wm").set_model(wms)
