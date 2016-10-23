@@ -34,7 +34,7 @@ else:
 p = subprocess.Popen(['ps', '-u', str(os.getuid())], stdout=subprocess.PIPE)
 out, err = p.communicate()
 processes_found = False
-for process in ['compton']:
+for process in ['compton', "marco", "xfwm4", "compiz", "metacity", "openbox", "awesome" ]:
     for line in out.splitlines():
         pname = line.decode('utf-8').split()[-1]
         if process in pname:
@@ -48,8 +48,8 @@ for process in ['compton']:
 
 if (processes_found):
     # avoid race conditions before launching new WMs
-    print ("Waiting 2 seconds...")
-    time.sleep(2)
+    print ("Waiting 0.2 seconds...")
+    time.sleep(0.2)
 
 if wm == "marco":
     settings = Gio.Settings("org.mate.Marco.general")
@@ -99,8 +99,8 @@ elif wm == "openbox-compton":
     time.sleep(2)
     subprocess.Popen(["compton", "--backend", "glx", "--vsync", "opengl-swc"])
 elif wm == "awesome":
-    subprocess.call(["killall", "marco", "xfwm4", "compiz", "metacity", "openbox", "awesome"]) # Kill all other window managers that might possibly still be running
-    time.sleep(0.1) # Wait some time until really all other window managers are killed otherwise awesome won't start up
+    # subprocess.call(["killall", "marco", "xfwm4", "compiz", "metacity", "openbox", "awesome"]) # Kill all other window managers that might possibly still be running
+    # time.sleep(0.1) # Wait some time until really all other window managers are killed otherwise awesome won't start up
     subprocess.Popen(["awesome"])
     if current_desktop == "MATE":  # The mate panel seems to move up a bit when starting awesome
         subprocess.Popen(["mate-panel", "--replace"])  # this seems to fix this issue
