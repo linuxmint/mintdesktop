@@ -98,3 +98,9 @@ elif wm == "openbox-compton":
     subprocess.Popen(["openbox", "--replace"])
     time.sleep(2)
     subprocess.Popen(["compton", "--backend", "glx", "--vsync", "opengl-swc"])
+elif wm == "awesome":
+    subprocess.call(["killall", "marco", "xfwm4", "compiz", "metacity", "openbox", "awesome"]) # Kill all other window managers that might possibly still be running
+    time.sleep(0.1) # Wait some time until really all other window managers are killed otherwise awesome won't start up
+    subprocess.Popen(["awesome"])
+    if current_desktop == "MATE":  # The mate panel seems to move up a bit when starting awesome
+        subprocess.Popen(["mate-panel", "--replace"])  # this seems to fix this issue
