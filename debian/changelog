@@ -1,3 +1,9 @@
+mintdesktop (3.5.3) serena; urgency=medium
+
+  * Clean up obsolete mate-panel-compiz-restart script and associate XDG autostart
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 14 Jan 2017 11:45:44 +0000
+
 mintdesktop (3.5.2) sarah; urgency=medium
 
   * Removed version field in xfce-autostart-wm.desktop
