@@ -14,11 +14,11 @@
 
   <title>سطحِ مکتب ترتیبات</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>ڈیسک ٹاپ ترتیبات میں خوش آمدید</p>
 
   <section id="windows" style="2column">
     <title>ونڈوز</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>ّونڈوز سیکشن میں آپ ونڈو منتظم پسند کر سکتے ہیں۔</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>

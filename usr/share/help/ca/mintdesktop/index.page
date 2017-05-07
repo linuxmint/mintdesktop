@@ -12,18 +12,18 @@
 
   </info>
 
-  <title>Configuració de l'escriptori</title>
+  <title>Ajusts de l'escriptori</title>
 
-	<p>Benvingut a Configuració d'Escriptori.</p>
+	<p>Benvingut als ajusts de l'escriptori.</p>
 
   <section id="windows" style="2column">
     <title>Finestres</title>
-	<p>La secció de Finestres li permet triar un gestor de finestres.</p>
+	<p>La secció finestres us permet triar un gestor de finestres.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
 		<item><p>Vores de finestra, barres de títol i botons de finestra</p></item>
-		<item><p>Events de finestres (moure, canviar la mida, assignar el focus)</p></item>
+		<item><p>Esdeveniments de les finestres (moure, canviar la mida i assignar el focus)</p></item>
 		<item><p>Composició (ombres, animacions, efectes, processament de GPU)</p></item>
 	</list>
 	</note>

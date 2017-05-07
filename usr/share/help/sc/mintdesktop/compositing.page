@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="compositing">
+
+   <info>
+    <link type="guide" xref="index#windows"/>
+    <credit type="author">
+      <name>Linux Mint</name>
+      <email>root@linuxmint.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+  </info>
+
+  <title>Proes e contras de su compositing</title>
+
+  <section id="pros">
+    <title>Profetos</title>
+    <list>
+      <item>
+        <p>Bisura e disignos megiorados: animatziones de sa bentana, umbras e trasparèntzias.</p>
+      </item>
+      <item>
+        <p>Poderamentu de sas aplicatziones modernas megioradu: sas decoratziones latu cliente in GTK3 sunt poderadas de prus dae sos manigiadores de bentanas cun su compositing.</p>
+      </item>
+    </list>
+  </section>
+
+  <section id="cons">
+    <title>Agràvios</title>
+
+    <list>
+      <item>
+        <p>Rendering GPU: cunforma s'ischeda gràfica e sos drivers, su rendering cun sa GPU (in logu de sa CPU) podet resurtare in artifatos visivos o in efetos de screen tearing.</p>
+      </item>
+      <item>
+        <p>Consumu de resursas: su compositing rechedet meda prus resursas. Custu podet causare prestatziones lenas o autonomia de sa bateria minimada in sos portàtiles.</p>
+      </item>
+    </list>
+  </section>
+
+</page>

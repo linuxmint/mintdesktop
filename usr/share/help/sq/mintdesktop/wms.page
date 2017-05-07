@@ -12,9 +12,9 @@
 
   </info>
 
-  <title>Overview of some window managers</title>
+  <title>Përmbledhje e disa menaxherëve të dritareve</title>
 
-  <p>Here's a description of some of the window managers available.</p>
+  <p>Këtu është një përshkrim i disa menaxherëve të dritareve të disponueshëm.</p>
 
   <section id="pros">
     <title>Marco</title>
@@ -36,7 +36,7 @@
 
   <section id="pros">
     <title>Compiz</title>
-    <p>Compiz is a very impressive window manager, very configurable and full of amazing effects and animations. It is however the least reliable and the least stable.</p>
+    <p>Compiz është një menaxher dritaresh mbresëlënës, shumë i konfigurueshëm dhe me plot efekte dhe animacione mahnitëse. Megjithatë, është më pak i besueshëm dhe më pak i qëndrueshëm.</p>
     <p>Compiz is installed by default in Linux Mint. Note: It is not available in LMDE.</p>
   </section>
 
@@ -48,7 +48,7 @@
 
   <section id="pros">
     <title>Openbox</title>
-    <p>Openbox is a fast and light-weight window manager.</p>
+    <p>Openbox është një menaxher dritaresh i shpejtë dhe i lehtë.</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>
 

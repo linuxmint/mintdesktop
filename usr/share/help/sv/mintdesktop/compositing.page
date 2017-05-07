@@ -31,7 +31,7 @@
 
     <list>
       <item>
-        <p>GPU rendering: Beroende på grafikkort och grafikdrivrutiner kan rendering med GPU, istället för CPU, resultera i bildstörningar som artefakter och visuella felaktigheter (tearing).</p>
+        <p>GPU-rendering: Beroende på grafikkort och grafikdrivrutiner kan rendering med GPU, istället för CPU, resultera i bildstörningar som artefakter och visuella felaktigheter (screen tearing).</p>
       </item>
       <item>
         <p>Resursanvändning: Skrivbordseffekter kräver mer systemresurser. Detta kan innebära sämre prestanda eller reducerad batteridrift för laptoppar.</p>

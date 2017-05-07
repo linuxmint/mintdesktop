@@ -18,7 +18,7 @@
 
   <section id="windows" style="2column">
     <title>Jendela</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>Bagian Windows memperbolehkan Anda memilih sebuah manager window</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
@@ -33,8 +33,8 @@
   <section id="terminal" style="2column">
     <title>Terminal</title>
     <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>If this option is enabled, each time you open a terminal, a little animal appears and says some randomly picked humoristic message.</p>
-    <note><p>Some people might find some of the messages offensive (that's why this option is disabled by default). Please note that these messages are not authored by Linux Mint.</p></note>
+    <p>Jika opsi ini diaktifkan, setiap Anda akan membuka Terminal, gambar hewan kecil akan muncul dan berkata lucu.</p>
+    <note><p>Beberapa orang mungkin akan tersinggung dengan pesan ini (inilah alasan mengapa opsi ini dimatikan). Mohon dimengerti bahwa pesan ini bukan dari pihak Linux Mint.</p></note>
   </section>
 
 </page>

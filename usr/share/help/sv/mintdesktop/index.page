@@ -24,7 +24,7 @@
 	<list>
 		<item><p>Fönsterkanter, titelfält och fönsterknappar.</p></item>
 		<item><p>Fönster-händelser (flytta, storleksändring, fokus)</p></item>
-		<item><p>Skrivbordseffekter (skyggor, animationer, effekter, GPU rendering)</p></item>
+		<item><p>Skrivbordseffekter (skyggor, animationer, effekter, GPU-rendering)</p></item>
 	</list>
 	</note>
 

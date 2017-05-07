@@ -31,7 +31,7 @@
 
     <list>
       <item>
-        <p>GPU renderização: Depende da placa de vídeo e seus respectivos drivers, renderização com GPU (como oposto a CPU) pode resultar em artefatos visuais ou rasgo na tela.</p>
+        <p>Renderização de GPU : Depende da placa de vídeo e seus respectivos drivers, renderização com GPU (como oposto a CPU) pode resultar em artefatos visuais ou rasgo na tela.</p>
       </item>
       <item>
         <p>Utilização de recursos: Composição requer mais recursos. Isto pode resultar negativamente no desempenho ou reduzir a autonomia da bateria em computadores portáteis.</p>

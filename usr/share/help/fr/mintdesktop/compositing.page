@@ -18,10 +18,10 @@
     <title>Avantages</title>
     <list>
       <item>
-        <p>Meilleure présentation : Animations de fenêtres, ombres et transparences.</p>
+        <p>Meilleure présentation : animations de fenêtres, ombres et transparences.</p>
       </item>
       <item>
-        <p>Meilleur support pour les applications modernes : Les 'Client-side decorations' sous GTK3 sont mieux supportées par les gestionnaires de fenêtres dotés de composition.</p>
+        <p>Meilleure prise en charge des applications modernes : les 'Client-side decorations' sous GTK3 sont mieux prises en charge par les gestionnaires de fenêtres dotés de composition.</p>
       </item>
     </list>
   </section>
@@ -31,10 +31,10 @@
 
     <list>
       <item>
-        <p>Rendu GPU: Selon les cartes graphiques et les pilotes utilisés, le rendu GPU (en opposition au rendu CPU effectué par le processeur)  peut conduire à des anomalies graphiques ou des effets de déchirement (screen-tearing).</p>
+        <p>Rendu GPU : selon la carte graphique et les pilotes utilisés, le rendu GPU (plutôt que le rendu CPU effectué par le processeur)  peut conduire à des anomalies graphiques ou des effets de déchirement (screen-tearing).</p>
       </item>
       <item>
-        <p>Ressources: La composition nécessite plus de ressources. Elle peut entraîner des baisses de performances ou une autonomie de batterie réduite sur les ordinateurs portables.</p>
+        <p>Ressources : la composition nécessite plus de ressources. Elle peut entraîner des baisses de performances ou une autonomie de batterie réduite sur les ordinateurs portables.</p>
       </item>
     </list>
   </section>

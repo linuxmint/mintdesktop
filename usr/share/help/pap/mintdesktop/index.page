@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="index">
+
+  <info>
+
+    <credit type="author">
+      <name>Linux Mint</name>
+      <email>root@linuxmint.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+  </info>
+
+  <title>Konfigurashonnan di Desktop</title>
+
+	<p>Bon biní na e Konfigurashonnan di Desktop</p>
+
+  <section id="windows" style="2column">
+    <title>Windows</title>
+	<p>E sekshon di Windows ta lagabo skohe un window manager</p>
+
+	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
+	<list>
+		<item><p>Rant di windows, bara di titulo i botonnan di window</p></item>
+		<item><p>Eventonan di window (moviendo, hasi grandi òf chikitu, focus e window)</p></item>
+		<item><p>Compositing (sombra, animashon, efektonan i GPU rendering)</p></item>
+	</list>
+	</note>
+
+  </section>
+
+  <section id="terminal" style="2column">
+    <title>Terminal</title>
+    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
+    <p>Si e opshon aki ta akiva kaba, tur bia bo habri e terminal un bestia chikitu ta aparese i bisa par di mensahe prèt.</p>
+    <note><p>Tin hende ku por haña e mensahenan aki bulgar (pesei e opshon aki ta bini standard desaktiva). Por fabor tuma nota ku e mensahenan aki no ta skibi dor di Linux Mint.</p></note>
+  </section>
+
+</page>

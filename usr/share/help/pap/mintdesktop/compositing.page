@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="compositing">
+
+   <info>
+    <link type="guide" xref="index#windows"/>
+    <credit type="author">
+      <name>Linux Mint</name>
+      <email>root@linuxmint.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+  </info>
+
+  <title>Pros I cons di compositing</title>
+
+  <section id="pros">
+    <title>Bentahanan</title>
+    <list>
+      <item>
+        <p>Miho aparensia &amp; feel: Animashonnan, sombranan i transparensia di window.</p>
+      </item>
+      <item>
+        <p>Miho sosten pa programanan modèrno: Dekorashonnan di e Client-side den GTK3 ta wòrdu miho soporta dor di e composited window managers.</p>
+      </item>
+    </list>
+  </section>
+
+  <section id="cons">
+    <title>Desbentaha</title>
+
+    <list>
+      <item>
+        <p>GPU rendering: Depende di bo graphics card i bo drivers, rendering ku GPU (kompara ku e CPU)por resulta den artefactonan visual riba e pantaya of screen tearing.</p>
+      </item>
+      <item>
+        <p>Uso di rekurso: Compositing ta rekeri mas rekurso. Esaki por resulta den prestashon mas slow of kapasidat di bateria di laptop redusi.</p>
+      </item>
+    </list>
+  </section>
+
+</page>

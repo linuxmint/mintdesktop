@@ -12,13 +12,13 @@
 
   </info>
 
-  <title>Overview of some window managers</title>
+  <title>ウインドウマネージャの概要</title>
 
-  <p>Here's a description of some of the window managers available.</p>
+  <p>利用できるいくつかのウインドウマネージャを説明します</p>
 
   <section id="pros">
     <title>Marco</title>
-    <p>MarcoはMATEデスクトップ環境の標準ウインドウマネージャです 非常に安定し信頼できます コンポジットなしでもありでも使えます</p>
+    <p>Marco is the default window manager for the MATE desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 

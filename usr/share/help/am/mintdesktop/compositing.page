@@ -12,16 +12,16 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>የ ማዋሀጃ ጥቅም እና ጉዳት</title>
 
   <section id="pros">
     <title>ጥቅሙ</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>የ ተሻለ መመልከቻ &amp; feel: የ መስኮት እንቅስቃሴ: ጥላዎች: እና ግልጽነት</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>ለ ዘመናዊ መተግባሪያ የ ተሻለ ድጋፍ: በ ደንበኞች-በኩል ማስጌጫ በ GTK3 በጣም የ ተደገፉ ናቸው ለ መቀላቀያ ለ መስኮት አስተዳዳሪ</p>
       </item>
     </list>
   </section>
@@ -31,10 +31,10 @@
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>የ GPU አፈጻጸም: እንደ እርስዎ የ graphics ካርድ አይነት እና drivers ይለያያል: የ GPU አፈጻጸም: (as opposed to the CPU) መመልከቻውን ሊቀደው ይችላል</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>ምንጮች መጠቀሚያ: Compositing በርካታ ምንጮች ይጠቀማል:  ይህ በ አፈጻጸም ላይ መዘግየትን ይፈጥራል ወይንም የ ባትሪ ሀይል ይቀንሳል በ ላፕቶፕ ኮምፒዩተር ላይ</p>
       </item>
     </list>
   </section>

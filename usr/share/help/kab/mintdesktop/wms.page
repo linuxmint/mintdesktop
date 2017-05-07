@@ -12,13 +12,13 @@
 
   </info>
 
-  <title>Overview of some window managers</title>
+  <title>Tazwart ar kra n imsefraken n isfuyla</title>
 
-  <p>Here's a description of some of the window managers available.</p>
+  <p>Hatan uglam n kra n imsefraken n usfaylu yellan.</p>
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco is the default window manager for the MATE desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Marco d amsefrak n usfaylu amezwer i twennaṭ n tnarit MATE.  Yerked aṭas uḍiɣ d aɣelsan. Yezmer ad ittwaselkem s neɣ s war asuddes.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 

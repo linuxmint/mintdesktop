@@ -12,43 +12,43 @@
 
   </info>
 
-  <title>Visió general d'alguns gestors de finestres</title>
+  <title>Resúmen di par di atministrado di window</title>
 
-  <p>A continuació es descriuen alguns dels gestors de finestres disponibles.</p>
+  <p>Ata'ki un diskripshon di e atministrado di windownan ku tin.</p>
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco és el gestor de finestres predeterminat per a l'entorn d'escriptori MATE. És molt estable i molt fiable. Pot funcionar amb o sense composició.</p>
+    <p>Marco ta e atministrado di bentana standard di e MATE desktop environment. E ta hopi stabil i masha konfiabel mes. E por drai ku of sin e buffer pa e animashon di e desktop environment.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Metacity</title>
-    <p>Metacity era el gestor de finestres predeterminat per a l'entorn d'escriptori GNOME 2. És molt estable i molt fiable. Pot funcionar amb o sense composició.</p>
+    <p>Metacity tabata e standard window manager pa GNOME 2 desktop environment. E ta hopi stabil i ta masha konfiabel mes. E por drai ku of sin  E por drai ku of sin e buffer pa e animashon di e desktop environment.</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Xfwm4</title>
-    <p>Xfwm4 és el gestor de finestres predeterminat per a l'entorn d'escriptori Xfce. És molt estable i molt fiable. Pot funcionar amb o sense composició.</p>
+    <p>Xfwm4 ta e window manager ku ta bini standard for di e Xfce desktop environment. E ta hopi stabil i hopi konfiabel. I por drai ku òf sin compositing.</p>
     <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Compiz</title>
-    <p>Compiz és un impressionant gestor de finestres, molt configurable i ple d'efectes i animacions sorprenents. Però, és el menys fiable i el menys estable.</p>
-    <p>Compiz s'instal·la per defecte en Linux Mint. Nota: No està disponible en LMDE.</p>
+    <p>Compiz ta un window manager hopi impreshonante, hopi bon konfigurabel i yen di effektonan i konfigurashonnan spektakular. Ma e ta esun menos konfiabel i menos stabil.</p>
+    <p>Compiz ta instala standard kaba den Linux Mint. Nota: E no ta disponibel den LMDE.</p>
   </section>
 
   <section id="pros">
     <title>Compton</title>
-    <p>Compton és un gestor de composició. Es pot utilitzar en combinació amb els gestors de finestres com ara Marco, Metacity o Xfwm4. Se sap que en Xfce, l'ús de Xfwm4 + Compton redueix l'efecte d'esquinçament d'imatge.</p>
+    <p>Compton ta un compositing manager. E por wòrdu usa den kombinashon ku windows managers manera Marco, Metacity òf Xfwm4. Den Xfce, Usando Xfwm4+Compton ta konosí ku e ta redusi screen tearing.</p>
     <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Openbox</title>
-    <p>Openbox és un gestor de finestres ràpid i lleuger.</p>
+    <p>Openbox ta un windows manager hopi lihe i fofo.</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>
 

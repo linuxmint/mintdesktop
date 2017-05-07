@@ -4,26 +4,26 @@
    <info>
     <link type="guide" xref="index#windows"/>
     <credit type="author">
-      <name>Linux Mint</name>
-      <email>root@linuxmint.com</email>
+      <name>लिनक्स मिन्ट</name>
+      <email>रूट@लिनक्समिन्ट.कम</email>
     </credit>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
   </info>
 
-  <title>Overview of some window managers</title>
+  <title>केही विन्डो प्रबन्धकहरू को अवलोकन</title>
 
-  <p>Here's a description of some of the window managers available.</p>
+  <p>यहाँ झ्याल उपलब्ध प्रबन्धकहरू केही विवरण छ।</p>
 
   <section id="pros">
-    <title>Marco</title>
-    <p>Marco is the default window manager for the MATE desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <title>म्याकरो</title>
+    <p>म्यार्को को मेट डेस्कटप वातावरणको लागि पूर्वनिर्धारित सञ्झ्याल प्रबन्धक हो। यो धेरै स्थिर र धेरै विश्वसनीय छ। यो वा कोम्पोसिटिङ बिनानै चल्न सक्छ।</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
-    <title>Metacity</title>
+    <title>मेटासिटी</title>
     <p>Metacity was the default window manager for the GNOME 2 desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>
@@ -35,19 +35,19 @@
   </section>
 
   <section id="pros">
-    <title>Compiz</title>
+    <title>कम्पिज</title>
     <p>Compiz is a very impressive window manager, very configurable and full of amazing effects and animations. It is however the least reliable and the least stable.</p>
     <p>Compiz is installed by default in Linux Mint. Note: It is not available in LMDE.</p>
   </section>
 
   <section id="pros">
-    <title>Compton</title>
+    <title>कम्पटोन</title>
     <p>Compton is a compositing manager. It can be used in combination with windows managers such as Marco, Metacity or Xfwm4. In Xfce, using Xfwm4+Compton is known to reduce screen tearing.</p>
     <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
   </section>
 
   <section id="pros">
-    <title>Openbox</title>
+    <title>खुला बाकस</title>
     <p>Openbox is a fast and light-weight window manager.</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>

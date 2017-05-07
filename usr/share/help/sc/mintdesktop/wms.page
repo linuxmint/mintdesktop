@@ -12,43 +12,43 @@
 
   </info>
 
-  <title>Visió general d'alguns gestors de finestres</title>
+  <title>Panoràmica de carchi manigiadore de bentanas</title>
 
-  <p>A continuació es descriuen alguns dels gestors de finestres disponibles.</p>
+  <p>Inoghe b'at una descritzione de unos cantos manigiadores de bentanas a disponidura.</p>
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco és el gestor de finestres predeterminat per a l'entorn d'escriptori MATE. És molt estable i molt fiable. Pot funcionar amb o sense composició.</p>
+    <p>Marco est su manigiadore de bentanas predefinidu pro s'ambiente de iscriania MATE. Est istàbile meda e de fidùtzia. Podet andare cun o sena compositing.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Metacity</title>
-    <p>Metacity era el gestor de finestres predeterminat per a l'entorn d'escriptori GNOME 2. És molt estable i molt fiable. Pot funcionar amb o sense composició.</p>
+    <p>Metacity est su manigiadore de bentanas predefinidu de s'ambiente de iscriania GNOME 2. Est istàbile meda e de fidùtzia. Podet andare cun o sena compositing.</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Xfwm4</title>
-    <p>Xfwm4 és el gestor de finestres predeterminat per a l'entorn d'escriptori Xfce. És molt estable i molt fiable. Pot funcionar amb o sense composició.</p>
+    <p>Xfwm4 est su manigiadore de bentanas predefinidu pro s'ambiente de iscriania Xfce. Est istàbile meda e de fidùtzia. Podet andare cun o sena compositing.</p>
     <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Compiz</title>
-    <p>Compiz és un impressionant gestor de finestres, molt configurable i ple d'efectes i animacions sorprenents. Però, és el menys fiable i el menys estable.</p>
-    <p>Compiz s'instal·la per defecte en Linux Mint. Nota: No està disponible en LMDE.</p>
+    <p>Compiz est unu manigiadore de bentanas impressionante, configuràbile e cun tantos efetos e animatziones ispantosas. Ma comente si siat abbarrat su prus pagu istàbile e de mancu fidùtzia.</p>
+    <p>Compiz est installadu giai in Linux Mint. Noda: No est a disponidura pro LMDE.</p>
   </section>
 
   <section id="pros">
     <title>Compton</title>
-    <p>Compton és un gestor de composició. Es pot utilitzar en combinació amb els gestors de finestres com ara Marco, Metacity o Xfwm4. Se sap que en Xfce, l'ús de Xfwm4 + Compton redueix l'efecte d'esquinçament d'imatge.</p>
+    <p>Compton est unu manigiadore cun su compositing. Si podet usare in pare cun àteos manigiadores de bentanas comente Marco, Metacity o Xfwm4. In Xfce, s'impreu de Xfwm4+Compton est nòdidu pro minimare s'efetu de screen tearing.</p>
     <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Openbox</title>
-    <p>Openbox és un gestor de finestres ràpid i lleuger.</p>
+    <p>Openbox est unu manigiadore de bentanas lèbiu e lestru.</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>
 

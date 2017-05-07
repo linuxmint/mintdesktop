@@ -14,17 +14,17 @@
 
   <title>Жұмыс үстел баптаулары</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>Жұмыс үстел баптауларына қош келдіңіз.</p>
 
   <section id="windows" style="2column">
     <title>Терезелер</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>"Терезелер" бөлімінде сіз қажетті терезе менеджерін таңдай аласыз.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>Терезе қыры, тақырыбы және батырмалар</p></item>
+		<item><p>Тереземен мүмкін болатын әрекеттер (жылжыту, өлшемін өзгерту, фокусировка)</p></item>
+		<item><p>Композитинг (көлеңке түсіру, эффектілер, GPU-рендеринг)</p></item>
 	</list>
 	</note>
 
@@ -33,8 +33,8 @@
   <section id="terminal" style="2column">
     <title>Терминал</title>
     <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>If this option is enabled, each time you open a terminal, a little animal appears and says some randomly picked humoristic message.</p>
-    <note><p>Some people might find some of the messages offensive (that's why this option is disabled by default). Please note that these messages are not authored by Linux Mint.</p></note>
+    <p>Егер бұл параметр іске қосылса, терминал әр рет іске қосқан кезде, кішкентай аң пайда болады және кездейсоқ таңдалған қызықты нақыл сөз айтады.</p>
+    <note><p>Кейбір нақыл сөздер біреудің сезіміне тіл тигізу мүмкін (сондықтан, бұл параметр әдепкі бойынша өшірулі). Назар аударыңыз, бұл нақыл сөздер Linux Mint командасымен жасалмайды.</p></note>
   </section>
 
 </page>

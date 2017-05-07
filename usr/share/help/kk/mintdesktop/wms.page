@@ -42,13 +42,13 @@
 
   <section id="pros">
     <title>Compton</title>
-    <p>Compton is a compositing manager. It can be used in combination with windows managers such as Marco, Metacity or Xfwm4. In Xfce, using Xfwm4+Compton is known to reduce screen tearing.</p>
+    <p>Compton - бұл құрастыру менеджері. Оны Macro, Metacity немесе Xfwm4 сияқты терезе менеджерлерімен ұштастыра отырып қолдануға болады. Xfce-ні Xfwm4+Compton-мен ұштастыра пайдаланып экранның алшақтықтығын азайтады.</p>
     <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Openbox</title>
-    <p>Openbox is a fast and light-weight window manager.</p>
+    <p>Openbox - бұл жылдам және жеңіл терезе менеджері.</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>
 
