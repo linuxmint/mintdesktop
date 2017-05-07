@@ -1,3 +1,13 @@
+mintdesktop (3.5.4) sonya; urgency=medium
+
+  [ monsta ]
+  * properly clean up another old .desktop file from /etc
+
+  [ Clement Lefebvre ]
+  * l10n: Generate additional files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 07 May 2017 13:00:27 +0100
+
 mintdesktop (3.5.3) serena; urgency=medium
 
   * Clean up obsolete mate-panel-compiz-restart script and associate XDG autostart
