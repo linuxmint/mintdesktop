@@ -1,3 +1,9 @@
+mintdesktop (3.5.5) sonya; urgency=medium
+
+  * Compiz: Add winrules defs to fix mintMenu offset
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 27 Jun 2017 16:24:02 +0200
+
 mintdesktop (3.5.4) sonya; urgency=medium
 
   [ monsta ]
