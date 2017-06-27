@@ -100,3 +100,8 @@ fill-color='#8afb0019'
 
 [plugins/showmouse]
 color='#ffdf3fff'
+
+[plugins/winrules]
+size-matches=['class=MintMenu.py']
+size-height-values=[0]
+size-width-values=[0]
