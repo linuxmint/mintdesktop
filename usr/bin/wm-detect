@@ -3,6 +3,7 @@
 import os
 import subprocess
 import gi
+gi.require_version('Gdk', '3.0')
 from gi.repository import Gdk
 
 if "XDG_CURRENT_DESKTOP" in os.environ:

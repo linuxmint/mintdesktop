@@ -5,6 +5,7 @@ import subprocess
 import gettext
 import shutil
 import gi
+gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk, GdkPixbuf, Gdk
 from gi.repository import Gio
 from subprocess import Popen
