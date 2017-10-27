@@ -1,3 +1,22 @@
+mintdesktop (3.5.6) sylvia; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Compiz: Add winrules to enabled plugins
+
+  [ monsta ]
+  * add missing runtime dependencies on GI packages
+  * add gi.require_version to fix annoying runtime warnings
+
+  [ erniejunior ]
+  * Add support for awesome to the window-manager-launcher
+  * Found method to kill the other window managers. Reduce the waiting time.
+  * Add awesome to the list in the gui
+
+  [ Clement Lefebvre ]
+  * l10n: Update POT file
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 27 Oct 2017 13:11:19 +0100
+
 mintdesktop (3.5.5) sonya; urgency=medium
 
   * Compiz: Add winrules defs to fix mintMenu offset
