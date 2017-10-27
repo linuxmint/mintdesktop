@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-11 22:53-0400\n"
+"POT-Creation-Date: 2017-10-27 13:10+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,7 @@ msgid "Here's a description of some of the window managers available."
 msgstr ""
 
 #: usr/share/help/C/mintdesktop/wms.page:21(title)
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:269
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:270
 msgid "Marco"
 msgstr ""
 
@@ -55,7 +55,7 @@ msgid ""
 msgstr ""
 
 #: usr/share/help/C/mintdesktop/wms.page:27(title)
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:274
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:275
 msgid "Metacity"
 msgstr ""
 
@@ -72,7 +72,7 @@ msgid ""
 msgstr ""
 
 #: usr/share/help/C/mintdesktop/wms.page:33(title)
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:279
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:280
 msgid "Xfwm4"
 msgstr ""
 
@@ -89,7 +89,7 @@ msgid ""
 msgstr ""
 
 #: usr/share/help/C/mintdesktop/wms.page:39(title)
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:288
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:289
 msgid "Compiz"
 msgstr ""
 
@@ -124,7 +124,7 @@ msgid ""
 msgstr ""
 
 #: usr/share/help/C/mintdesktop/wms.page:51(title)
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:284
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:285
 msgid "Openbox"
 msgstr ""
 
@@ -139,7 +139,7 @@ msgid ""
 msgstr ""
 
 #: usr/share/help/C/mintdesktop/index.page:14(title)
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:164 generate_desktop_files:28
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:165 generate_desktop_files:28
 msgid "Desktop Settings"
 msgstr ""
 
@@ -148,7 +148,7 @@ msgid "Welcome to Desktop Settings."
 msgstr ""
 
 #: usr/share/help/C/mintdesktop/index.page:19(title)
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:125
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:126
 msgid "Windows"
 msgstr ""
 
@@ -175,8 +175,8 @@ msgid "Compositing (shadows, animations, effects, GPU rendering)"
 msgstr ""
 
 #: usr/share/help/C/mintdesktop/index.page:33(title)
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:127
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:177
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:128
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:178
 msgid "Terminal"
 msgstr ""
 
@@ -238,185 +238,189 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:124
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:125
 msgid "Desktop"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:126
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:127
 msgid "Interface"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:168
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:169
 msgid "Desktop icons"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:169
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:170
 msgid "Marco settings"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:170
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:171
 msgid "Metacity settings"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:171
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:172
 msgid "Compiz settings"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:172
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:173
 msgid "Configure Compiz"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:173
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:174
 msgid "Reset Compiz settings"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:174
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:175
 msgid "Icons"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:175
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:176
 msgid "Context menus"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:176
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:177
 msgid "Toolbars"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:178
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:179
 msgid "Window Manager"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:180
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:181
 msgid "Select the items you want to see on the desktop:"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:182
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:183
 msgid "Computer"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:183
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:184
 msgid "Home"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:184
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:185
 msgid "Network"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:185
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:186
 msgid "Trash"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:186
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:187
 msgid "Mounted Volumes"
-msgstr ""
-
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:188
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:191
-msgid "Don't show window content while dragging them"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:189
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:192
-msgid "Use system font in titlebar"
+msgid "Don't show window content while dragging them"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:190
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:193
+msgid "Use system font in titlebar"
+msgstr ""
+
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:191
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:194
 msgid "Buttons layout:"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:195
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:196
 msgid "Show fortune cookies"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:197
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:198
 msgid "Show icons on menus"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:198
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:199
 msgid "Show icons on buttons"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:199
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:200
 msgid "Show Input Methods menu in context menus"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:200
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:201
 msgid "Show Unicode Control Character menu in context menus"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:202
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:203
 msgid "Buttons labels:"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:203
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:204
 msgid "Icon size:"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:230
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:231
 msgid "Traditional style (Right)"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:231
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:232
 msgid "Mac style (Left)"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:249
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:250
 msgid "Small"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:250
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:251
 msgid "Large"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:270
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:271
 msgid "Marco + Compositing"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:272
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:273
 msgid "Marco + Compton"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:275
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:276
 msgid "Metacity + Compositing"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:277
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:278
 msgid "Metacity + Compton"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:280
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:281
 msgid "Xfwm4 + Compositing"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:282
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:283
 msgid "Xfwm4 + Compton"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:286
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:287
 msgid "Openbox + Compton"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:292
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:291
+msgid "Awesome"
+msgstr ""
+
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:295
 msgid ""
 "Click on the help button for more information about window managers.\n"
 "Use the 'wm-recovery' command to switch back to the default window manager.\n"
 "Use the 'wm-detect' command to check which window manager is running."
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:298
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:301
 msgid "Text below items"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:299
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:302
 msgid "Text beside items"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:300
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:303
 msgid "Icons only"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:301
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:304
 msgid "Text only"
 msgstr ""
 

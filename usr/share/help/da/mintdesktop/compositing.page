@@ -21,7 +21,7 @@
         <p>Bedre udseende og funktionalitet: vinduesanimationer, skygger og gennemsigtighed.</p>
       </item>
       <item>
-        <p>Bedre understøttelse af moderne programmer: klientside udsmykning i GTK3 understøttes bedre af vindueshåndtering med compositing.</p>
+        <p>Bedre understøttelse af moderne programmer: udsmykning på klientsiden i GTK3 understøttes bedre af vindueshåndtering med compositing.</p>
       </item>
     </list>
   </section>

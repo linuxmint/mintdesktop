@@ -17,7 +17,7 @@
   <p>הנה תקציר של כמה ממנהלי החלונות הזמינים</p>
 
   <section id="pros">
-    <title>Marco</title>
+    <title>מאקרו</title>
     <p>Marco is the default window manager for the MATE desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
