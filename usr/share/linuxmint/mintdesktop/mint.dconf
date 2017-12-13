@@ -88,7 +88,7 @@ selection-fill-color='#2f2f4f4f'
 hsize=4
 active-plugins=['core', 'composite', 'opengl', 'compiztoolbox', 'copytex', 'decor', 'imgpng', 'cube', 'gnomecompat', 'regex', 'rotate', 'move', 'resize', 'grid', 'commands', 'staticswitcher', 'animation', 'expo', 'wobbly', 'winrules']
 focus-prevention-level=1
-focus-prevention-match='!(class=Polkit-gnome-authentication-agent-1) & !(class=MintMenu.py)'
+focus-prevention-match='!(class=Polkit-gnome-authentication-agent-1) & !(class=MintMenu.py) & !(title=Whisker Menu)'
 
 [plugins/shift]
 ground-color1='#b3b3b3cc'
