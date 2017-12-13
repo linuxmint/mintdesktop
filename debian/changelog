@@ -1,3 +1,9 @@
+mintdesktop (3.5.7) sylvia; urgency=medium
+
+  * Compiz: Fix focus stealing protection for Whisker Menu
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 13 Dec 2017 10:13:45 +0000
+
 mintdesktop (3.5.6) sylvia; urgency=medium
 
   [ Clement Lefebvre ]
