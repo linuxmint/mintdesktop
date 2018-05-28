@@ -125,7 +125,6 @@ class MintDesktop:
         side_desktop_options = SidePage(0, _("Desktop"), "user-desktop")
         side_windows = SidePage(1, _("Windows"), "preferences-system-windows")
         side_interface = SidePage(2, _("Interface"), "preferences-desktop")
-        side_terminal = SidePage(3, _("Terminal"), "terminal")
 
         self.compiz_path = os.path.expanduser('~/.config/compiz-1')
 
@@ -140,9 +139,9 @@ class MintDesktop:
             pass
 
         if self.xfce:
-            self.sidePages = [side_windows, side_terminal]
+            self.sidePages = [side_windows]
         else:
-            self.sidePages = [side_desktop_options, side_windows, side_interface, side_terminal]
+            self.sidePages = [side_desktop_options, side_windows, side_interface]
 
         # create the backing store for the side nav-view.
         theme = Gtk.IconTheme.get_default()
@@ -175,7 +174,6 @@ class MintDesktop:
         self.builder.get_object("label_icons").set_markup("<b>" + _("Icons") + "</b>")
         self.builder.get_object("label_context_menus").set_markup("<b>" + _("Context menus") + "</b>")
         self.builder.get_object("label_toolbars").set_markup("<b>" + _("Toolbars") + "</b>")
-        self.builder.get_object("label_terminal").set_markup("<b>" + _("Terminal") + "</b>")
         self.builder.get_object("label_wm").set_markup("<b>" + _("Window Manager") + "</b>")
 
         self.builder.get_object("caption_desktop_icons").set_markup("<small><i><span foreground=\"#555555\">" + _("Select the items you want to see on the desktop:") + "</span></i></small>")
@@ -192,8 +190,6 @@ class MintDesktop:
         self.builder.get_object("checkbutton_resources_metacity").set_label(_("Don't show window content while dragging them"))
         self.builder.get_object("checkbutton_titlebar_metacity").set_label(_("Use system font in titlebar"))
         self.builder.get_object("label_layouts_metacity").set_text(_("Buttons layout:"))
-
-        self.builder.get_object("checkbox_fortunes").set_label(_("Show fortune cookies"))
 
         self.builder.get_object("checkbutton_menuicon").set_label(_("Show icons on menus"))
         self.builder.get_object("checkbutton_button_icons").set_label(_("Show icons on buttons"))
@@ -251,9 +247,6 @@ class MintDesktop:
         iconSizes.append([_("Large"), "large-toolbar"])
         self.builder.get_object("combobox_icon_size").set_model(iconSizes)
         self.init_combobox("org.mate.interface", "toolbar-icons-size", "combobox_icon_size")
-
-        # terminal page
-        self.init_checkbox("com.linuxmint.terminal", "show-fortunes", "checkbox_fortunes")
 
         if "XDG_CURRENT_DESKTOP" in os.environ:
             current_desktop = os.environ["XDG_CURRENT_DESKTOP"]
