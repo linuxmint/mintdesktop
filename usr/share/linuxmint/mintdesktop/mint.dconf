@@ -1,5 +1,5 @@
 [/]
-plugins-with-set-keys=['addhelper', 'mblur', 'rotate', 'place', 'scalefilter', 'core', 'clone', 'shelf', 'scale', 'td', 'wobbly', 'imgjpeg', 'workspacenames', 'opengl', 'session', 'commands', 'neg', 'extrawm', 'screenshot', 'ezoom', 'wall', 'kdecompat', 'cubeaddon', 'resizeinfo', 'grid', 'composite', 'decor', 'shift', 'showrepaint', 'cube', 'freewins', 'workarounds', 'scaleaddon', 'move', 'trailfocus', 'mag', 'mousepoll', 'snap', 'showmouse', 'firepaint', 'titleinfo', 'expo', 'fadedesktop', 'obs', 'wizard', 'animation', 'splash', 'put', 'ring', 'notification', 'annotate', 'showdesktop', 'wallpaper', 'crashhandler', 'fade', 'maximumize', 'water', 'gnomecompat', 'vpswitch', 'staticswitcher', 'switcher', 'opacify', 'bench', 'resize', 'thumbnail', 'winrules', 'widget', 'imgsvg']
+plugins-with-set-keys=['addhelper', 'mblur', 'rotate', 'place', 'scalefilter', 'core', 'clone', 'shelf', 'scale', 'td', 'wobbly', 'imgjpeg', 'workspacenames', 'opengl', 'session', 'commands', 'neg', 'extrawm', 'screenshot', 'ezoom', 'wall', 'kdecompat', 'cubeaddon', 'resizeinfo', 'grid', 'composite', 'decor', 'shift', 'showrepaint', 'cube', 'freewins', 'workarounds', 'scaleaddon', 'move', 'trailfocus', 'mag', 'mousepoll', 'snap', 'showmouse', 'firepaint', 'titleinfo', 'expo', 'fadedesktop', 'obs', 'wizard', 'animation', 'splash', 'put', 'ring', 'notification', 'annotate', 'showdesktop', 'wallpaper', 'crashhandler', 'fade', 'maximumize', 'water', 'matecompat', 'vpswitch', 'staticswitcher', 'switcher', 'opacify', 'bench', 'resize', 'thumbnail', 'winrules', 'widget', 'imgsvg']
 
 [plugins/crashhandler]
 wm-cmd='marco --replace'
@@ -86,7 +86,7 @@ selection-fill-color='#2f2f4f4f'
 
 [plugins/core]
 hsize=4
-active-plugins=['core', 'composite', 'opengl', 'compiztoolbox', 'copytex', 'decor', 'imgpng', 'cube', 'gnomecompat', 'regex', 'rotate', 'move', 'resize', 'grid', 'commands', 'staticswitcher', 'animation', 'expo', 'wobbly', 'winrules']
+active-plugins=['core', 'composite', 'opengl', 'compiztoolbox', 'copytex', 'decor', 'imgpng', 'cube', 'matecompat', 'regex', 'rotate', 'move', 'resize', 'grid', 'commands', 'staticswitcher', 'animation', 'expo', 'wobbly', 'winrules']
 focus-prevention-level=1
 focus-prevention-match='!(class=Polkit-gnome-authentication-agent-1) & !(class=MintMenu.py) & !(title=Whisker Menu)'
 
