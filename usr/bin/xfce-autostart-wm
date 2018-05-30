@@ -30,7 +30,7 @@ if wm in ["xfwm4", "xfwm4-composite"]:
     pass
 elif wm == "xfwm4-compton":
     # start compton in addition to the already running xfwm4
-    subprocess.Popen(["compton"])
+    subprocess.Popen(["compton", "--backend", "glx", "--vsync", "opengl-swc"])
 else:
     # kill xfwm4 and start the selected wm
     subprocess.Popen(["window-manager-launcher"])
