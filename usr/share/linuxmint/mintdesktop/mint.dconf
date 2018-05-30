@@ -66,12 +66,8 @@ ground-color2='#b3b3b300'
 selected-color='#000000ff'
 reflection=true
 
-[plugins/gnomecompat]
-main-menu-key='Disabled'
-command-terminal='mate-terminal'
-command-window-screenshot='mate-screenshot --window'
-command-screenshot='mate-screenshot'
-run-key='Disabled'
+[plugins/matecompat]
+run-command-terminal-key='<Control><Alt>t'
 
 [plugins/staticswitcher]
 prev-all-key='<Shift><Alt>Tab'
