@@ -1,3 +1,19 @@
+mintdesktop (3.5.8) tara; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Remove fortune settings (obsolete)
+  * Small UI fixes
+
+  [ monsta ]
+  * compiz config: fix some settings (#31)
+
+  [ Clement Lefebvre ]
+  * Fix adjustment
+  * Remove obsolete GTK options
+  * Fix default value for titlebar button layout
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 30 May 2018 10:53:17 +0100
+
 mintdesktop (3.5.7) sylvia; urgency=medium
 
   * Compiz: Fix focus stealing protection for Whisker Menu
