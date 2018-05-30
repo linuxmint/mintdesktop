@@ -1,3 +1,14 @@
+mintdesktop (3.6.0) tara; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Xfce autostart: Start compton with gl arguments
+
+  [ monsta ]
+  * properly clean obsolete adjustments file from /etc (#32)
+  * compiz config: add terminal key for matecompat and clean up a bit (#33)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 30 May 2018 14:37:49 +0100
+
 mintdesktop (3.5.9) tara; urgency=medium
 
   * Compiz: Use matecompat instead of gnomecompat
