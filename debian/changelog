@@ -1,3 +1,9 @@
+mintdesktop (3.5.9) tara; urgency=medium
+
+  * Compiz: Use matecompat instead of gnomecompat
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 30 May 2018 11:08:34 +0100
+
 mintdesktop (3.5.8) tara; urgency=medium
 
   [ Clement Lefebvre ]
