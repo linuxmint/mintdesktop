@@ -1,5 +1,5 @@
 [/]
-plugins-with-set-keys=['addhelper', 'mblur', 'rotate', 'place', 'scalefilter', 'core', 'clone', 'shelf', 'scale', 'td', 'wobbly', 'imgjpeg', 'workspacenames', 'opengl', 'session', 'commands', 'neg', 'extrawm', 'screenshot', 'ezoom', 'wall', 'kdecompat', 'cubeaddon', 'resizeinfo', 'grid', 'composite', 'decor', 'shift', 'showrepaint', 'cube', 'freewins', 'workarounds', 'scaleaddon', 'move', 'trailfocus', 'mag', 'mousepoll', 'snap', 'showmouse', 'firepaint', 'titleinfo', 'expo', 'fadedesktop', 'obs', 'wizard', 'animation', 'splash', 'put', 'ring', 'notification', 'annotate', 'showdesktop', 'wallpaper', 'crashhandler', 'fade', 'maximumize', 'water', 'matecompat', 'vpswitch', 'staticswitcher', 'switcher', 'opacify', 'bench', 'resize', 'thumbnail', 'winrules', 'widget', 'imgsvg']
+plugins-with-set-keys=['addhelper', 'mblur', 'rotate', 'place', 'scalefilter', 'core', 'clone', 'shelf', 'scale', 'td', 'wobbly', 'imgjpeg', 'workspacenames', 'opengl', 'session', 'commands', 'neg', 'extrawm', 'screenshot', 'ezoom', 'wall', 'kdecompat', 'cubeaddon', 'resizeinfo', 'grid', 'composite', 'decor', 'shift', 'showrepaint', 'cube', 'freewins', 'workarounds', 'scaleaddon', 'move', 'trailfocus', 'mag', 'mousepoll', 'snap', 'showmouse', 'firepaint', 'titleinfo', 'expo', 'fadedesktop', 'obs', 'wizard', 'animation', 'splash', 'put', 'ring', 'notification', 'annotate', 'showdesktop', 'wallpaper', 'crashhandler', 'fade', 'maximumize', 'water', 'matecompat', 'vpswitch', 'switcher', 'opacify', 'bench', 'resize', 'thumbnail', 'winrules', 'widget', 'imgsvg']
 
 [plugins/crashhandler]
 wm-cmd='marco --replace'
@@ -66,16 +66,8 @@ ground-color2='#b3b3b300'
 selected-color='#000000ff'
 reflection=true
 
-[plugins/gnomecompat]
-main-menu-key='Disabled'
-command-terminal='mate-terminal'
-command-window-screenshot='mate-screenshot --window'
-command-screenshot='mate-screenshot'
-run-key='Disabled'
-
-[plugins/staticswitcher]
-prev-all-key='<Shift><Alt>Tab'
-next-all-key='<Alt>Tab'
+[plugins/matecompat]
+run-command-terminal-key='<Control><Alt>t'
 
 [plugins/firepaint]
 fire-color='#ff3305ff'
