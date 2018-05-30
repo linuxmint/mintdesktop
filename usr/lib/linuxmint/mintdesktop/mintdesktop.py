@@ -172,7 +172,6 @@ class MintDesktop:
         self.builder.get_object("compiz_settings_button").set_label(_("Configure Compiz"))
         self.builder.get_object("compiz_reset_button").set_label(_("Reset Compiz settings"))
         self.builder.get_object("label_icons").set_markup("<b>" + _("Icons") + "</b>")
-        self.builder.get_object("label_context_menus").set_markup("<b>" + _("Context menus") + "</b>")
         self.builder.get_object("label_toolbars").set_markup("<b>" + _("Toolbars") + "</b>")
         self.builder.get_object("label_wm").set_markup("<b>" + _("Window Manager") + "</b>")
 
@@ -193,8 +192,6 @@ class MintDesktop:
 
         self.builder.get_object("checkbutton_menuicon").set_label(_("Show icons on menus"))
         self.builder.get_object("checkbutton_button_icons").set_label(_("Show icons on buttons"))
-        self.builder.get_object("checkbutton_im_menu").set_label(_("Show Input Methods menu in context menus"))
-        self.builder.get_object("checkbutton_unicode").set_label(_("Show Unicode Control Character menu in context menus"))
 
         self.builder.get_object("label_tool_icons").set_text(_("Buttons labels:"))
         self.builder.get_object("label_icon_size").set_text(_("Icon size:"))
@@ -239,8 +236,6 @@ class MintDesktop:
 
         # interface page
         self.init_checkbox("org.mate.interface", "menus-have-icons", "checkbutton_menuicon")
-        self.init_checkbox("org.mate.interface", "show-input-method-menu", "checkbutton_im_menu")
-        self.init_checkbox("org.mate.interface", "show-unicode-menu", "checkbutton_unicode")
         self.init_checkbox("org.mate.interface", "buttons-have-icons", "checkbutton_button_icons")
         iconSizes = Gtk.ListStore(str, str)
         iconSizes.append([_("Small"), "small-toolbar"])
