@@ -221,7 +221,7 @@ class MintDesktop:
 
         # Window Manager page
         layouts = Gtk.ListStore(str, str)
-        layouts.append([_("Traditional style (Right)"), "menu:minimize,maximize,close"])
+        layouts.append([_("Traditional style (Right)"), ":minimize,maximize,close"])
         layouts.append([_("Mac style (Left)"), "close,minimize,maximize:"])
 
         self.init_checkbox("org.mate.Marco.general", "reduced-resources", "checkbutton_resources_marco")
