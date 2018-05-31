@@ -32,6 +32,14 @@ class MintDesktop:
         settings = Gio.Settings.new(schema)
         return settings.get_string(key)
 
+    def set_int(self, schema, key, value):
+        settings = Gio.Settings.new(schema)
+        settings.set_int(key, value)
+
+    def get_int(self, schema, key):
+        settings = Gio.Settings.new(schema)
+        return settings.get_int(key)
+
     def set_bool(self, schema, key, value):
         settings = Gio.Settings.new(schema)
         settings.set_boolean(key, value.get_active())
@@ -65,6 +73,24 @@ class MintDesktop:
         act = widget.get_active()
         value = widget.get_model()[act]
         self.set_string(schema, key, value[1])
+
+    def init_combobox_int(self, schema, key, name):
+        source = Gio.SettingsSchemaSource.get_default()
+        if source.lookup(schema, True) != None:
+            widget = self.builder.get_object(name)
+            conf = self.get_int(schema, key)
+            index = 0
+            for row in widget.get_model():
+                if(conf == row[1]):
+                    widget.set_active(index)
+                    break
+                index = index + 1
+            widget.connect("changed", lambda x: self.combo_fallback_int(schema, key, x))
+
+    def combo_fallback_int(self, schema, key, widget):
+        act = widget.get_active()
+        value = widget.get_model()[act]
+        self.set_int(schema, key, value[1])
 
     # Change pages
     def side_view_nav(self, param):
@@ -249,9 +275,7 @@ class MintDesktop:
                 wm_key = "mate-window-manager"
             else:
                 wm_key = "xfce-window-manager"
-            print(wm_key)
             settings = Gio.Settings("com.linuxmint.desktop")
-            wm = settings.get_string(wm_key)
             wms = Gtk.ListStore(str, str)
             compton = os.path.exists("/usr/bin/compton")
             if os.path.exists("/usr/bin/marco"):
@@ -283,6 +307,19 @@ class MintDesktop:
             self.builder.get_object("combo_wm").set_tooltip_text(_("Click on the help button for more information about window managers.\nUse the 'wm-recovery' command to switch back to the default window manager.\nUse the 'wm-detect' command to check which window manager is running."))
             self.init_combobox("com.linuxmint.desktop", wm_key, "combo_wm")
             self.builder.get_object("combo_wm").connect("changed", self.wm_changed)
+
+            # HiDPI
+            if current_desktop == "MATE":
+                options = Gtk.ListStore(str, int)
+                options.append([_("Auto"), 0])
+                options.append([_("Normal"), 1])
+                options.append([_("Double (HiDPI)"), 2])
+                self.builder.get_object("combo_hidpi").set_model(options)
+                self.init_combobox_int("org.mate.interface", "window-scaling-factor", "combo_hidpi")
+                self.builder.get_object("label_hidpi").set_text(_("User interface scaling"))
+            else:
+                self.builder.get_object("combo_hidpi").hide()
+                self.builder.get_object("label_hidpi").hide()
 
         # toolbar icon styles
         iconStyles = Gtk.ListStore(str, str)
