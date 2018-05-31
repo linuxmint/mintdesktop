@@ -12,16 +12,16 @@
 
   </info>
 
-  <title>Výhody a nevýhody rozvržení oken</title>
+  <title>Výhody a nevýhody kompozitních efektů</title>
 
   <section id="pros">
     <title>Výhody</title>
     <list>
       <item>
-        <p>Lepší vzhled &amp; dojem: Animace oken, stíny a průhlednost.</p>
+        <p>Lepší dojem ze vzhledu: animace oken, stínování a průhlednost.</p>
       </item>
       <item>
-        <p>Lepší podpora pro moderní aplikace: Uživatelské dekorace v GTK 3 jsou lépe podporovány správci oken s rozvržením</p>
+        <p>Lepší podpora pro moderní aplikace: dekorace na straně aplikací v GTK 3 jsou lépe podporovány kompozitními správci oken.</p>
       </item>
     </list>
   </section>
@@ -31,10 +31,10 @@
 
     <list>
       <item>
-        <p>Vykreslování pomocí GPU: V závislosti na Vaší grafické kartě a ovladačích, vykreslování pomocí GPU (oproti CPU) může způsobit chybné vykreslování, či trhání obrazu.</p>
+        <p>Vykreslováno prostředky grafického čipu: dle kvalit přítomného čipu a jeho ovladačů tento způsob (oproti vypočítáváním grafiky procesorem) může vést k chybnému či neplynulému (trhavému) vykreslování.</p>
       </item>
       <item>
-        <p>Nárok na zdroje: Rozvržení vyžaduje více prostředků. Výsledkem tedy může být menší výkon, či snížená výdrž baterií u přenosných počítačů</p>
+        <p>Nároky na systémové prostředky: kompozice jich vyžaduje více. Výsledkem může být nižší výkon, či zkrácená výdrž na akumulátor u přenosných počítačů.</p>
       </item>
     </list>
   </section>

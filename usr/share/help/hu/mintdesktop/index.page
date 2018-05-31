@@ -24,7 +24,7 @@
 	<list>
 		<item><p>Ablakkeretek, címsorok és ablakkezelő gombok</p></item>
 		<item><p>Ablakesemények (mozgatás, átméretezés, fókuszkezelés)</p></item>
-		<item><p>Kompozitálás (árnyékok, animációk, effektusok, GPU-n keresztüli leképzés)</p></item>
+		<item><p>Kompozitálás (árnyékok, animációk, effektusok, GPU processzoron keresztüli leképzés)</p></item>
 	</list>
 	</note>
 

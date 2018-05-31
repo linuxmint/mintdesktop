@@ -30,13 +30,13 @@
 
   <section id="pros">
     <title>Xfwm4</title>
-    <p>Xfwm4 is the default window manager for the Xfce desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Xfwm4 er standard vindusbehandler for skrivebordsmiljøet Xfce. Den er svært stabil og pålitelig. Den kan brukes med eller uten sammensetning.</p>
     <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Compiz</title>
-    <p>Compiz is a very impressive window manager, very configurable and full of amazing effects and animations. It is however the least reliable and the least stable.</p>
+    <p>Compiz er en imponerende vindusbehandler med mange konfigurasjonsmuligheter, full av utrolige effekter og animasjoner. Den er imidlertid den minst pålitelige og minst stabile vindusbehandleren.</p>
     <p>Compiz er installert som standard i Linux Mint. NB: Compiz er ikke tilgjengelig i LMDE</p>
   </section>
 

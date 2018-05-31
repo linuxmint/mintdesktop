@@ -18,12 +18,12 @@
 
   <section id="windows" style="2column">
     <title>Vinduer</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>Vindusinnstillingene lar deg velge en vindusbehandler.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
+		<item><p>Vindusrammer, tittellinjer og tittellinjeknapper</p></item>
+		<item><p>Vindushendelser (flytte, endre størrelse,  endre vindu i fokus)</p></item>
 		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
 	</list>
 	</note>

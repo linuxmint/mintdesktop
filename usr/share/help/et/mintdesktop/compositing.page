@@ -12,29 +12,29 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>Komposiitimise eelised ja puudused</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>Eelised</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>Parem välimus ja tunnetus: akende animatsioonid, varjud ja läbipaistvus.</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>Parem kaasaegsete rakenduste tugi: komposiitivad aknahaldurid toetavad paremini kliendipoolseid GTK3 dekoratsioone.</p>
       </item>
     </list>
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>Puudused</title>
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>GPU renderdus: sõltuvalt graafikakaardist ja draiveritest, võib GPUga renderdamine (vastandina CPUga renderdamisele) põhjustada nähtavaid vigu või ekraani "rebimist".</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>Ressursikasutus: komposiitimine kasutab rohkem ressursse. See võib põhjustada arvuti väiksemat jõudlust või sülearvutitel aku kiiremat tühjenemist.</p>
       </item>
     </list>
   </section>

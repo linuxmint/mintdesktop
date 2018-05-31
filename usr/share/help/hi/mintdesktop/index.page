@@ -4,7 +4,7 @@
   <info>
 
     <credit type="author">
-      <name>Linux Mint</name>
+      <name>लिनक्स मिंट</name>
       <email>root@linuxmint.com</email>
     </credit>
 
@@ -12,19 +12,19 @@
 
   </info>
 
-  <title>डेस्कटॉप समायोजन</title>
+  <title>डेस्कटॉप सेटिंग्स</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>डेस्कटॉप सेटिंग्स में स्वागत है।</p>
 
   <section id="windows" style="2column">
-    <title>विंडोज</title>
-	<p>The Windows section lets you choose a window manager.</p>
+    <title>विंडो</title>
+	<p>इस विंडो अनुभाग द्वारा आप विंडो प्रबंधक चुन सकते हैं।</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>विंडो सीमाएँ, शीर्षक पट्टियाँ व विंडो बटन</p></item>
+		<item><p>विंडो प्रसंग (विंडो का स्थानांतरण, आकर बदलना व केंद्रित करना )</p></item>
+		<item><p>Compositing (छाया, एनिमेशन, प्रभाव, GPU द्वारा प्रतिपादन)</p></item>
 	</list>
 	</note>
 
@@ -33,8 +33,8 @@
   <section id="terminal" style="2column">
     <title>टर्मिनल</title>
     <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>If this option is enabled, each time you open a terminal, a little animal appears and says some randomly picked humoristic message.</p>
-    <note><p>Some people might find some of the messages offensive (that's why this option is disabled by default). Please note that these messages are not authored by Linux Mint.</p></note>
+    <p>यदि यह विकल्प सक्रिय है, तो हर बार टर्मिनल खोलने पर, एक छोटा जानवर बेतरतीब ढंग से चुना गया मज़ाकिया संदेश प्रदर्शित करेगा।</p>
+    <note><p>कुछ लोगों को ये संदेश अप्रिय लग सकते हैं (इसलिए डिफ़ॉल्ट रूप से यह विकल्प असक्रिय है)। कृपया ध्यान दें कि ये संदेश लिनक्स मिंट द्वारा नहीं लिखे जाते हैं।</p></note>
   </section>
 
 </page>

@@ -18,7 +18,7 @@
 
   <section id="windows" style="2column">
     <title>창</title>
-	<p>창 섹션에서 창 관리자를 선택하시면 됩니다.</p>
+	<p>창 섹션에서 윈도우 매니저를 선택하시면 됩니다.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>

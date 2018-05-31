@@ -31,7 +31,7 @@
 
     <list>
       <item>
-        <p>GPU leképzés: A grafikus kártyától és a illesztőprogramtól függően a GPU leképzés (a CPU leképzéssel ellentétben) hibás megjelenést és kép szétesését okozhatja.</p>
+        <p>GPU leképzés: A grafikus kártyától és a illesztőprogramtól függően a GPU leképzés (a CPU leképzéssel ellentétben) hibás megjelenést és a képernyőkép szétesését okozhatja.</p>
       </item>
       <item>
         <p>Erőforrás felhasználás: A kompozitálás több erőforrást igényel. Ez rosszabb teljesítményt és laptopon rövidebb akkumulátoros üzemidőt okozhat.</p>

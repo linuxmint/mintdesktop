@@ -14,17 +14,17 @@
 
   <title>Visão geral de alguns gerenciadores de janelas</title>
 
-  <p>Aqui está uma descrição de alguns gerenciadores de janelas disponíveis.</p>
+  <p>Aqui está uma descrição de alguns dos gerenciadores de janelas disponíveis.</p>
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco é o gerenciador principal de janelas do ambiente MATE. Estável e confiável. Pode ser executado com ou sem complementos.</p>
+    <p>Marco é o gerenciador principal de janelas do ambiente MATE. Ele é muito estável e confiável. Pode ser executado com ou sem complementos.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Metacity</title>
-    <p>Metacity foi o gerenciador de janelas padrão do ambiente GNOME2. Estável e confiável. Pode ser executado com ou sem complementos.</p>
+    <p>Metacity era o gerenciador de janelas padrão do ambiente GNOME2. Estável e confiável. Pode ser executado com ou sem complementos.</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>
 

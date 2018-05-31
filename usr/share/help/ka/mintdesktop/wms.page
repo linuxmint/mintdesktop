@@ -12,9 +12,9 @@
 
   </info>
 
-  <title>Overview of some window managers</title>
+  <title>ფანჯრის მენეჯერების გადახედვა</title>
 
-  <p>Here's a description of some of the window managers available.</p>
+  <p>აქ არის ხელმისაწვდომი ფანჯრის მენეჯერების განმარტება.</p>
 
   <section id="pros">
     <title>Marco</title>
@@ -48,7 +48,7 @@
 
   <section id="pros">
     <title>Openbox</title>
-    <p>Openbox is a fast and light-weight window manager.</p>
+    <p>Openbox არის სწრაფი და მსუბუქი ფანჯრის მენეჯერი</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>
 

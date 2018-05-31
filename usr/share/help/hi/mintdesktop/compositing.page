@@ -4,7 +4,7 @@
    <info>
     <link type="guide" xref="index#windows"/>
     <credit type="author">
-      <name>Linux Mint</name>
+      <name>लिनक्स मिंट</name>
       <email>root@linuxmint.com</email>
     </credit>
 
@@ -12,29 +12,29 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>Compositing के फायदें व नुकसान</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>फायदें</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>बेहतर दिखावट &amp; अनुभूति: विंडो एनिमेशन, छाया व पारदर्शिता।</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>आधुनिक अनुप्रयोगों के लिए बेहतर समर्थन: GTK3 में क्लाइंट-साइड सजावट को compositing करने वाले विंडो प्रबंधकों द्वारा बेहतर समर्थन मिलता है।</p>
       </item>
     </list>
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>नुकसान</title>
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>GPU प्रतिपादन: आपके ग्राफ़िक्स कार्ड व ड्राइवर के आधार पर, GPU द्वारा प्रतिपादन से (CPU के बजाए) दृश्य artifact या स्क्रीन tearing हो सकती है।</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>संसाधन उपयोग: Compositing को अधिक संसाधनों की आवश्यकता होती है। इससे लैपटॉप कंप्यूटर कार्यक्षमता धीमी या फिर बैटरी स्वायत्तता कम हो सकती है।</p>
       </item>
     </list>
   </section>

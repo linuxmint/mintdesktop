@@ -12,29 +12,29 @@
 
   </info>
 
-  <title>Nastavení plochy</title>
+  <title>Nastavení pracovního prostředí</title>
 
-	<p>Vítejte v nastavení pracovní plochy.</p>
+	<p>Vítejte v nastavení pracovního prostředí.</p>
 
   <section id="windows" style="2column">
     <title>Okna</title>
-	<p>Sekce Okna Vám umožní zvolit správce oken.</p>
+	<p>Sekce Okna umožňuje zvolit správce oken.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Okraje oken, záhlaví oken a tlačítka na záhlaví oken</p></item>
-		<item><p>Události oken (přesun, změna velikosti, změna aktivního okna)</p></item>
-		<item><p>Rozvržení oken (stíny, animace, efektry, vykreslování pomocí GPU)</p></item>
+		<item><p>Okrajů a záhlaví oken a tlačítek v záhlaví oken</p></item>
+		<item><p>Událostí oken (přesun, změna velikosti, změna aktivního okna)</p></item>
+		<item><p>Rozvržení oken (stíny, animace, efekty, vykreslování prostředky grafického čipu)</p></item>
 	</list>
 	</note>
 
   </section>
 
   <section id="terminal" style="2column">
-    <title>Terminál</title>
+    <title>Příkazový řádek</title>
     <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>Pokud je tato možnost povolena, pokaždé, když pustíte terminál, se objeví zvířátko a řekne nějakou náhodně vybranou humornou hlášku.</p>
-    <note><p>Někteří lidé mohou tyto hlášky považovat za urážlivé (proto jsou ve výchozím nastavení vypnuty). Upozorňujeme, že autory těchto hlášek nejsou tvůrci Linux Mintu.</p></note>
+    <p>Pokud je tato předvolba zapnuta, pak pokaždé, když spustíte příkazový řádek, se objeví zvířátko a řekne nějakou náhodně vybranou humornou hlášku.</p>
+    <note><p>Někteří lidé mohou tyto hlášky považovat za urážlivé (proto jsou ve výchozím nastavení vypnuty). Upozorňujeme, že autory těchto hlášek nejsou tvůrci systému Linux Mint.</p></note>
   </section>
 
 </page>

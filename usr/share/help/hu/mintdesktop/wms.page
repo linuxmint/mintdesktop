@@ -42,7 +42,7 @@
 
   <section id="pros">
     <title>Compton</title>
-    <p>A Compton egy kompozitáló kezelő. Használható együttműködésben többek között a következő ablakkezelőkkel Marco, Metacity vagy Xfwm4. Xfce esetén a Xfwm4 és Compton együttes használata csökkenti a képernyő szétesést.</p>
+    <p>A Compton egy kompozitáló kezelő. Használható együttműködésben többek között a következő ablakkezelőkkel Marco, Metacity vagy Xfwm4. Xfce esetén a Xfwm4 és Compton együttes használata csökkenti a képernyőkép szétesést.</p>
     <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
   </section>
 

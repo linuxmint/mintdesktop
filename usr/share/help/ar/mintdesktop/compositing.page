@@ -12,29 +12,29 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>إيجابيات وسلبيات التركيب</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>المزايا</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>نظرة أفضل  </p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>دعم أفضل للتطبيقات الحديثة: الزخارف من جانب العميل في GTK3 مدعومة بشكل أفضل من قبل مديري النوافذ المركبة.</p>
       </item>
     </list>
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>السلبيات</title>
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>عرض الجرافيك: اعتماداً على بطاقة الرسومات الخاصة بك وبرامج التشغيل الخاصة بك، يمكن أن يؤدي تقديم وحدة معالجة الرسومات (على عكس وحدة المعالجة المركزية) إلى إنتاج أدوات مرئية أو تمزيق الشاشة.</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>استخدام الموارد: يتطلب التركيب المزيد من الموارد. يمكن أن يؤدي ذلك إلى أداء بطيء أو استقلال أقل للبطارية على أجهزة الكمبيوتر المحمولة.</p>
       </item>
     </list>
   </section>

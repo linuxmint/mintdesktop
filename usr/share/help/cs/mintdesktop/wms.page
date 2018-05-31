@@ -12,43 +12,43 @@
 
   </info>
 
-  <title>Přehled vybraných správců oken</title>
+  <title>Přehled některých vybraných správců oken</title>
 
-  <p>Zde je přehled vybraných správců oken.</p>
+  <p>Zde je popis některých ze správců oken, které jsou k dispozici.</p>
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco je výchozí manažer oken pro MATE. Je stabilní a spolehlivý. Lze ho provozovat s i bez kompozice oken</p>
+    <p>Marco je výchozí správce oken pro prostředí MATE. Je velmi stabilní a spolehlivý. Je možné ho provozovat i bez kompozitních efektů.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Metacity</title>
-    <p>Metacity byl výchozí manažer oken pro GNOME 2. Je stabilní a spolehlivý. Lze ho provozovat s i bez kompozice oken</p>
+    <p>Metacity byl výchozí správce oken pro prostředí GNOME 2. Je velmi stabilní a spolehlivý. Je možné ho provozovat i bez kompozitních efektů.</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Xfwm4</title>
-    <p>Xfwm4 je výchozí manažer oken pro Xfce. Je stabilní a spolehlivý. Lze ho provozovat s i bez kompozice oken.</p>
+    <p>Xfwm4 je výchozí správce oken pro prostředí Xfce. Je velmi stabilní a spolehlivý. Je možné ho provozovat i bez kompozitních efektů.</p>
     <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Compiz</title>
-    <p>Compiz je velmi působivý správce oken, hodně nastavitelný a plný úžasných efektů a animací. Je však nejméně spolehlivý a také nejméně stabilní.</p>
-    <p>Compiz je v Linux Mintu nainstalován už v základu. Poznámka: Není dostupný v LMDE.</p>
+    <p>Compiz je velmi působivý správce oken, velmi nastavitelný a plný úžasných efektů a animací. Je však nejméně spolehlivý a také nejméně stabilní.</p>
+    <p>Compiz je v Linux Mint nainstalovaný už v základu. Poznámka: Ve variantě systému LMDE (Linux Mint Debian edition) není k dispozici.</p>
   </section>
 
   <section id="pros">
     <title>Compton</title>
-    <p>Compton je správce rozvržení oken. Může být použit v kombinaci se správci oken, jako je Marco, Metacity nebo Xfwm4, přičemž používat kombinaci Xfwm4+Compton  snižuje trhání obrazovky</p>
+    <p>Compton je správce kompozice. Může být použit ve spojení se správci oken, jako je Marco, Metacity nebo Xfwm4, přičemž o kombinaci Xfwm4+Compton se ví, že snižuje neplynulost (trhání) vykreslování obrazovky.</p>
     <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Openbox</title>
-    <p>Openbox je rychlý a jednoduchý správce oken.</p>
+    <p>Openbox je rychlý a nenáročný správce oken.</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>
 

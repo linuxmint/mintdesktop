@@ -18,7 +18,7 @@
     <title>Advantages</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>უკეთესი შეხედულება &amp; იგრძენი: ფანჯრის ანიმაციები, ჩრდილები და გამჭვირვალობა.</p>
       </item>
       <item>
         <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
@@ -31,7 +31,7 @@
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>GPU -ს რენდერი: დამოკიდებულია თქვენს გრაფიკულ კარტაზე და დრაივერებზე, GPU -თი რენდერს შეუძლია გავლენა იქონიოს ვიზუალურ არტეფაქტებზე ან ეკრანის ხარვეზებზე.</p>
       </item>
       <item>
         <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
