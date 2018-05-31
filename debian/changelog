@@ -1,3 +1,11 @@
+mintdesktop (3.6.1) tara; urgency=medium
+
+  * Add support for HiDPI selection in MATE
+  * UI: Fix alignment and spacing issues
+  * l10n: Update POT and files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 31 May 2018 13:55:41 +0100
+
 mintdesktop (3.6.0) tara; urgency=medium
 
   [ Clement Lefebvre ]
