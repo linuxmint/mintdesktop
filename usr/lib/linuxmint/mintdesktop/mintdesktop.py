@@ -157,15 +157,9 @@ class MintDesktop:
         wm_info = subprocess.getoutput("wmctrl -m")
         self.show_hide_options(wm_info.lower())
 
-        self.xfce = False
-        try:
-            if "xfce4" in os.environ['XDG_DATA_DIRS']:
-                self.xfce = True
-        except:
-            pass
-
-        if self.xfce:
+        if os.getenv("XDG_CURRENT_DESKTOP") == "XFCE":
             self.sidePages = [side_windows]
+            self.builder.get_object("frame3").hide()
         else:
             self.sidePages = [side_desktop_options, side_windows, side_interface]
 
