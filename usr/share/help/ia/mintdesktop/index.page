@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>Terminal</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>Si ce option es activate, cata vice tu aperi un terminal, un parve animal appare e dice alcun message humorose extrahite in modo casual.</p>
-    <note><p>Alcunes pote trovar alcun del messages malsonante (i.e. le ration ce option es normalmente disactivate).</p></note>
-  </section>
-
 </page>

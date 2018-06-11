@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>Skjáhermir</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>Ef þessi valkostur er virkur, mun í hvert skipti sem þú opnar skjáhermiglugga (terminal - útstöð) birtast lítið kvikindi sem skrifar einhver tilviljanakennd smellin skilaboð.</p>
-    <note><p>Sumum gæti fundist sum þessara skilaboða ókurteisleg (þessvegna er þessi kostur sjálfgefið óvirkur). Athugaðu að þessi skilaboð eru ekki samin af Linux Mint teyminu.</p></note>
-  </section>
-
 </page>

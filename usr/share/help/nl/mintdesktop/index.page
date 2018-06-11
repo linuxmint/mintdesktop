@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>Terminalvenster</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>Indien deze optie is ingeschakeld, zal er telkens wanneer u een terminalvenster opent, een klein diertje verschijnen dat een willekeurige grappige boodschap zegt.</p>
-    <note><p>Sommige mensen zouden aanstoot kunnen nemen aan sommige boodschappen (daarom is deze optie standaard uitgeschakeld). De boodschappen zijn niet gemaakt door Linux Mint.</p></note>
-  </section>
-
 </page>

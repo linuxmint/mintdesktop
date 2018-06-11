@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>Trình dòng lệnh</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>Nếu tuỳ chọn này bật, mỗi khi bạn mở trình dòng lệnh sẽ có một con vật nhỏ hiện ra và nói thông điệp gì đó rất hài hước được chọn ngẫu nhiên.</p>
-    <note><p>Có người thấy một số thông điệp này chướng mắt (đó là lý do tuỳ chọn này mặc định là tắt). Xin lưu ý rằng những thông điệp này không phải do Linux Mint tạo ra.</p></note>
-  </section>
-
 </page>

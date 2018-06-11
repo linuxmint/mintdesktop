@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>Terminal</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>Med detta tillval kommer ett litet djur och en pratbubbla med en rolig text att visas varje gång du öppnar ett terminalfönster.</p>
-    <note><p>Vissa av texterna kan uppfattas som stötande. Som standard är detta tillval därför avstängt. Observera att utvecklarna av Linux Mint inte står bakom de texter som visas.</p></note>
-  </section>
-
 </page>

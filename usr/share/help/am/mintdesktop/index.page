@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>ተርሚናል</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>ይህን ምርጫ ካስቻሉ እርስዎ ተርሚናል በ ከፈቱ ጊዜ ትንሽ እንሰሳ ይታያል እና አስቂኝ መልእክቶች ያሳያል</p>
-    <note><p>አንዳንድ ስዎች እነዚህን መልእክቶች አይወዱዋቸውም (ስለዚህ በ ነባር ተሰናክለዋል). እባክዎን ያስታውሱ እነዚህ መልእክቶች በ ሊነክስ ሚንት ቡድን እንዳልተሰናዱም</p></note>
-  </section>
-
 </page>

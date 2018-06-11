@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>Pääte</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>Jos sallit tämä asetus on valittu, aina terminaalin avautuessa ilmestyy pieni eläin, joka sanoo jonkin humoristisen viestin.</p>
-    <note><p>Jotkut voivat pitää joitain viestejä loukkaavina (tästä syystä valinta on oletuksena pois päältä). Mitkään viesteistä eivät ole Linux Mintin laatimia.</p></note>
-  </section>
-
 </page>

@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>Терминал</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>Агар ушбу амал ёқилган бўлса, хар сафар терминални ишга туширганингизда қандайдир кичкина ҳайвонча пайдо бўлиб эҳтимолий танланган латифаларни айтиб туради.</p>
-    <note><p>Баъзиларга бу латифалар ёқмаслиги мумкин. Шунинг учун у ноошкор (default) ҳолда ўчирилган. Эътибор беринг, уларга Linux Mint муаллиф эмас.</p></note>
-  </section>
-
 </page>

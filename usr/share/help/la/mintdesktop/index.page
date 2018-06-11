@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>Terminus</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>If this option is enabled, each time you open a terminal, a little animal appears and says some randomly picked humoristic message.</p>
-    <note><p>Some people might find some of the messages offensive (that's why this option is disabled by default). Please note that these messages are not authored by Linux Mint.</p></note>
-  </section>
-
 </page>

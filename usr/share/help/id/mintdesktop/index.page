@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>Terminal</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>Jika opsi ini diaktifkan, setiap Anda akan membuka Terminal, gambar hewan kecil akan muncul dan berkata lucu.</p>
-    <note><p>Beberapa orang mungkin akan tersinggung dengan pesan ini (inilah alasan mengapa opsi ini dimatikan). Mohon dimengerti bahwa pesan ini bukan dari pihak Linux Mint.</p></note>
-  </section>
-
 </page>

@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>Terminal</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>Si activeu aquesta opció, cada cop que obriu un terminal, apareixerà un animaló i dirà algun missatge humorístic triat a l'atzar.</p>
-    <note><p>Algunes persones poden trobar alguns dels missatges ofensius (per això aquesta opció està desactivada per defecte). Recordeu que aquests missatges no estan escrits per Linux Mint.</p></note>
-  </section>
-
 </page>

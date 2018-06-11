@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>Příkazový řádek</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>Pokud je tato předvolba zapnuta, pak pokaždé, když spustíte příkazový řádek, se objeví zvířátko a řekne nějakou náhodně vybranou humornou hlášku.</p>
-    <note><p>Někteří lidé mohou tyto hlášky považovat za urážlivé (proto jsou ve výchozím nastavení vypnuty). Upozorňujeme, že autory těchto hlášek nejsou tvůrci systému Linux Mint.</p></note>
-  </section>
-
 </page>

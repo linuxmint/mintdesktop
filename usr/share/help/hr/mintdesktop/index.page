@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>Terminal</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>Ako je ova mogućnost onemogućena, svaki puta kada otvorite terminal, pojavi se mala životinja i kaže neke naizmjenično odabrane humoristične poruke.</p>
-    <note><p>Nekim ljudima mogu neke poruke biti uvredljive (zato je ova mogućnost standardno onemogućena). Zapamtite da ove poruke nisu stvorene od strane Linux Minta.</p></note>
-  </section>
-
 </page>

@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>المحطة الطرفية</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>إذا تم تمكين هذا الخيار، ففي كل مرة تفتح فيها المحطة الطرفية، يظهر حيوان صغير ويقول بعض الرسائل الفكاهية المختارة عشوائياً.</p>
-    <note><p>قد يجد بعض الأشخاص بعض الرسائل المسيئة (ولهذا السبب يتم تعطيل هذا الخيار افتراضياً). يرجى ملاحظة أن هذه الرسائل ليست من تأليف Linux Mint.</p></note>
-  </section>
-
 </page>

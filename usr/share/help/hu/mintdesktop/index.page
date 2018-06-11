@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>Terminál</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>Ha ezt a beállítást engedélyezi, akkor minden alkalommal, amikor megnyitja a terminált, egy kis állat jelenik meg a képernyőt, aki humoros üzenettel szórakoztatja.</p>
-    <note><p>Néhány felhasználóban ez ellenérzést válthat ki, így ez az beállítás alapból letiltásra került. Ezek az üzenetek nem a Linux Mint által írt szövegek.</p></note>
-  </section>
-
 </page>

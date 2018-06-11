@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>Terminalas</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>Jeigu šis parametras įjungtas, kas kartą jums atvėrus terminalą, pasirodys mažas gyvūnėlis ir pasakys kažkokį atsitiktinai išrinktą humoristinį pranešimą.</p>
-    <note><p>Kai kurie žmonės gali palaikyti kai kuriuos pranešimus įžeidžiančiais (štai kodėl pagal numatymą, šis parametras yra išjungtas). Prašome pastebėti, kad šiuos pranešimus nėra sukūrusi Linux Mint.</p></note>
-  </section>
-
 </page>

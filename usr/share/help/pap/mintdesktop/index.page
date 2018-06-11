@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>Terminal</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>Si e opshon aki ta akiva kaba, tur bia bo habri e terminal un bestia chikitu ta aparese i bisa par di mensahe prèt.</p>
-    <note><p>Tin hende ku por haña e mensahenan aki bulgar (pesei e opshon aki ta bini standard desaktiva). Por fabor tuma nota ku e mensahenan aki no ta skibi dor di Linux Mint.</p></note>
-  </section>
-
 </page>

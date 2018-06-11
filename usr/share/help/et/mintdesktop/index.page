@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>Terminal</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>Kui see valik on lubatud, siis igal terminali avamisel ilmub väike loomake ja ütleb juhuslikult valitud humoorika teate.</p>
-    <note><p>Mõned inimesed võivad neid teateid pidada solvavaks (selle pärast on see alguses välja lülitatud). Tuleb ära märkida, et Linux Mint ei ole nende sõnumite autor.</p></note>
-  </section>
-
 </page>

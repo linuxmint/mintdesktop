@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>終端機</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>若啟用此選項，每次你開啟終端機，都會有小動物出現並說些隨機挑選的幽默訊息。</p>
-    <note><p>有些人可能會被特定訊息冒犯 (這也是此選項被預設停用的原因)。請注意，這些訊息並非由 Linux Mint 撰寫。</p></note>
-  </section>
-
 </page>

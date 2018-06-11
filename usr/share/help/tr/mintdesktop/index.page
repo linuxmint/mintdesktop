@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>Uçbirim</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>Eğer bu seçenek etkinse, uçbirimi her açtığınızda, küçük bir hayvan imgesi ve rastgele seçilmiş bir esprili mesaj görüntülenir.</p>
-    <note><p>Bazı eleştiri mesajları ile karşılaşabilirsiniz (belirli bir özellik neden varsayılan olarak pasif gibi...). Bu tarz mesajların Linux Mint tarafından yazılmadığını unutmayınız.</p></note>
-  </section>
-
 </page>

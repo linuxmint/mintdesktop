@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>टर्मिनल</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>यदि यह विकल्प सक्रिय है, तो हर बार टर्मिनल खोलने पर, एक छोटा जानवर बेतरतीब ढंग से चुना गया मज़ाकिया संदेश प्रदर्शित करेगा।</p>
-    <note><p>कुछ लोगों को ये संदेश अप्रिय लग सकते हैं (इसलिए डिफ़ॉल्ट रूप से यह विकल्प असक्रिय है)। कृपया ध्यान दें कि ये संदेश लिनक्स मिंट द्वारा नहीं लिखे जाते हैं।</p></note>
-  </section>
-
 </page>

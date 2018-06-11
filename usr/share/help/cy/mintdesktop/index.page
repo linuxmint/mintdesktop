@@ -30,11 +30,4 @@
 
   </section>
 
-  <section id="terminal" style="2column">
-    <title>Terfynell</title>
-    <p>The terminal section lets you enable or disable <gui>fortune cookies</gui>.</p>
-    <p>Os yw'r dewis wedi ei alluogi, bob tro fyddwch yn agor terfynell, bydd anifail bach yn ymddangos ac yn adrodd neges ddoniol ar hap.</p>
-    <note><p>Gall rhai teimlo fod rhai o'r negeseuon yn sarhaus (dyna pam mae'r dewis wedi ei analluogi drwy ragosodiad). Sylwch nad yw'r negeseuon hyn wedi eu hawdurdodi gan Linux Mint.</p></note>
-  </section>
-
 </page>
