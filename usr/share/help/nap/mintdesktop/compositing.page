@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="compositing">
+
+   <info>
+    <link type="guide" xref="index#windows"/>
+    <credit type="author">
+      <name>Linux Mint</name>
+      <email>root@linuxmint.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+  </info>
+
+  <title>Cose buone e cose malament d''o compositing</title>
+
+  <section id="pros">
+    <title>Cose buone</title>
+    <list>
+      <item>
+        <p>Aspett e design ca parn cchiù bell: animazion d''e fenest, ombreggiatur e trasparenz.</p>
+      </item>
+      <item>
+        <p>Supporto assai meglio p''i programm cchiù nuov: 'e decorazioni d''o lato client in GTK3 so megl supportat d''i composited window manager.</p>
+      </item>
+    </list>
+  </section>
+
+  <section id="cons">
+    <title>Cose malament</title>
+
+    <list>
+      <item>
+        <p>Rendering GPU: a second d''a scheda grafica e d''i driver. A fa 'o rendering c''a GPU (invece che cu 'a CPU) putess fa malamente o fa ascì 'o screen tearing.</p>
+      </item>
+      <item>
+        <p>Aus d''e risorse: 'o compositing se zuca cchiù risorse. Stu fatt putess fa ascì meno prestazioni oppure 'a batteria ca se cunsuma primma ngopp i portatili.</p>
+      </item>
+    </list>
+  </section>
+
+</page>

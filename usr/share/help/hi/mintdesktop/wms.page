@@ -14,23 +14,23 @@
 
   <title>विंडो प्रबंधकों का अवलोकन</title>
 
-  <p>यहाँ कुछ विंडो प्रबंधक वर्णित है।</p>
+  <p>यहाँ कुछ उपलब्ध विंडो प्रबंधक वर्णित है।</p>
 
   <section id="pros">
-    <title>Marco</title>
-    <p>Marco, MATE डेस्कटॉप वातावरण का डिफ़ॉल्ट विंडो प्रबंधक है। यह बेहद स्थिर व भरोसेमंद है। आप इसे compositing के साथ या बिना भी चला सकते हैं।</p>
+    <title>मार्को</title>
+    <p>मार्को, मैटे डेस्कटॉप वातावरण का डिफ़ॉल्ट विंडो प्रबंधक है। यह बेहद स्थिर व भरोसेमंद है। आप इसे संयोजन के साथ या बिना भी चला सकते हैं।</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
-    <title>Metacity</title>
-    <p>Metacity, Gnome 2 डेस्कटॉप वातावरण का डिफ़ॉल्ट विंडो प्रबंधक है। यह बेहद स्थिर व भरोसेमंद है। आप इसे compositing के साथ या बिना भी चला सकते हैं।</p>
+    <title>मेटासिटी</title>
+    <p>मेटासिटी, गनोम 2 डेस्कटॉप वातावरण का डिफ़ॉल्ट विंडो प्रबंधक है। यह बेहद स्थिर व भरोसेमंद है। आप इसे संयोजन के साथ या बिना भी चला सकते हैं।</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Xfwm4</title>
-    <p>Xfwm4, Xfce डेस्कटॉप वातावरण का डिफ़ॉल्ट विंडो प्रबंधक है। यह बेहद स्थिर व भरोसेमंद है। आप इसे compositing के साथ या बिना भी चला सकते हैं।</p>
+    <p>Xfwm4, Xfce डेस्कटॉप वातावरण का डिफ़ॉल्ट विंडो प्रबंधक है। यह बेहद स्थिर व भरोसेमंद है। आप इसे संयोजन के साथ या बिना भी चला सकते हैं।</p>
     <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
   </section>
 
@@ -42,13 +42,13 @@
 
   <section id="pros">
     <title>Compton</title>
-    <p>Compton एक compositing प्रबंधक है। इसे Marco, Metacity या Xfwm4 जैसे विंडो प्रबंधकों के साथ संयोजन में इस्तेमाल किया जा सकता है। Xfwm4 + Compton का उपयोग कर Xfce में screen tearing घटाई जा सकती है।</p>
+    <p>Compton एक संयोजन प्रबंधक है। इसे मार्को, मेटासिटी या Xfwm4 जैसे विंडो प्रबंधकों के साथ संयोजन में इस्तेमाल किया जा सकता है। Xfwm4 + Compton का उपयोग कर Xfce में दृश्यात्मक विसंगतियाँ घटाई जा सकती है।</p>
     <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
   </section>
 
   <section id="pros">
-    <title>Openbox</title>
-    <p>Openbox एक तेज़ व हल्का विंडो प्रबंधक है।</p>
+    <title>ओपनबॉक्स</title>
+    <p>ओपनबॉक्स एक तेज़ व हल्का विंडो प्रबंधक है।</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>
 

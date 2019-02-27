@@ -4,7 +4,7 @@
   <info>
 
     <credit type="author">
-      <name>Linuks Mint</name>
+      <name>Linux Mint</name>
       <email>root@linuxmint.com</email>
     </credit>
 
@@ -12,19 +12,19 @@
 
   </info>
 
-  <title>Podešavanja radne površi</title>
+  <title>Impostazioni d''o Desktop</title>
 
-	<p>Dobrodošli u postavke radne površine.</p>
+	<p>Benvenut dint all'Impostazioni d''o Desktop</p>
 
   <section id="windows" style="2column">
-    <title>Prozori</title>
-	<p>Odeljak prozora vam omogućava da izaberete upravnika prozora.</p>
+    <title>Fenestre</title>
+	<p>'A sezione Fenestre te fa scegliere nu gestore d''e fenestre.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Ivice prozora, naslovne trake i tipke prozora</p></item>
-		<item><p>Akcije prozora (pokretanje, promena veličine, fokusiranje prozora)</p></item>
-		<item><p>Kompozicija (senke, animacije, efekti, GPU prikaz)</p></item>
+		<item><p>Bordi d''e fenestre, barre d''o titolo e buttun d''e fenestre</p></item>
+		<item><p>Eventi d''a Fenestra (spuost, allarga, miett a fuoc)</p></item>
+		<item><p>Grafica (ombreggiatur, animazion, effett, rendering d''a GPU)</p></item>
 	</list>
 	</note>
 

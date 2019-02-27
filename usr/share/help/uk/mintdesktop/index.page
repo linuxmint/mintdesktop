@@ -12,13 +12,13 @@
 
   </info>
 
-  <title>Налаштування стільниці</title>
+  <title>Налаштування робочого столу</title>
 
-	<p>Ласкаво просимо до налаштувань стільниці.</p>
+	<p>Ласкаво просимо до налаштувань робочого столу.</p>
 
   <section id="windows" style="2column">
     <title>Вікна</title>
-	<p>Розділ Вікна дозволяє обрати менеджера вікон.</p>
+	<p>Розділ Вікна дозволяє обрати менеджер вікон.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>

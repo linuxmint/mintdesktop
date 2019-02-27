@@ -12,43 +12,43 @@
 
   </info>
 
-  <title>Oversikt over noen av vindusbehandlerne</title>
+  <title>Te faccio verè cocc gestore 'e fenestra</title>
 
-  <p>Her er en beskrivelse av noen vindusbehandlere som er tilgjengelige</p>
+  <p>Ccà ce sta na descrizione 'e cocc gestore 'e fenestre (windows magager) ca se ponn scegliere.</p>
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco er standard vindusbehandler for MATE skrivebordmiljøet. Det er veldig stabilt og veldig pålitelig. det kan kjøre med eller uten compositing.</p>
+    <p>Marco è 'o gestore 'e fenestre predefinito 'e ll'ambiente desktop MATE. E' assai tuosto e nun te lascia a pere. Se pò fa partì con o senza 'o compositing.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Metacity</title>
-    <p>Metacity var standard vindusbehandler for GNOME 2 skrivebordmiljøet. Det er veldig stabilt og veldig pålitelig. det kan kjøre med eller uten compositing.</p>
+    <p>Metacity era 'o gestore 'e fenestre predefinito 'e ll'ambiente desktop GNOME 2. E' assai tuosto e nun te lascia a pere. Se pò fa partì con o senza 'o compositing.</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Xfwm4</title>
-    <p>Xfwm4 er standard vindusbehandler for skrivebordsmiljøet Xfce. Den er svært stabil og pålitelig. Den kan brukes med eller uten sammensetning.</p>
+    <p>Xfwm4 è 'o gestore 'e fenestre predefinito 'e ll'ambiente desktop Xfce. E' assai tuosto e nun te lascia a pere. Se pò fa partì con o senza 'o compositing.</p>
     <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Compiz</title>
-    <p>Compiz er en imponerende vindusbehandler med mange konfigurasjonsmuligheter, full av utrolige effekter og animasjoner. Den er imidlertid den minst pålitelige og minst stabile vindusbehandleren.</p>
-    <p>Compiz er installert som standard i Linux Mint. NB: Compiz er ikke tilgjengelig i LMDE</p>
+    <p>Compiz è nu gestore 'e fenestre ca fa veramente paura, ce può fa chell ca vuò tu e ce stann nu sacc d'effett e d'animazioni. Però è chill ca è cchiù capace ca se nchiov.</p>
+    <p>Compiz già sta dint a Linux Mint ma nun ce sta in LMDE.</p>
   </section>
 
   <section id="pros">
     <title>Compton</title>
-    <p>Compton er en komposjonsleder. Den kan brukes i kombinasjon med Windows-ledere som Marco, Metacity eller Xfwm4. I Xfce, er det kjent med Xfwm4 + Compton å redusere skjermsår.</p>
+    <p>Compton è nu compositing manager. Se può usà cu Marco, Metacity o Xfwm4. Dint a Xfce, ausann Xfwm4+Compton se pò ridurre 'o screen tearing.</p>
     <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Openbox</title>
-    <p>Openbox er en rask og lett vindusbehandler</p>
+    <p>Openbox è nu gestore 'e fenestre assai veloce e liggiero.</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>
 

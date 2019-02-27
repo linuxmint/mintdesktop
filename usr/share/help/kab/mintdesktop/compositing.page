@@ -12,29 +12,29 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>Ibaɣuren akked iɛewwiqen n usuddes</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>Ibaɣuren</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>Tamuɣli ifazen: asmussu n isfuyla, tili akked tefrawant.</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>Tiddin igerrzen i isnasen itraren: Adlag si tama n umsaɣ di GTK3 ittedu ugar deg imsefraken n isfuyla uddisen.</p>
       </item>
     </list>
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>Iɛewwiqen</title>
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>Tiririt GPU : i lmend n tkarḍa tudlift inek akked inuḍaf inek, tiririt s GPU  (deg umḍiq n GPU) tezmer ad d-teglu s usexreb n ubeqqeḍ neɣ s ucerreg n ugdil.</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>Tiɣbula: asuddes yesra ugar n teɣbula. Yezmer ad d-yeglu s usenqes n tikli neɣ s usenqes n twurmanit n tbatrit deg iselkimen izirazen.</p>
       </item>
     </list>
   </section>

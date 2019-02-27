@@ -24,7 +24,7 @@
 	<list>
 		<item><p>Vindusrammer, tittellinjer og tittellinjeknapper</p></item>
 		<item><p>Vindushendelser (flytte, endre størrelse,  endre vindu i fokus)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>Komposisjon (skygger, animasjoner, effekter, GPU-gjengivelse)</p></item>
 	</list>
 	</note>
 

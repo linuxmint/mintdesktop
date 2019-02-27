@@ -14,17 +14,17 @@
 
   <title>Iɣewwaṛen n tnarit</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>Ansuf ɣer iɣewwaren n tnarit.</p>
 
   <section id="windows" style="2column">
     <title>Isfuyla</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>Tigezmi 'Isfuyla' ad k-tsureg ad tferneḍ amsefrak n isfuyla.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>Iran n isfuyla, tifeggagin n izewlen, tiqfalin n isfuyla</p></item>
+		<item><p>Tidyanin n isfuyla (asmutti, alus n tisekta, asaḍas n isfuyla)</p></item>
+		<item><p>Asuddes (tili, asmussu, asemdu, tiririt GPU)</p></item>
 	</list>
 	</note>
 

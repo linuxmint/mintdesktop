@@ -12,16 +12,16 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>Fordeler og ulemper med sammensetning</title>
 
   <section id="pros">
     <title>Fordeler</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>Bedre utseende &amp; Følelse: Vinduets animasjoner, skygger og gjennomsiktighet.</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>Bedre støtte til moderne applikasjoner: Klientsiden dekorasjoner i GTK3 er bedre støttet av kompositt vindu ledere.</p>
       </item>
     </list>
   </section>
@@ -31,10 +31,10 @@
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>GPU-gjengivelse: Avhengig av grafikkortet og driverne kan gjengivelse med GPU (i motsetning til CPU) resultere i visuelle gjenstander eller skjermsår.</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>Ressursbruk: Komposisjon krever flere ressurser. Dette kan resultere i lavere ytelse eller redusert batteriautonomi på bærbare datamaskiner.</p>
       </item>
     </list>
   </section>
