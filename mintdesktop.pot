@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-17 16:04+0100\n"
+"POT-Creation-Date: 2019-06-03 10:16+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -315,7 +315,7 @@ msgid "Marco settings"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:182
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:191
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:196
 msgid "Use system font in titlebar"
 msgstr ""
 
@@ -324,79 +324,85 @@ msgid "Don't show window content while dragging them"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:185
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:190
 msgid "Traditional style (Right)"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:186
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:191
 msgid "Mac style (Left)"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:187
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:192
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:197
 msgid "Buttons layout:"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:189
-msgid "Metacity settings"
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:192
+msgid "Buttons layout (CSD windows):"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:194
+msgid "Metacity settings"
+msgstr ""
+
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:199
 msgid "Compiz settings"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:196
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:201
 msgid "Configure Compiz"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:200
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:205
 msgid "Reset Compiz settings"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:216
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:221
 msgid "Icons"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:217
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:222
 msgid "Show icons on menus"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:218
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:223
 msgid "Show icons on buttons"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:220
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:225
 msgid "Toolbars"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:223
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:228
 msgid "Text below items"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:224
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:229
 msgid "Text beside items"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:225
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:230
 msgid "Icons only"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:226
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:231
 msgid "Text only"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:227
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:232
 msgid "Buttons labels:"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:230
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:235
 msgid "Small"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:231
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:236
 msgid "Large"
 msgstr ""
 
-#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:232
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:237
 msgid "Icon size:"
 msgstr ""
 
