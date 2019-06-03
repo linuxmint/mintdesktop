@@ -181,15 +181,20 @@ class MintDesktop:
 
         self.marco_section.add_row(GSettingsSwitch(_("Use system font in titlebar"), "org.mate.Marco.general", "titlebar-uses-system-font"))
         self.marco_section.add_row(GSettingsSwitch(_("Don't show window content while dragging them"), "org.mate.Marco.general", "reduced-resources"))
-        options = []
-        options.append([":minimize,maximize,close", _("Traditional style (Right)")])
-        options.append(["close,minimize,maximize:", _("Mac style (Left)")])
-        self.marco_section.add_row(GSettingsComboBox(_("Buttons layout:"), "org.mate.Marco.general", "button-layout", options, size_group=size_group))
+        button_options = []
+        button_options.append([":minimize,maximize,close", _("Traditional style (Right)")])
+        button_options.append(["close,minimize,maximize:", _("Mac style (Left)")])
+        self.marco_section.add_row(GSettingsComboBox(_("Buttons layout:"), "org.mate.Marco.general", "button-layout", button_options, size_group=size_group))
+
+        csd_button_options = []
+        csd_button_options.append(["menu:minimize,maximize,close", _("Traditional style (Right)")])
+        csd_button_options.append(["close,minimize,maximize:menu", _("Mac style (Left)")])
+        self.marco_section.add_row(GSettingsComboBox(_("Buttons layout (CSD windows):"), "org.mate.interface", "gtk-decoration-layout", csd_button_options, size_group=size_group))
 
         self.metacity_section = page.add_section(_("Metacity settings"))
 
         self.metacity_section.add_row(GSettingsSwitch(_("Use system font in titlebar"), "org.gnome.desktop.wm.preferences", "titlebar-uses-system-font"))
-        self.metacity_section.add_row(GSettingsComboBox(_("Buttons layout:"), "org.gnome.desktop.wm.preferences", "button-layout", options, size_group=size_group))
+        self.metacity_section.add_row(GSettingsComboBox(_("Buttons layout:"), "org.gnome.desktop.wm.preferences", "button-layout", button_options, size_group=size_group))
 
         self.compiz_section = page.add_section(_("Compiz settings"))
 
