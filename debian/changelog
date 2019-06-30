@@ -1,3 +1,12 @@
+mintdesktop (3.6.4) tina; urgency=medium
+
+  * Fix generate_desktop_files
+  * Use xapp.GSettingsWidgets
+  * Marco: Add setting for CSD windows buttons layout
+  * l10n: Update POT
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 30 Jun 2019 15:51:41 +0200
+
 mintdesktop (3.6.3) tara; urgency=medium
 
   * Remove terminal section from help
