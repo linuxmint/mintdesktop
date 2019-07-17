@@ -1,3 +1,9 @@
+mintdesktop (3.6.6) tina; urgency=medium
+
+  * Fix another MATE specific part of the code running outside of MATE
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 17 Jul 2019 12:20:27 +0200
+
 mintdesktop (3.6.5) tina; urgency=medium
 
   * Fix crash in Xfce
