@@ -212,39 +212,40 @@ class MintDesktop:
         self.show_hide_options(wm_info)
 
         # Interface page
-        size_group = Gtk.SizeGroup()
-        size_group.set_mode(Gtk.SizeGroupMode.HORIZONTAL)
+        if self.de_is_mate:
+            size_group = Gtk.SizeGroup()
+            size_group.set_mode(Gtk.SizeGroupMode.HORIZONTAL)
 
-        vbox = self.builder.get_object("vbox_interface")
-        page = SettingsPage()
-        vbox.pack_start(page, True, True, 0)
+            vbox = self.builder.get_object("vbox_interface")
+            page = SettingsPage()
+            vbox.pack_start(page, True, True, 0)
 
-        section = page.add_section(_("Icons"))
-        section.add_row(GSettingsSwitch(_("Show icons on menus"), "org.mate.interface", "menus-have-icons"))
-        section.add_row(GSettingsSwitch(_("Show icons on buttons"), "org.mate.interface", "buttons-have-icons"))
+            section = page.add_section(_("Icons"))
+            section.add_row(GSettingsSwitch(_("Show icons on menus"), "org.mate.interface", "menus-have-icons"))
+            section.add_row(GSettingsSwitch(_("Show icons on buttons"), "org.mate.interface", "buttons-have-icons"))
 
-        section = page.add_section(_("Toolbars"))
+            section = page.add_section(_("Toolbars"))
 
-        options = []
-        options.append(["both", _("Text below items")])
-        options.append(["both-horiz", _("Text beside items")])
-        options.append(["icons", _("Icons only")])
-        options.append(["text", _("Text only")])
-        section.add_row(GSettingsComboBox(_("Buttons labels:"), "org.mate.interface", "toolbar-style", options, size_group=size_group))
+            options = []
+            options.append(["both", _("Text below items")])
+            options.append(["both-horiz", _("Text beside items")])
+            options.append(["icons", _("Icons only")])
+            options.append(["text", _("Text only")])
+            section.add_row(GSettingsComboBox(_("Buttons labels:"), "org.mate.interface", "toolbar-style", options, size_group=size_group))
 
-        options = []
-        options.append(["small-toolbar", _("Small")])
-        options.append(["large-toolbar", _("Large")])
-        section.add_row(GSettingsComboBox(_("Icon size:"), "org.mate.interface", "toolbar-icons-size", options, size_group=size_group))
+            options = []
+            options.append(["small-toolbar", _("Small")])
+            options.append(["large-toolbar", _("Large")])
+            section.add_row(GSettingsComboBox(_("Icon size:"), "org.mate.interface", "toolbar-icons-size", options, size_group=size_group))
 
-        page.show_all()
+            page.show_all()
 
-        # Ensure MATE loads the WM we set here
-        settings = Gio.Settings("com.linuxmint.desktop")
-        source = Gio.SettingsSchemaSource.get_default()
-        if source.lookup('org.mate.session.required-components', True):
-            settings = Gio.Settings("org.mate.session.required-components")
-            settings.set_string("windowmanager", "mint-window-manager")
+            # Ensure MATE loads the WM we set here
+            settings = Gio.Settings("com.linuxmint.desktop")
+            source = Gio.SettingsSchemaSource.get_default()
+            if source.lookup('org.mate.session.required-components', True):
+                settings = Gio.Settings("org.mate.session.required-components")
+                settings.set_string("windowmanager", "mint-window-manager")
 
         # Ensure Xfce loads the WM we set here
         legacy_xfce_path = os.path.expanduser('~/.config/autostart/Compiz.desktop')
