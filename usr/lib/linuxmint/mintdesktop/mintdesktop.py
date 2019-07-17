@@ -41,7 +41,8 @@ class MintDesktop:
         self.show_hide_options(wm)
 
     def show_hide_options(self, wm):
-        self.marco_section.hide()
+        if self.marco_section is not None:
+            self.marco_section.hide()
         self.metacity_section.hide()
         self.compiz_section.hide()
         if "marco" in wm:
@@ -84,13 +85,13 @@ class MintDesktop:
 
         self.compiz_path = os.path.expanduser('~/.config/compiz-1')
 
-        self.de_is_mate = True
-        if os.getenv("XDG_CURRENT_DESKTOP") == "XFCE":
-            self.de_is_mate = False
+        self.de_is_mate = False
+        if os.getenv("XDG_CURRENT_DESKTOP") == "MATE":
+            self.de_is_mate = True
+            self.sidePages = [side_desktop_options, side_windows, side_interface]
+        else:
             self.sidePages = [side_windows]
             self.builder.get_object("frame3").hide()
-        else:
-            self.sidePages = [side_desktop_options, side_windows, side_interface]
 
         # create the backing store for the side nav-view.
         theme = Gtk.IconTheme.get_default()
@@ -114,18 +115,17 @@ class MintDesktop:
         self.window.connect("destroy", Gtk.main_quit)
 
         # Desktop icons page
-        vbox = self.builder.get_object("vbox_desktop_icons")
-        page = SettingsPage()
-        vbox.pack_start(page, True, True, 0)
-
-        section = page.add_section(_("Desktop icons"), _("Select the items you want to see on the desktop:"))
-        section.add_row(GSettingsSwitch(_("Computer"), "org.mate.caja.desktop", "computer-icon-visible"))
-        section.add_row(GSettingsSwitch(_("Home"), "org.mate.caja.desktop", "home-icon-visible"))
-        section.add_row(GSettingsSwitch(_("Network"), "org.mate.caja.desktop", "network-icon-visible"))
-        section.add_row(GSettingsSwitch(_("Trash"), "org.mate.caja.desktop", "trash-icon-visible"))
-        section.add_row(GSettingsSwitch(_("Mounted Volumes"), "org.mate.caja.desktop", "volumes-visible"))
-
-        page.show_all()
+        if self.de_is_mate:
+            vbox = self.builder.get_object("vbox_desktop_icons")
+            page = SettingsPage()
+            vbox.pack_start(page, True, True, 0)
+            section = page.add_section(_("Desktop icons"), _("Select the items you want to see on the desktop:"))
+            section.add_row(GSettingsSwitch(_("Computer"), "org.mate.caja.desktop", "computer-icon-visible"))
+            section.add_row(GSettingsSwitch(_("Home"), "org.mate.caja.desktop", "home-icon-visible"))
+            section.add_row(GSettingsSwitch(_("Network"), "org.mate.caja.desktop", "network-icon-visible"))
+            section.add_row(GSettingsSwitch(_("Trash"), "org.mate.caja.desktop", "trash-icon-visible"))
+            section.add_row(GSettingsSwitch(_("Mounted Volumes"), "org.mate.caja.desktop", "volumes-visible"))
+            page.show_all()
 
         # WM page
         size_group = Gtk.SizeGroup()
@@ -170,6 +170,14 @@ class MintDesktop:
         combo.content_widget.connect("changed", self.wm_changed)
         section.add_row(combo)
 
+        button_options = []
+        button_options.append([":minimize,maximize,close", _("Traditional style (Right)")])
+        button_options.append(["close,minimize,maximize:", _("Mac style (Left)")])
+
+        csd_button_options = []
+        csd_button_options.append(["menu:minimize,maximize,close", _("Traditional style (Right)")])
+        csd_button_options.append(["close,minimize,maximize:menu", _("Mac style (Left)")])
+
         if self.de_is_mate:
             options = []
             options.append([0, _("Auto")])
@@ -177,22 +185,15 @@ class MintDesktop:
             options.append([2, _("Double (HiDPI)")])
             section.add_row(GSettingsComboBox(_("User interface scaling"), "org.mate.interface", "window-scaling-factor", options, size_group=size_group))
 
-        self.marco_section = page.add_section(_("Marco settings"))
-
-        self.marco_section.add_row(GSettingsSwitch(_("Use system font in titlebar"), "org.mate.Marco.general", "titlebar-uses-system-font"))
-        self.marco_section.add_row(GSettingsSwitch(_("Don't show window content while dragging them"), "org.mate.Marco.general", "reduced-resources"))
-        button_options = []
-        button_options.append([":minimize,maximize,close", _("Traditional style (Right)")])
-        button_options.append(["close,minimize,maximize:", _("Mac style (Left)")])
-        self.marco_section.add_row(GSettingsComboBox(_("Buttons layout:"), "org.mate.Marco.general", "button-layout", button_options, size_group=size_group))
-
-        csd_button_options = []
-        csd_button_options.append(["menu:minimize,maximize,close", _("Traditional style (Right)")])
-        csd_button_options.append(["close,minimize,maximize:menu", _("Mac style (Left)")])
-        self.marco_section.add_row(GSettingsComboBox(_("Buttons layout (CSD windows):"), "org.mate.interface", "gtk-decoration-layout", csd_button_options, size_group=size_group))
+            self.marco_section = page.add_section(_("Marco settings"))
+            self.marco_section.add_row(GSettingsSwitch(_("Use system font in titlebar"), "org.mate.Marco.general", "titlebar-uses-system-font"))
+            self.marco_section.add_row(GSettingsSwitch(_("Don't show window content while dragging them"), "org.mate.Marco.general", "reduced-resources"))
+            self.marco_section.add_row(GSettingsComboBox(_("Buttons layout:"), "org.mate.Marco.general", "button-layout", button_options, size_group=size_group))
+            self.marco_section.add_row(GSettingsComboBox(_("Buttons layout (CSD windows):"), "org.mate.interface", "gtk-decoration-layout", csd_button_options, size_group=size_group))
+        else:
+            self.marco_section = None
 
         self.metacity_section = page.add_section(_("Metacity settings"))
-
         self.metacity_section.add_row(GSettingsSwitch(_("Use system font in titlebar"), "org.gnome.desktop.wm.preferences", "titlebar-uses-system-font"))
         self.metacity_section.add_row(GSettingsComboBox(_("Buttons layout:"), "org.gnome.desktop.wm.preferences", "button-layout", button_options, size_group=size_group))
 
