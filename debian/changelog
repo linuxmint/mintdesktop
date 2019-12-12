@@ -1,3 +1,9 @@
+mintdesktop (3.6.7) tricia; urgency=medium
+
+  * Compiz: Change default settings
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 12 Dec 2019 16:08:49 +0000
+
 mintdesktop (3.6.6) tina; urgency=medium
 
   * Fix another MATE specific part of the code running outside of MATE
