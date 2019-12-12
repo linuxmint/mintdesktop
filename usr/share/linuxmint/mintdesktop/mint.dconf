@@ -66,6 +66,15 @@ ground-color2='#b3b3b300'
 selected-color='#000000ff'
 reflection=true
 
+[plugins/ezoom]
+zoom-in-button='<Shift><Super>Button4'
+zoom-out-button='<Shift><Super>Button5'
+
+[plugins/firepaint]
+num-particles=20000
+fire-size=7
+fire-life=0.2
+
 [plugins/matecompat]
 run-command-terminal-key='<Control><Alt>t'
 
@@ -78,7 +87,7 @@ selection-fill-color='#2f2f4f4f'
 
 [plugins/core]
 hsize=4
-active-plugins=['core', 'composite', 'opengl', 'compiztoolbox', 'copytex', 'decor', 'imgpng', 'cube', 'matecompat', 'regex', 'rotate', 'move', 'resize', 'grid', 'commands', 'staticswitcher', 'animation', 'expo', 'wobbly', 'winrules']
+active-plugins=['core', 'composite', 'opengl', 'compiztoolbox', 'copytex', 'decor', 'firepaint', 'imgpng', 'cube', 'matecompat', 'mousepoll, 'regex', 'rotate', 'move', 'obs', 'resize', 'snap', grid', 'commands', 'staticswitcher', 'animation', 'expo', 'ezoom', 'winrules']
 focus-prevention-level=1
 focus-prevention-match='!(class=Polkit-gnome-authentication-agent-1) & !(class=MintMenu.py) & !(title=Whisker Menu)'
 
