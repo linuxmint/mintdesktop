@@ -1,3 +1,9 @@
+mintdesktop (3.6.9) ulyana; urgency=medium
+
+  * l10n: Generate files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 14 May 2020 08:17:56 +0100
+
 mintdesktop (3.6.8) tricia; urgency=medium
 
   * Compiz: Fix syntax for initial settings
