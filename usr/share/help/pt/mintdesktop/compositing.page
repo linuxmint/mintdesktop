@@ -12,16 +12,16 @@
 
   </info>
 
-  <title>Prós e contras da composição</title>
+  <title>Vantagens e desvantagens da composição</title>
 
   <section id="pros">
     <title>Vantagens</title>
     <list>
       <item>
-        <p>Melhor look &amp; e aspeto: animações de janelas, sombras e transparências.</p>
+        <p>Melhor aspeto: animações de janelas, sombras e transparências.</p>
       </item>
       <item>
-        <p>Melhor suporte para aplicações modernas: decorações client-side em GTK3 são melhor suportadas por gestores de janelas com composição.</p>
+        <p>Melhor suporte para aplicações modernas: decorações 'client-side' em GTK3 são melhor suportadas por gestores de janelas com composição.</p>
       </item>
     </list>
   </section>
@@ -31,10 +31,10 @@
 
     <list>
       <item>
-        <p>Renderização de GPU: dependendo da placa de vídeo e dos drivers, pode resultar na desconfiguração da tela (ao contrário da renderização com o CPU).</p>
+        <p>Renderização de GPU: dependendo da placa de vídeo e dos controladores, pode resultar na desconfiguração da tela (ao contrário da renderização com o CPU).</p>
       </item>
       <item>
-        <p>Uso de recursos: a composição requer mais recursos. Isso pode resultar num desempenho mais lento ou reduzir a autonomia da bateria em computadores portáteis.</p>
+        <p>Utilização de recursos: a composição requer mais recursos. Isso pode resultar num desempenho mais lento ou reduzir a autonomia da bateria em computadores portáteis.</p>
       </item>
     </list>
   </section>

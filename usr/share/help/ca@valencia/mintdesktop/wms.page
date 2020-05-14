@@ -12,12 +12,12 @@
 
   </info>
 
-  <title>תצוגה של כמה ממנהלי החלונות</title>
+  <title>Overview of some window managers</title>
 
-  <p>הנה תקציר של כמה ממנהלי החלונות הזמינים</p>
+  <p>Here's a description of some of the window managers available.</p>
 
   <section id="pros">
-    <title>מאקרו</title>
+    <title>Marco</title>
     <p>Marco is the default window manager for the MATE desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
@@ -37,7 +37,7 @@
   <section id="pros">
     <title>Compiz</title>
     <p>Compiz is a very impressive window manager, very configurable and full of amazing effects and animations. It is however the least reliable and the least stable.</p>
-    <p>Compiz מותקן ב-Linux Mint כברירת מחדל. הערה: הוא לא זמין ב-LMDE.</p>
+    <p>Compiz is installed by default in Linux Mint. Note: It is not available in LMDE.</p>
   </section>
 
   <section id="pros">

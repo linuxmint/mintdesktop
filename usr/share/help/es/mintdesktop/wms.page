@@ -12,7 +12,7 @@
 
   </info>
 
-  <title>Repaso de algunos gestores de ventanas</title>
+  <title>Resumen de algunos gestores de ventanas</title>
 
   <p>A continuación se describen algunos de los gestores de ventanas disponibles.</p>
 
@@ -36,13 +36,13 @@
 
   <section id="pros">
     <title>Compiz</title>
-    <p>Compiz es un impresionante gestor de ventanas, muy configurable y lleno de efectos y animaciones asombrosas. Sin embargo, es el menos fiable y el menos estable.</p>
-    <p>Compiz se instala por defecto en Linux Mint. Nota: No está disponible en LMDE.</p>
+    <p>Compiz es un impresionante gestor de ventanas, muy configurable y repleto de efectos y animaciones asombrosas. Sin embargo, es el menos fiable y el menos estable.</p>
+    <p>Compiz se instala por defecto en Linux Mint. Nota: no está disponible en LMDE.</p>
   </section>
 
   <section id="pros">
     <title>Compton</title>
-    <p>Compton es un gestor de composición. Se puede usar en combinación con gestores de ventanas como Marco, Metacity o Xfwm4. Es conocido que en Xfce, el uso de Xfwm4 + Compton reduce el efecto de rasgado de pantalla.</p>
+    <p>Compton es un gestor de composición. Se puede usar en combinación con gestores de ventanas como Marco, Metacity o Xfwm4. Es conocido que en Xfce, el uso de Xfwm4 + Compton reduce el efecto bandera en pantalla.</p>
     <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
   </section>
 

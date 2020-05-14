@@ -23,7 +23,7 @@
   </section>
 
   <section id="pros">
-    <title>Metacity</title>
+    <title>মেটাসিটি</title>
     <p>Metacity was the default window manager for the GNOME 2 desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>

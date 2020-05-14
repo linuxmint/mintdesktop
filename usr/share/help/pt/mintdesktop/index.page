@@ -14,17 +14,17 @@
 
   <title>Definições do ambiente de trabalho</title>
 
-	<p>Bem-vindo às definições do Ambiente de Trabalho.</p>
+	<p>Bem-vindo às definições do ambiente de trabalho.</p>
 
   <section id="windows" style="2column">
     <title>Janelas</title>
-	<p>A secção Janelas permitir-lhe-á escolher o gestor de janelas.</p>
+	<p>A secção Janelas permite-lhe escolher o gestor de janelas.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Bordas, barras e botões das janelas</p></item>
+		<item><p>Contornos, barras e botões das janelas</p></item>
 		<item><p>Eventos de janelas (mover, ajuste de tamanho e foco de janelas)</p></item>
-		<item><p>Composição (sombras, animações, efeitos, e renderização)</p></item>
+		<item><p>Composição (sombras, animações, efeitos e renderização)</p></item>
 	</list>
 	</note>
 

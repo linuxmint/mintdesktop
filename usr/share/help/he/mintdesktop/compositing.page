@@ -12,10 +12,10 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>יתרונות וחסרונות של קומפוזיציה</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>יתרונות</title>
     <list>
       <item>
         <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
@@ -27,7 +27,7 @@
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>חסרונות</title>
 
     <list>
       <item>

@@ -14,17 +14,17 @@
 
   <title>Configuración del escritorio</title>
 
-	<p>Bienvenido a Configuración de Escritorio.</p>
+	<p>Le damos la bienvenida a la configuración del escritorio.</p>
 
   <section id="windows" style="2column">
     <title>Ventanas</title>
-	<p>La sección de Ventanas le permite elegir un gestor de ventanas.</p>
+	<p>La sección Ventanas le permite elegir un gestor de ventanas.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Bordes de ventana, barras de título y botones de ventana</p></item>
-		<item><p>Eventos de ventanas (mover, cambiar tamaño, asignar el foco)</p></item>
-		<item><p>Composición (sombras, animaciones, efectos, procesamiento de GPU)</p></item>
+		<item><p>Los bordes de las ventanas, las barras del título y los botones de las ventanas.</p></item>
+		<item><p>Los eventos de las ventanas (mover, cambiar el tamaño y enfocar las ventanas).</p></item>
+		<item><p>La composición (sombras, animaciones, efectos y procesamiento con la GPU).</p></item>
 	</list>
 	</note>
 

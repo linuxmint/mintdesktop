@@ -12,13 +12,13 @@
 
   </info>
 
-  <title>Skrivebordsinnstillingar</title>
+  <title>Desktop Settings</title>
 
-	<p>Velkommen til Skrivebordsinnstillingar</p>
+	<p>Welcome to Desktop Settings.</p>
 
   <section id="windows" style="2column">
-    <title>Vindauge</title>
-	<p>Vindaugeinnstillingane lar deg velje ein vindaugehandsamar</p>
+    <title>Windows</title>
+	<p>The Windows section lets you choose a window manager.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>

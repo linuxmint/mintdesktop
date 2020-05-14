@@ -12,19 +12,19 @@
 
   </info>
 
-  <title>Skriviborðsuppseting</title>
+  <title>Uppsetan av skriviborð</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>Vælkomin til uppsetan av skriviborð</p>
 
   <section id="windows" style="2column">
     <title>Gluggar</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>í Windows partinum kanst tú velja window manager.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
 		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>Hendingar í Windows (flyta, minka, vaksa, hálýsa)</p></item>
+		<item><p>Kompositing (skuggar, animatiónir, effektir, GPU rendering)</p></item>
 	</list>
 	</note>
 

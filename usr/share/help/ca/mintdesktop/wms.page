@@ -18,19 +18,19 @@
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco és el gestor de finestres predeterminat per a l'entorn d'escriptori MATE. És molt estable i molt fiable. Pot funcionar amb o sense composició.</p>
+    <p>Marco és el gestor de finestres predeterminat per a l'entorn d'escriptori MATE. És molt estable i molt fiable. Pot funcionar amb composició o sense.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Metacity</title>
-    <p>Metacity era el gestor de finestres predeterminat per a l'entorn d'escriptori GNOME 2. És molt estable i molt fiable. Pot funcionar amb o sense composició.</p>
+    <p>Metacity era el gestor de finestres predeterminat per a l'entorn d'escriptori GNOME 2. És molt estable i molt fiable. Pot funcionar amb composició o sense.</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Xfwm4</title>
-    <p>Xfwm4 és el gestor de finestres predeterminat per a l'entorn d'escriptori Xfce. És molt estable i molt fiable. Pot funcionar amb o sense composició.</p>
+    <p>Xfwm4 és el gestor de finestres predeterminat per a l'entorn d'escriptori Xfce. És molt estable i molt fiable. Pot funcionar amb composició o sense.</p>
     <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
   </section>
 

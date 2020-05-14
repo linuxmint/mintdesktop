@@ -22,9 +22,9 @@
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>Tepi jendela, bilah judul, dan tombol jendela</p></item>
+		<item><p>Peristiwa jendela (memindah, mengubah ukuran, menerima fokus)</p></item>
+		<item><p>Pengkomposisian (bayangan, animasi, efek, perenderan GPU)</p></item>
 	</list>
 	</note>
 

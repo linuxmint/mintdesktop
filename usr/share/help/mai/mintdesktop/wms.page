@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="wms">
+
+   <info>
+    <link type="guide" xref="index#windows"/>
+    <credit type="author">
+      <name>लिनक्स मिंट</name>
+      <email>root@linuxmint.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+  </info>
+
+  <title>किछ विंडो प्रबंधकक अवलोकन</title>
+
+  <p>एत्त किछु उपलब्ध विंडो प्रबंधक वर्णित अछि।</p>
+
+  <section id="pros">
+    <title>मार्को</title>
+    <p>मार्को, मेट डेस्कटॉप वातावरणक डिफ़ॉल्ट विंडो प्रबंधक अछि। इ बेहद स्थिर व भरोसेमंद अछि। आहाँ एकरा संयोजनक सङ्ग वा बिना चला सकैत छि।</p>
+    <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
+  </section>
+
+  <section id="pros">
+    <title>मेटासिटी</title>
+    <p>मेटासिटी, नोम(GNOME) 2 डेस्कटॉप वातावरणक डिफ़ॉल्ट विंडो प्रबंधक अछि। इ बेहद स्थिर व भरोसेमंद है। आहाँ एकरा संयोजनक सङ्ग वा बिना चला सकैत छि।</p>
+    <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
+  </section>
+
+  <section id="pros">
+    <title>Xfwm4</title>
+    <p>Xfwm4, Xfce डेस्कटॉप वातावरणक डिफ़ॉल्ट विंडो प्रबंधक अछि। इ बेहद स्थिर व भरोसेमंद अछि। आहाँ एकरा संयोजनक सङ्ग वा बिना चला सकैत छि।</p>
+    <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
+  </section>
+
+  <section id="pros">
+    <title>Compiz</title>
+    <p>Compiz एकटा बहुत प्रभावशाली विंडो प्रबंधक अछि, इ विन्यास अनुकूल व अद्भुत प्रभाव अऔर एनिमेशन युक्त अछि। मुदा एकर विश्वसनीयता व स्थिरता सबस' कम अछि।</p>
+    <p>Compiz लिनक्स मिंट में डिफ़ॉल्ट रूप स इंस्टॉल रहैत अछि। ध्यान दी: इ LMDE मे उपलब्ध नहि अछि।</p>
+  </section>
+
+  <section id="pros">
+    <title>Compton</title>
+    <p>Compton एकटा संयोजन प्रबंधक अछि। एकरा मार्को, मेटासिटी या Xfwm4 जेहन विंडो प्रबंधकोंक सङ्ग संयोजन मे इस्तेमाल कयल जाय सकैत अछि। Xfwm4 + Compton क उपयोग क:क Xfce मे दृश्यात्मक विसंगति घटायल जा सकैत अछि।</p>
+    <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
+  </section>
+
+  <section id="pros">
+    <title>ओपनबॉक्स</title>
+    <p>ओपनबॉक्स एकटा तेज़ व हल्का विंडो प्रबंधक अछि।</p>
+    <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
+  </section>
+
+</page>

@@ -24,7 +24,7 @@
 	<list>
 		<item><p>Ikkunoiden reunuksista, otsikkopalkista ja ikkunoiden painikkeista</p></item>
 		<item><p>Ikkunoinnin tapahtumista (liikuttaminen, koon muuttaminen, ikkunan kohdistaminen)</p></item>
-		<item><p>Sommittelusta (varjot, animaatiot, efektit, GPU-piirtäminen)</p></item>
+		<item><p>Sommittelusta (varjot, animaatiot, efektit, GPU -piirtäminen)</p></item>
 	</list>
 	</note>
 

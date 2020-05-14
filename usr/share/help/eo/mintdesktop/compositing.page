@@ -4,7 +4,7 @@
    <info>
     <link type="guide" xref="index#windows"/>
     <credit type="author">
-      <name>Linux Mint</name>
+      <name>Linukso Minto</name>
       <email>root@linuxmint.com</email>
     </credit>
 
@@ -12,29 +12,29 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>Avantaĝoj kaj malavantaĝoj de kunmetado</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>Avantaĝoj</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>Pli bona aspekto: fenestroanimacioj, ombroj kaj travidebleco.</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>Pli bona subteno por modernaj aplikaĵoj: Klientflankaj ornamaĵoj en GTK3 estas pli bone subtenataj de kunmetadaj fenestroadministriloj.</p>
       </item>
     </list>
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>Malavantaĝoj</title>
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>Grafikprocesora bildigo: Depende de via grafika karto kaj viaj peliloj, bildigo per grafikprocesoro (kontraŭe al ĉefprocesoro) eble rezultigos bildajn deformojn (blokojn aŭ strekojn).</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>Rimeda uzado: Kunmetado postulas pli da rimedoj. Ĉi tio eble rezultigos pli malrapidan funkciadon aŭ malpli da bateria vivdaŭro sur tekokomputiloj.</p>
       </item>
     </list>
   </section>

@@ -17,7 +17,7 @@
 	<p>Добро дошли у подешавања радне површи.</p>
 
   <section id="windows" style="2column">
-    <title>Прозори</title>
+    <title>Прозор</title>
 	<p>У одељку прозора можете изабрати управника прозора.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>

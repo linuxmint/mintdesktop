@@ -12,13 +12,13 @@
 
   </info>
 
-  <title>Overview of some window managers</title>
+  <title>Yvirlit yvir nakrar window managers</title>
 
-  <p>Here's a description of some of the window managers available.</p>
+  <p>Her er ein lýsing av nøkur window managers sum eru tøkir</p>
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco is the default window manager for the MATE desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Marco er sjálvsettir window manager fyri MARE desktop umhvørvi.  Tað er álítandi og virkar væl bæði við og uttan compositing.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
@@ -48,7 +48,7 @@
 
   <section id="pros">
     <title>Openbox</title>
-    <p>Openbox is a fast and light-weight window manager.</p>
+    <p>Openbox er ein skjótur og lættur window manager.</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>
 

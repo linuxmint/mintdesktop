@@ -18,10 +18,10 @@
     <title>Ventajas</title>
     <list>
       <item>
-        <p>Mejor apariencia: animación de ventanas, sombras y transparencias.</p>
+        <p>Mejor apariencia y comportamiento: animaciones de las ventanas, sombras y transparencias.</p>
       </item>
       <item>
-        <p>Mejor soporte para aplicaciones modernas: los gestores de ventanas con composición dan mejor soporte a la decoración del lado del cliente en GTK3.</p>
+        <p>Mejor compatibilidad con las aplicaciones modernas: los gestores de ventanas con composición ofrecen una mejor compatibilidad con las decoraciones del lado del cliente en GTK3.</p>
       </item>
     </list>
   </section>
@@ -31,10 +31,10 @@
 
     <list>
       <item>
-        <p>Procesamiento de GPU: dependiendo de la tarjeta gráfica y sus controladores, la representación con la GPU (a diferencia de la CPU) puede dar lugar a artefactos visuales o discontinuidades en la imagen.</p>
+        <p>Procesamiento con la GPU: dependiendo de la tarjeta gráfica y los controladores, el procesamiento con la GPU (a diferencia de con la CPU) puede provocar artefactos visuales o el efecto bandera.</p>
       </item>
       <item>
-        <p>Uso de recursos: la composición requiere más recursos. Esto puede resultar en un rendimiento más lento o reducir la autonomía de la batería en los ordenadores portátiles.</p>
+        <p>Uso de recursos: la composición requiere más recursos. El resultado puede ser un descenso del rendimiento o una reducción de la autonomía de la batería en los ordenadores portátiles.</p>
       </item>
     </list>
   </section>

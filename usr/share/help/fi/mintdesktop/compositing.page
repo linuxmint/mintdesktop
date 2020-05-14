@@ -31,7 +31,7 @@
 
     <list>
       <item>
-        <p>GPU-renderöinti: Näytönohjaimesta ja ajureista riippuen GPU:lla renderöinti (verrattuna CPU-renderöintiin) voi johtaa kuvan häiriöihin tai repeilyefektiin.</p>
+        <p>GPU-renderointi: Näytönohjaimesta ja ajureista riippuen GPU:lla renderointi (verrattuna CPU -renderointiin) voi johtaa kuvan häiriöihin tai repeilyefektiin.</p>
       </item>
       <item>
         <p>Resurssien käyttö: Sommittelu vaatii enemmän resursseja. Tämä voi johtaa heikompaan suorituskykyyn tai vähentää akkukestoa kannettavissa tietokoneissa.</p>

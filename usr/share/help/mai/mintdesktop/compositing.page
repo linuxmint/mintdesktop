@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="compositing">
+
+   <info>
+    <link type="guide" xref="index#windows"/>
+    <credit type="author">
+      <name>लिनक्स मिंट</name>
+      <email>root@linuxmint.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+  </info>
+
+  <title>संयोजनक फायदा व नुकसान</title>
+
+  <section id="pros">
+    <title>फायदा</title>
+    <list>
+      <item>
+        <p>बेहतर दिखावट आओर अनुभूति : विंडो एनिमेशन, छाया व पारदर्शिता।</p>
+      </item>
+      <item>
+        <p>आधुनिक अनुप्रयोग लेल बेहतर समर्थन: GTK3 मे क्लाइंट-साइड सजावट संयोजन करय बला विंडो प्रबंधक द्वारा बेहतर समर्थन भेटैत अछि।</p>
+      </item>
+    </list>
+  </section>
+
+  <section id="cons">
+    <title>नुकसान</title>
+
+    <list>
+      <item>
+        <p>GPU प्रतिपादन: आहाँक ग्राफ़िक्स कार्ड व ड्राइवरक आधार पर, GPU द्वारा प्रतिपादन स (CPU के बजाए) दृश्यात्मक विसंगति भ सकैत अछि।</p>
+      </item>
+      <item>
+        <p>संसाधन उपयोग: संयोजन के अधिक संसाधनक आवश्यकता होयत अछि। अहिस' लैपटॉप या कंप्यूटरक कार्यक्षमता सुस्त वा बैटरी स्वायत्तता कम भ सकैत अछि।</p>
+      </item>
+    </list>
+  </section>
+
+</page>

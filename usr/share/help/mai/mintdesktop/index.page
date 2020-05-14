@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="index">
+
+  <info>
+
+    <credit type="author">
+      <name>लिनक्स मिंट</name>
+      <email>root@linuxmint.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+  </info>
+
+  <title>डेस्कटॉप सेटिंग्स</title>
+
+	<p>डेस्कटॉप सेटिंग्स मे स्वागत अछि।</p>
+
+  <section id="windows" style="2column">
+    <title>विंडो</title>
+	<p>विंडो अनुभाग द्वारा आहाँ विंडो प्रबंधक चुइन सकैत छि।</p>
+
+	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
+	<list>
+		<item><p>विंडो सीमा, शीर्षक पट्टि आओर विंडो बटन</p></item>
+		<item><p>विंडो प्रसंग (विंडोक स्थानांतरण, आकार बदलनाय आ केंद्रित करनाय )</p></item>
+		<item><p>संयोजन (छाया, एनिमेशन, प्रभाव, GPU द्वारा प्रतिपादन)</p></item>
+	</list>
+	</note>
+
+  </section>
+
+</page>

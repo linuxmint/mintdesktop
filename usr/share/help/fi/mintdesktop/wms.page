@@ -18,19 +18,19 @@
 
   <section id="pros">
     <title>Marco</title>
-    <p>MATE-työpöytäympäristö käyttää oletusarvoisesti Marco-ikkunoinninhallintaa. Se on erittäin vakaa ja luotettava. Se toimii  sommittelulla tai ilman sitä.</p>
+    <p>MATE -työpöytäympäristö käyttää oletusarvoisesti Marco -ikkunoinninhallintaa. Se on erittäin vakaa ja luotettava. Se toimii sommittelulla tai ilman sitä.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Metacity</title>
-    <p>Gnome 2 -työpöytäympäristö käytti oletusarvoisesti Metacity-ikkunoinninhallintaa. Se on erittäin vakaa ja luotettava. Se toimii  sommittelulla tai ilman sitä.</p>
+    <p>Gnome 2 -työpöytäympäristö käytti oletusarvoisesti Metacity-ikkunoinninhallintaa. Se on erittäin vakaa ja luotettava. Se toimii sommittelulla tai ilman sitä.</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Xfwm4</title>
-    <p>Xfce-työpöytäympäristö käyttää oletusarvoisesti Xfwm4-ikkunoinninhallintaa. Se on erittäin vakaa ja luotettava. Se toimii  sommittelulla tai ilman sitä.</p>
+    <p>Xfce -työpöytäympäristö käyttää oletusarvoisesti Xfwm4 -ikkunoinninhallintaa. Se on erittäin vakaa ja luotettava. Se toimii sommittelulla tai ilman sitä.</p>
     <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
   </section>
 

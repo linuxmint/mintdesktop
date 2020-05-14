@@ -4,7 +4,7 @@
    <info>
     <link type="guide" xref="index#windows"/>
     <credit type="author">
-      <name>Linux Mint</name>
+      <name>ලිනක්ස මින්ට්</name>
       <email>root@linuxmint.com</email>
     </credit>
 
@@ -12,9 +12,9 @@
 
   </info>
 
-  <title>Overview of some window managers</title>
+  <title>කවුළු කළමනාකරුවන්ගේ දළ විශ්ලේෂණය</title>
 
-  <p>Here's a description of some of the window managers available.</p>
+  <p>පවතින කවුළු කළමනාකරුවන්ගේ විස්තරයක් මෙන්න</p>
 
   <section id="pros">
     <title>Marco</title>

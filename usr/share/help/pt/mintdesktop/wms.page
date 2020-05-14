@@ -18,31 +18,31 @@
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco é o gestor de janelas por defeito do MATE. É muito estável e muito fiável. Pode ser executado com ou sem composição.</p>
+    <p>Marco é o gestor de janelas do MATE. É muito estável e fiável. Pode ser executado com ou sem composição.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Metacity</title>
-    <p>Metacity é o gestor de janelas por defeito do GNOME 2. É muito estável e muito fiável. Pode ser executado com ou sem composição.</p>
+    <p>Metacity é o gestor de janelas do GNOME 2. É muito estável e fiável. Pode ser executado com ou sem composição.</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Xfwm4</title>
-    <p>Xfwm4 é o gestor de janelas por defeito do Xfce. É muito estável e muito fiável. Pode ser executado com ou sem composição.</p>
+    <p>Xfwm4 é o gestor de janelas do Xfce. É muito estável e fiável. Pode ser executado com ou sem composição.</p>
     <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Compiz</title>
-    <p>Compiz é o gestor de janelas impressionante, muito configurável e cheio de efeitos e animações fantásticas. No entanto, é o menos fiável e o menos estável.</p>
-    <p>O Compiz está instalado por defeito no Linux Mint. Nota: No entanto não está disponível em LMDE.</p>
+    <p>Compiz é um gestor de janelas impressionante, muito configurável e cheio de efeitos e animações fantásticas. No entanto, é o menos fiável e o menos estável.</p>
+    <p>O Compiz vem instalado no Linux Mint. Nota: não está disponível em LMDE.</p>
   </section>
 
   <section id="pros">
     <title>Compton</title>
-    <p>Compton é um gestor de composições. Pode ser usado em combinação com os gestor de janelas, tais como Marco, Metacity ou Xfwm4. No Xfce, usar Xfwm4 + Compton poderá resultar em desconfiguração da tela.</p>
+    <p>Compton é um gestor de composições. Pode ser usado em combinação com os gestor de janelas, tais como Marco, Metacity ou Xfwm4. No Xfce, usar Xfwm4 + Compton poderá melhorar a exibição dos elementos no ecrã.</p>
     <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
   </section>
 
