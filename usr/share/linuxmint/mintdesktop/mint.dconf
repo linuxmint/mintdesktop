@@ -87,7 +87,7 @@ selection-fill-color='#2f2f4f4f'
 
 [plugins/core]
 hsize=4
-active-plugins=['core', 'composite', 'opengl', 'compiztoolbox', 'copytex', 'decor', 'firepaint', 'imgpng', 'cube', 'matecompat', 'mousepoll, 'regex', 'rotate', 'move', 'obs', 'resize', 'snap', grid', 'commands', 'staticswitcher', 'animation', 'expo', 'ezoom', 'winrules']
+active-plugins=['core', 'composite', 'opengl', 'compiztoolbox', 'copytex', 'decor', 'firepaint', 'imgpng', 'cube', 'matecompat', 'mousepoll', 'regex', 'rotate', 'move', 'obs', 'resize', 'snap', 'grid', 'commands', 'staticswitcher', 'animation', 'expo', 'ezoom', 'winrules']
 focus-prevention-level=1
 focus-prevention-match='!(class=Polkit-gnome-authentication-agent-1) & !(class=MintMenu.py) & !(title=Whisker Menu)'
 
