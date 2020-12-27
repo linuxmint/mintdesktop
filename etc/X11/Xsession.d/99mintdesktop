@@ -1,0 +1,4 @@
+# This file is sourced by Xsession(5), not executed.
+
+# Default profile for Compiz
+export COMPIZ_CONFIG_PROFILE="mint"
