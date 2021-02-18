@@ -44,11 +44,14 @@ class MintDesktop:
         if self.marco_section is not None:
             self.marco_section.hide()
         self.metacity_section.hide()
+        self.mutter_section.hide()
         self.compiz_section.hide()
         if "marco" in wm:
             self.marco_section.show()
         elif "metacity" in wm:
             self.metacity_section.show()
+        elif "mutter" in wm:
+            self.mutter_section.show()
         elif "compiz" in wm and os.path.exists("/usr/bin/ccsm"):
             self.compiz_section.show()
             self.compiz_reset_button.set_sensitive(os.path.exists(self.compiz_path))
@@ -161,6 +164,8 @@ class MintDesktop:
             options.append(["openbox", _("Openbox")])
             if compton:
                 options.append(["openbox-compton", _("Openbox + Compton")])
+        if os.path.exists("/usr/bin/mutter"):
+            options.append(["mutter", _("Mutter")])
         if os.path.exists("/usr/bin/compiz"):
             options.append(["compiz", _("Compiz")])
         if os.path.exists("/usr/bin/awesome"):
@@ -195,7 +200,15 @@ class MintDesktop:
 
         self.metacity_section = page.add_section(_("Metacity settings"))
         self.metacity_section.add_row(GSettingsSwitch(_("Use system font in titlebar"), "org.gnome.desktop.wm.preferences", "titlebar-uses-system-font"))
+        self.metacity_section.add_row(GSettingsSwitch(_("Don't show window content while dragging them"), "org.gnome.metacity", "reduced-resources"))
         self.metacity_section.add_row(GSettingsComboBox(_("Buttons layout:"), "org.gnome.desktop.wm.preferences", "button-layout", button_options, size_group=size_group))
+
+        self.mutter_section = page.add_section(_("Mutter settings"))
+        self.mutter_section.add_row(GSettingsSwitch(_("Use system font in titlebar"), "org.gnome.desktop.wm.preferences", "titlebar-uses-system-font"))
+        self.mutter_section.add_row(GSettingsSwitch(_("Place new windows in the center of the screen"), "org.gnome.mutter", "center-new-windows"))
+        self.mutter_section.add_row(GSettingsSwitch(_("Automatically maximize nearly screen sized windows"), "org.gnome.mutter", "auto-maximize"))
+        self.mutter_section.add_row(GSettingsSwitch(_("Enable edge tiling when dropping windows on screen edges"), "org.gnome.mutter", "edge-tiling"))
+        self.mutter_section.add_row(GSettingsComboBox(_("Buttons layout:"), "org.gnome.desktop.wm.preferences", "button-layout", button_options, size_group=size_group))
 
         self.compiz_section = page.add_section(_("Compiz settings"))
 
