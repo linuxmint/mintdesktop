@@ -45,6 +45,7 @@ class MintDesktop:
             self.marco_section.hide()
         self.metacity_section.hide()
         self.mutter_section.hide()
+        self.xfwm4_section.hide()
         self.compiz_section.hide()
         if "marco" in wm:
             self.marco_section.show()
@@ -52,12 +53,20 @@ class MintDesktop:
             self.metacity_section.show()
         elif "mutter" in wm:
             self.mutter_section.show()
+        elif "xfwm4" in wm:
+            self.xfwm4_section.show()
         elif "compiz" in wm and os.path.exists("/usr/bin/ccsm"):
             self.compiz_section.show()
             self.compiz_reset_button.set_sensitive(os.path.exists(self.compiz_path))
 
     def help_button_clicked(self, widget):
         Popen(["xdg-open", "help:mintdesktop"])
+
+    def xfwm4_settings_button_clicked(self, widget):
+        Popen(["xfwm4-settings"])
+
+    def xfwm4_tweaks_button_clicked(self, widget):
+        Popen(["xfwm4-tweaks-settings"])
 
     def compiz_settings_button_clicked(self, widget):
         Popen(["ccsm"])
@@ -209,6 +218,16 @@ class MintDesktop:
         self.mutter_section.add_row(GSettingsSwitch(_("Automatically maximize nearly screen sized windows"), "org.gnome.mutter", "auto-maximize"))
         self.mutter_section.add_row(GSettingsSwitch(_("Enable edge tiling when dropping windows on screen edges"), "org.gnome.mutter", "edge-tiling"))
         self.mutter_section.add_row(GSettingsComboBox(_("Buttons layout:"), "org.gnome.desktop.wm.preferences", "button-layout", button_options, size_group=size_group))
+
+        self.xfwm4_section = page.add_section(_("Xfwm4 settings"))
+
+        self.xfwm4_settings_button = Gtk.Button(_("Configure Xfwm4"))
+        self.xfwm4_settings_button.connect("clicked", self.xfwm4_settings_button_clicked)
+        self.xfwm4_section.add_row(self.xfwm4_settings_button)
+
+        self.xfwm4_tweaks_button = Gtk.Button(_("Tweak Xfwm4"))
+        self.xfwm4_tweaks_button.connect("clicked", self.xfwm4_tweaks_button_clicked)
+        self.xfwm4_section.add_row(self.xfwm4_tweaks_button)
 
         self.compiz_section = page.add_section(_("Compiz settings"))
 
