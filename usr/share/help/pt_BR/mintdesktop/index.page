@@ -24,7 +24,7 @@
 	<list>
 		<item><p>Bordas de janela, barra de títulos e botões da janela</p></item>
 		<item><p>Janela de Eventos (movimentos, redimensionamentos, janela foco)</p></item>
-		<item><p>Complementos (sombras, animações, efeitos, GPU renderização)</p></item>
+		<item><p>Composição (sombras, animações, efeitos, renderização na GPU)</p></item>
 	</list>
 	</note>
 

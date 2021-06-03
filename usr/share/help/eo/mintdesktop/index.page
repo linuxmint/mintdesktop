@@ -18,12 +18,12 @@
 
   <section id="windows" style="2column">
     <title>Fenestroj</title>
-	<p>La sekcio Fenestroj ebligas al vi elekti fenestroadministrilon.</p>
+	<p>La sekcio Fenestroj ebligas al vi elekti fenestro-administrilon.</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Fenestroborderoj, titolobretoj kaj fenestrobutonoj</p></item>
-		<item><p>Fenestroeventoj (movado, regrandigado, enfokusigado de fenestroj)</p></item>
+		<item><p>Fenestroborderoj, titolaj bretoj kaj fenestrobutonoj</p></item>
+		<item><p>Fenestro-eventoj (movado, regrandigo, enfokusigo de fenestroj)</p></item>
 		<item><p>Kunmetado de bildoj (ombroj, animacioj, efektoj, grafikprocesora bildigo)</p></item>
 	</list>
 	</note>

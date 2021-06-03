@@ -12,29 +12,29 @@
 
   </info>
 
-  <title>Pros and cons of compositing</title>
+  <title>コンポジットの利点と欠点</title>
 
   <section id="pros">
-    <title>Advantages</title>
+    <title>利点</title>
     <list>
       <item>
-        <p>Better look &amp; feel: Window animations, shadows and transparency.</p>
+        <p>より美しい外観と視覚効果: ウィンドウのアニメーションや、影・透過効果が適用されます。</p>
       </item>
       <item>
-        <p>Better support for modern applications: Client-side decorations in GTK3 are better supported by composited window managers.</p>
+        <p>最新のアプリケーションとのより良い相互作用: GTK3 で作成されたクライアント側装飾 (CSD) のアプリケーションは、コンポジットを有効にしたウィンドウマネージャーとの相性が抜群です。</p>
       </item>
     </list>
   </section>
 
   <section id="cons">
-    <title>Disadvantages</title>
+    <title>欠点</title>
 
     <list>
       <item>
-        <p>GPU rendering: Depending on your graphics card and your drivers, rendering with the GPU (as opposed to the CPU) can result in visual artefacts or screen tearing.</p>
+        <p>GPU 描画: お使いのグラフィックカードやドライバーとの組み合わせ次第では、GPU が (CPU とは違い) 不自然・不正確な描画を行ったり、画面のテアリングを発生させることがあります。</p>
       </item>
       <item>
-        <p>Resource usage: Compositing requires more resources. This can result in slower performance or reduced battery autonomy on laptop computers.</p>
+        <p>リソースの消費量: コンポジット処理には、より多くのリソースを必要とします。これにより、パフォーマンスの低下や、ノート PC バッテリーの持続時間が悪化します。</p>
       </item>
     </list>
   </section>

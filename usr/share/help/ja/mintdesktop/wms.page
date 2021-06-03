@@ -12,43 +12,49 @@
 
   </info>
 
-  <title>ウインドウマネージャの概要</title>
+  <title>ウィンドウマネージャーの概要</title>
 
-  <p>利用できるいくつかのウインドウマネージャを説明します</p>
+  <p>利用できるウィンドウマネージャーをいくつか紹介します。</p>
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco is the default window manager for the MATE desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Marco は MATE デスクトップ環境の既定のウィンドウマネージャーです。とても安定していて信頼性があります。コンポジットの有無にかかわらず利用できます。</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Metacity</title>
-    <p>Metacity was the default window manager for the GNOME 2 desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Metacity は、かつての GNOME 2 デスクトップ環境で使われていたウィンドウマネージャーです。とても安定していて信頼性があります。コンポジットの有無にかかわらず利用できます。</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>
 
   <section id="pros">
+    <title>Mutter</title>
+    <p>Mutter is the default window and compositing manager for the GNOME 3 desktop environment. It is very stable and very reliable.</p>
+    <p>If Mutter is not installed already, you can install it with <cmd>apt install mutter</cmd>.</p>
+  </section>
+
+  <section id="pros">
     <title>Xfwm4</title>
-    <p>Xfwm4 is the default window manager for the Xfce desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Xfwm4 は XFce デスクトップ環境の既定のウィンドウマネージャーです。とても安定していて信頼性があります。コンポジットの有無にかかわらず利用できます。</p>
     <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Compiz</title>
-    <p>Compiz is a very impressive window manager, very configurable and full of amazing effects and animations. It is however the least reliable and the least stable.</p>
-    <p>Compiz is installed by default in Linux Mint. Note: It is not available in LMDE.</p>
+    <p>Compiz はとても印象的なウィンドウマネージャーです。拡張性に優れ、視覚効果やアニメーションが多様されています。しかし、安定性や信頼性は低くなっています。</p>
+    <p>Compiz は Linux Mint に最初からインストールされています。ただし、LMDE では利用できません。</p>
   </section>
 
   <section id="pros">
     <title>Compton</title>
-    <p>Compton is a compositing manager. It can be used in combination with windows managers such as Marco, Metacity or Xfwm4. In Xfce, using Xfwm4+Compton is known to reduce screen tearing.</p>
+    <p>Compton はコンポジットマネージャーです。Marco、Metacity、Xfwm4 などのウィンドウマネージャーと組み合わせて利用できます。XFce 環境では Xfwm4 と Compton の併用により、画面のテアリングを減少させることが知られています。</p>
     <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Openbox</title>
-    <p>Openbox is a fast and light-weight window manager.</p>
+    <p>Openbox は高速で軽量なウィンドウマネージャーです。</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>
 

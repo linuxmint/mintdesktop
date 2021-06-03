@@ -29,6 +29,12 @@
   </section>
 
   <section id="pros">
+    <title>Mutter</title>
+    <p>Mutter is the default window and compositing manager for the GNOME 3 desktop environment. It is very stable and very reliable.</p>
+    <p>If Mutter is not installed already, you can install it with <cmd>apt install mutter</cmd>.</p>
+  </section>
+
+  <section id="pros">
     <title>Xfwm4</title>
     <p>Xfwm4, Xfce डेस्कटॉप वातावरण का डिफ़ॉल्ट विंडो प्रबंधक है। यह बेहद स्थिर व भरोसेमंद है। आप इसे संयोजन के साथ या बिना भी चला सकते हैं।</p>
     <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>

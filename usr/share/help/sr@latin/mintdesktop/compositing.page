@@ -21,7 +21,7 @@
         <p>Bolji izgled i osećaj: animacije prozora, senke i prozirnost.</p>
       </item>
       <item>
-        <p>Bolja podrška za moderne aplikacije: ukrasi klijenta u GTK3 su bolje podržani od strane kompozit upravnika prozorima.</p>
+        <p>Bolja podrška za moderne aplikacije: ukrasi na strani klijenta u GTK3 su bolje podržani od strane kompozitiranog upravljača prozorima.</p>
       </item>
     </list>
   </section>
@@ -31,10 +31,10 @@
 
     <list>
       <item>
-        <p>GPU prikaz: zavisi od vaše grafičke kartice i upravljačkim programima, prikaz s GPU-om (različito od CPU-a) može dovesti do artefaktima ili kidanjem ekrana.</p>
+        <p>GPU vizuelizacija: U zavisnosti od vaše grafičke karte i upravljačkih programa, vizuelizacija GPU-om (za razliku od one CPU-om) može dovesti do pojave vizuelnih artefakata ili ``cepanja`` ekrana.</p>
       </item>
       <item>
-        <p>Korištenje resursa: kompozitiranje koristi više resursa. To može rezultirati sporijim performansama ili smanjenom autonomijom baterije na prenosnim računarima.</p>
+        <p>Korištenje resursa: Kompozitiranje zahteva korićenje više resursa. To može rezultirati sporijim performansama ili smanjenom autonomijom baterije na prenosnim računarima.</p>
       </item>
     </list>
   </section>

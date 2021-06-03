@@ -14,18 +14,24 @@
 
   <title>Pregled nekoliko upravnika prozorima</title>
 
-  <p>Ovo je popis nekoliko dostupnih upravnika prozorima.</p>
+  <p>Ovo je opis nekih od tih dostupnih upravljača prozorima.</p>
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco je uobičajeni upravnik prozorima za MAT radno okruženje. Vrlo je stabilan i pouzdan. Može se pokrenuti bez kompostiranja.</p>
+    <p>Marco je podrazumevani upravljač prozorima za MATE radno okruženje. Vrlo je stabilan i pouzdan. Može da radi sa ili bez kompozitiranja.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Metacity</title>
-    <p>Metacity je uobičajeni upravnik prozorima za GNOME 2 radno okruženje. Vrlo je stabilan i pouzdan. Može se pokrenuti bez kompostiranja.</p>
+    <p>Metacity je podrazumevani upravljač prozorima za GNOME 2 radno okruženje. Vrlo je stabilan i pouzdan. Može da radi sa ili bez kompozitiranja.</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
+  </section>
+
+  <section id="pros">
+    <title>Mutter</title>
+    <p>Mutter is the default window and compositing manager for the GNOME 3 desktop environment. It is very stable and very reliable.</p>
+    <p>If Mutter is not installed already, you can install it with <cmd>apt install mutter</cmd>.</p>
   </section>
 
   <section id="pros">
@@ -36,19 +42,19 @@
 
   <section id="pros">
     <title>Compiz</title>
-    <p>Compiz je vrlo impresivan upravnik prozor, vrlo prilagodljiv s mnogo neverovatnih efekata i animacija. Zbog toga je manje pouzdan i stabilan.</p>
-    <p>Compiz je standardno instaliran u Linux Mintu. Napomena: nije dostupan u LMDE.</p>
+    <p>Compiz je veoma impresivan upravljač prozorima, vrlo prilagodljiv, sa mnogo neverovatnih efekata i animacija. Međutim, on je najmanje pouzdan i stabilan.</p>
+    <p>Compiz je podrazumevano instaliran u Linux Mintu. Napomena: nije dostupan u LMDE.</p>
   </section>
 
   <section id="pros">
     <title>Compton</title>
-    <p>Compton je upravnik prozora. Može se koristiti u kombinaciji s upravinicima prozora poput Marco, Metacity ili Xfwm4. U Xfceu, koristeći Xfwm4+Compton je poznato da smanjuje kidanje ekrana.</p>
+    <p>Compton je upravljač kompozitiranja. Može se koristiti u kombinaciji s upravljačima prozora poput Marca, Metacityja ili Xfwm4. U Xfceu, poznato je da korišćenje Xfwm4+Compton smanjuje ``cepanje`` ekrana.</p>
     <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Openbox</title>
-    <p>Openbox je brz upravnik prozora koji koristi malo resursa.</p>
+    <p>Openbox je brz upravljač prozorima koji koristi malo resursa.</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>
 

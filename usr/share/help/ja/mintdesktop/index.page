@@ -14,17 +14,17 @@
 
   <title>デスクトップの設定</title>
 
-	<p>Welcome to Desktop Settings.</p>
+	<p>デスクトップの設定へようこそ。</p>
 
   <section id="windows" style="2column">
     <title>ウィンドウ</title>
-	<p>The Windows section lets you choose a window manager.</p>
+	<p>ウィンドウセクションではウィンドウマネージャーを選択できます。</p>
 
 	<note><p>Within the operating system, the <gui>window manager</gui> is the part which is responsible for:</p>
 	<list>
-		<item><p>Windows borders, title bars and window buttons</p></item>
-		<item><p>Window events (moving, resizing, focusing windows)</p></item>
-		<item><p>Compositing (shadows, animations, effects, GPU rendering)</p></item>
+		<item><p>ウィンドウの境界線、タイトルバー、ウィンドウのボタン</p></item>
+		<item><p>ウィンドウのイベント (ウィンドウの移動、サイズ変更、フォーカス)</p></item>
+		<item><p>コンポジット (影、アニメーション、視覚効果、GPU 描画)</p></item>
 	</list>
 	</note>
 

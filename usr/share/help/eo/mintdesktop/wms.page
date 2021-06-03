@@ -12,43 +12,49 @@
 
   </info>
 
-  <title>Superrigardo pri kelkaj fenestroadministriloj</title>
+  <title>Superrigardo de kelkaj fenestro-administriloj</title>
 
-  <p>Jen priskribo de kelkaj el la disponeblaj fenestroadministriloj.</p>
+  <p>Jen priskribo de kelkaj el la disponeblaj fenestro-administriloj.</p>
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco estas la defaŭlta fenestroadministrilo por labortabla ĉirkaŭaĵo MATE. Ĝi estas tre stabila kaj tre fidinda. Ĝi povas funkcii kun aŭ sen (bilda) kunmetado.</p>
+    <p>Marco estas la defaŭlta fenestro-administrilo por labortabla ĉirkaŭaĵo MATE. Ĝi estas tre stabila kaj tre fidinda. Ĝi povas funkcii kun aŭ sen (bilda) kunmetado.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Metacity</title>
-    <p>Metacity estis la defaŭlta fenestroadministrilo por labortabla ĉirkaŭaĵo GNOME 2. Ĝi estas tre stabila kaj tre fidinda. Ĝi povas funkcii kun aŭ sen kunmetado.</p>
+    <p>Metacity estis la defaŭlta fenestro-administrilo por labortabla ĉirkaŭaĵo GNOME 2. Ĝi estas tre stabila kaj tre fidinda. Ĝi povas funkcii kun aŭ sen kunmetado.</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>
 
   <section id="pros">
+    <title>Mutter</title>
+    <p>Mutter is the default window and compositing manager for the GNOME 3 desktop environment. It is very stable and very reliable.</p>
+    <p>If Mutter is not installed already, you can install it with <cmd>apt install mutter</cmd>.</p>
+  </section>
+
+  <section id="pros">
     <title>Xfwm4</title>
-    <p>Xfwm4 estas la defaŭlta fenestroadministrilo por labortabla ĉirkaŭaĵo Xfce. Ĝi estas tre stabila kaj tre fidinda. Ĝi povas funkcii kun aŭ sen kunmetado.</p>
+    <p>Xfwm4 estas la defaŭlta fenestro-administrilo por labortabla ĉirkaŭaĵo Xfce. Ĝi estas tre stabila kaj tre fidinda. Ĝi povas funkcii kun aŭ sen kunmetado.</p>
     <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Compiz</title>
-    <p>Compiz estas tre impresa fenestroadministrilo, tre agordebla kaj plena je mirigaj efektoj kaj animacioj. Tamen ĝi estas plej malmulte fidinda kaj plej malmulte stabila.</p>
-    <p>Compiz estas defaŭlte instalita en Linukso Minto. Atentu: Ĝi ne disponeblas en LMDE.</p>
+    <p>Compiz estas tre impresa fenestro-administrilo, tre agordebla kaj plena je mirigaj efektoj kaj animacioj. Tamen ĝi estas plej malmulte fidinda kaj plej malmulte stabila.</p>
+    <p>Compiz estas defaŭlte instalita en Linukso Minto. Komento: Ĝi ne disponeblas en LMDE.</p>
   </section>
 
   <section id="pros">
     <title>Compton</title>
-    <p>Compton estas kunmetada administrilo. Ĝi uzeblas kune kun fenestroadministriloj kiel Marco, Metacity aŭ Xfwm4. En Xfce uzado de Xfwm4+Compton konate limigas bildan deformon.</p>
+    <p>Compton estas kunmetada administrilo. Ĝi uzeblas kune kun fenestro-administriloj kiel Marco, Metacity aŭ Xfwm4. En Xfce uzado de Xfwm4+Compton konate limigas bildan deformon.</p>
     <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Openbox</title>
-    <p>Openbox estas rapida kaj malpeza fenestroadministrilo.</p>
+    <p>Openbox estas rapida kaj malpeza fenestro-administrilo.</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>
 

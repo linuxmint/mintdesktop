@@ -12,32 +12,38 @@
 
   </info>
 
-  <title>Overview of some window managers</title>
+  <title>איבערבליק פֿון עטלעכע פֿענצטער־מענעדזשערס</title>
 
-  <p>Here's a description of some of the window managers available.</p>
+  <p>ס'איז דאָ אַ באַשרײַבונג פֿון עטלעכע בנימצא פֿענצטער־מענעדזשערס.</p>
 
   <section id="pros">
     <title>Marco</title>
-    <p>Marco is the default window manager for the MATE desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Macro איז דער פֿענצטער־מענעדזשער פֿאַר דער MATE עקראַנאָרט־סבֿיבֿה דורך דער פֿעליקײט. ער איז זײער סטאַביל און פֿאַרלאָזלעך. ער קען פֿונקציאָנירן מיט אָדער אָן קאָמפּאָזיטונג.</p>
     <p>If Marco is not installed already, you can install it with <cmd>apt install marco</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Metacity</title>
-    <p>Metacity was the default window manager for the GNOME 2 desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Metacity איז דער פֿענצטער־מענעדזשער פֿאַר דער GNOME2 עקראַנאָרט־סבֿיבֿה דורך דער פֿעליקײט. ער איז זײער סטאַביל און פֿאַרלאָזלעך. ער קען פֿונקציאָנירן מיט אָדער אָן קאָמפּאָזיטונג.</p>
     <p>If Metacity is not installed already, you can install it with <cmd>apt install metacity</cmd>.</p>
   </section>
 
   <section id="pros">
+    <title>Mutter</title>
+    <p>Mutter is the default window and compositing manager for the GNOME 3 desktop environment. It is very stable and very reliable.</p>
+    <p>If Mutter is not installed already, you can install it with <cmd>apt install mutter</cmd>.</p>
+  </section>
+
+  <section id="pros">
     <title>Xfwm4</title>
-    <p>Xfwm4 is the default window manager for the Xfce desktop environment. It is very stable and very reliable. It can run with or without compositing.</p>
+    <p>Xfwm4 איז דער פֿענצטער־מענעדזשער פֿאַר דער Xfce עקראַנאָרט־סבֿיבֿה דורך דער פֿעליקײט. ער איז זײער סטאַביל און פֿאַרלאָזלעך. ער קען פֿונקציאָנירן מיט אָדער אָן קאָמפּאָזיטונג.</p>
     <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Compiz</title>
-    <p>Compiz is a very impressive window manager, very configurable and full of amazing effects and animations. It is however the least reliable and the least stable.</p>
-    <p>Compiz is installed by default in Linux Mint. Note: It is not available in LMDE.</p>
+    <p>Compiz איז זײער אַן אימפּאָזאַנטער פֿענצטער־מענעדזשער, ער איז זײער קאָנפֿיגורירבאַר און פֿול מיט אומבאַגרײַפֿלעכע עפֿעקטן און אַנימאַציעס. מערניט, איז ער דער אונפֿאַרלאָזלעכסטער און דער אונסטאַבילסטער.</p>
+    <p>Compiz איז אינסטאַלירט אין Linux Mint דורך דער פֿעליקײט. אָנמערקונג: ער איז ניט בנימצא אין LMDE</p>
   </section>
 
   <section id="pros">

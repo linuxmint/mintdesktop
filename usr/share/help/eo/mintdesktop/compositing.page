@@ -18,10 +18,10 @@
     <title>Avantaĝoj</title>
     <list>
       <item>
-        <p>Pli bona aspekto: fenestroanimacioj, ombroj kaj travidebleco.</p>
+        <p>Pli bona aspekto: fenestro-animacioj, ombroj kaj travideblo.</p>
       </item>
       <item>
-        <p>Pli bona subteno por modernaj aplikaĵoj: Klientflankaj ornamaĵoj en GTK3 estas pli bone subtenataj de kunmetadaj fenestroadministriloj.</p>
+        <p>Pli bona subteno por modernaj aplikaĵoj: Klientflankaj ornamaĵoj en Gtk3 estas pli bone subtenataj de kunmetadaj fenestro-administriloj.</p>
       </item>
     </list>
   </section>
@@ -34,7 +34,7 @@
         <p>Grafikprocesora bildigo: Depende de via grafika karto kaj viaj peliloj, bildigo per grafikprocesoro (kontraŭe al ĉefprocesoro) eble rezultigos bildajn deformojn (blokojn aŭ strekojn).</p>
       </item>
       <item>
-        <p>Rimeda uzado: Kunmetado postulas pli da rimedoj. Ĉi tio eble rezultigos pli malrapidan funkciadon aŭ malpli da bateria vivdaŭro sur tekokomputiloj.</p>
+        <p>Risurco-uzado: Kunmetado postulas pli da risurcoj. Ĉi tio eble rezultigos pli malrapidan rendimenton aŭ malpli da bateria vivdaŭro sur tekokomputiloj.</p>
       </item>
     </list>
   </section>

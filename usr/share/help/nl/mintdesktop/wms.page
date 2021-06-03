@@ -29,6 +29,12 @@
   </section>
 
   <section id="pros">
+    <title>Mutter</title>
+    <p>Mutter is the default window and compositing manager for the GNOME 3 desktop environment. It is very stable and very reliable.</p>
+    <p>If Mutter is not installed already, you can install it with <cmd>apt install mutter</cmd>.</p>
+  </section>
+
+  <section id="pros">
     <title>Xfwm4</title>
     <p>Xfwm4 is de standaard-vensterbeheerder voor de Xfce-werkomgeving. Hij is zeer stabiel en betrouwbaar. Hij kan draaien met of zonder beeldsamenstelling (compositing).</p>
     <p>If Xfwm4 is not installed already, you can install it with <cmd>apt install xfwm4</cmd>.</p>
@@ -36,19 +42,19 @@
 
   <section id="pros">
     <title>Compiz</title>
-    <p>Compiz is een zeer indrukwekkende vensterbeheerder, zeer instelbaar en vol met verbazende effecten en animaties. Het is echter de minst betrouwbare en de minst stabiele.</p>
-    <p>Compiz is standaard geïnstalleerd in Linux Mint. let op: hij is niet beschikbaar in LMDE.</p>
+    <p>Compiz is een indrukwekkende vensterbeheerder, zeer instelbaar en vol met verbazende effecten en animaties. Het is echter helaas ook de minst betrouwbare en de minst stabiele.</p>
+    <p>Compiz is standaard geïnstalleerd in Linux Mint. Let op: hij is niet beschikbaar in LMDE.</p>
   </section>
 
   <section id="pros">
     <title>Compton</title>
-    <p>Compton is een beheerder voor beeldsamenstelling (compositing). Hij kan worden gebruikt in combinatie met vensterbeheerders als Marco, metacity of Xfwm4. In Xfce staat het gebruik van Xfwm4 + Comptin erom bekend dat het beeldvervorming (strepen) vermindert.</p>
+    <p>Compton is een beheerder voor beeldsamenstelling (compositing). Hij kan worden gebruikt in combinatie met vensterbeheerders als Marco, metacity of Xfwm4. In Xfce staat het gebruik van Xfwm4 + Compton erom bekend dat het beeldvervorming (strepen) vermindert.</p>
     <p>If Compton is not installed already, you can install it with <cmd>apt install compton</cmd>.</p>
   </section>
 
   <section id="pros">
     <title>Openbox</title>
-    <p>Openbox is een snelle lichtgewicht vensterbeheerder zonder toeters en bellen.</p>
+    <p>Openbox is een snelle lichtgewicht-vensterbeheerder zonder toeters en bellen.</p>
     <p>If Openbox is not installed already, you can install it with <cmd>apt install openbox</cmd>.</p>
   </section>
 
