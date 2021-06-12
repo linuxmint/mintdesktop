@@ -213,28 +213,25 @@ class MintDesktop:
         self.metacity_section.add_row(GSettingsComboBox(_("Buttons layout:"), "org.gnome.desktop.wm.preferences", "button-layout", button_options, size_group=size_group))
 
         self.mutter_section = page.add_section(_("Mutter settings"))
-        self.mutter_section.add_row(GSettingsSwitch(_("Use system font in titlebar"), "org.gnome.desktop.wm.preferences", "titlebar-uses-system-font"))
-        self.mutter_section.add_row(GSettingsSwitch(_("Place new windows in the center of the screen"), "org.gnome.mutter", "center-new-windows"))
-        self.mutter_section.add_row(GSettingsSwitch(_("Automatically maximize nearly screen sized windows"), "org.gnome.mutter", "auto-maximize"))
-        self.mutter_section.add_row(GSettingsSwitch(_("Enable edge tiling when dropping windows on screen edges"), "org.gnome.mutter", "edge-tiling"))
-        self.mutter_section.add_row(GSettingsComboBox(_("Buttons layout:"), "org.gnome.desktop.wm.preferences", "button-layout", button_options, size_group=size_group))
+        if os.path.exists("/usr/bin/mutter"):
+            self.mutter_section.add_row(GSettingsSwitch(_("Use system font in titlebar"), "org.gnome.desktop.wm.preferences", "titlebar-uses-system-font"))
+            self.mutter_section.add_row(GSettingsSwitch(_("Place new windows in the center of the screen"), "org.gnome.mutter", "center-new-windows"))
+            self.mutter_section.add_row(GSettingsSwitch(_("Automatically maximize nearly screen sized windows"), "org.gnome.mutter", "auto-maximize"))
+            self.mutter_section.add_row(GSettingsSwitch(_("Enable edge tiling when dropping windows on screen edges"), "org.gnome.mutter", "edge-tiling"))
+            self.mutter_section.add_row(GSettingsComboBox(_("Buttons layout:"), "org.gnome.desktop.wm.preferences", "button-layout", button_options, size_group=size_group))
 
         self.xfwm4_section = page.add_section(_("Xfwm4 settings"))
-
         self.xfwm4_settings_button = Gtk.Button(_("Configure Xfwm4"))
         self.xfwm4_settings_button.connect("clicked", self.xfwm4_settings_button_clicked)
         self.xfwm4_section.add_row(self.xfwm4_settings_button)
-
         self.xfwm4_tweaks_button = Gtk.Button(_("Tweak Xfwm4"))
         self.xfwm4_tweaks_button.connect("clicked", self.xfwm4_tweaks_button_clicked)
         self.xfwm4_section.add_row(self.xfwm4_tweaks_button)
 
         self.compiz_section = page.add_section(_("Compiz settings"))
-
         button = Gtk.Button(_("Configure Compiz"))
         button.connect("clicked", self.compiz_settings_button_clicked)
         self.compiz_section.add_row(button)
-
         self.compiz_reset_button = Gtk.Button(_("Reset Compiz settings"))
         self.compiz_reset_button.connect("clicked", self.compiz_reset_button_clicked)
         self.compiz_section.add_row(self.compiz_reset_button)
