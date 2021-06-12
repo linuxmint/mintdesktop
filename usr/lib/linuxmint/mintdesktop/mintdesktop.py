@@ -140,8 +140,7 @@ class MintDesktop:
             page.show_all()
 
         # WM page
-        size_group = Gtk.SizeGroup()
-        size_group.set_mode(Gtk.SizeGroupMode.HORIZONTAL)
+        size_group = Gtk.SizeGroup(mode=Gtk.SizeGroupMode.HORIZONTAL)
 
         vbox = self.builder.get_object("vbox_wm")
         page = SettingsPage()
@@ -221,18 +220,18 @@ class MintDesktop:
             self.mutter_section.add_row(GSettingsComboBox(_("Buttons layout:"), "org.gnome.desktop.wm.preferences", "button-layout", button_options, size_group=size_group))
 
         self.xfwm4_section = page.add_section(_("Xfwm4 settings"))
-        self.xfwm4_settings_button = Gtk.Button(_("Configure Xfwm4"))
+        self.xfwm4_settings_button = Gtk.Button(label=_("Configure Xfwm4"))
         self.xfwm4_settings_button.connect("clicked", self.xfwm4_settings_button_clicked)
         self.xfwm4_section.add_row(self.xfwm4_settings_button)
-        self.xfwm4_tweaks_button = Gtk.Button(_("Tweak Xfwm4"))
+        self.xfwm4_tweaks_button = Gtk.Button(label=_("Tweak Xfwm4"))
         self.xfwm4_tweaks_button.connect("clicked", self.xfwm4_tweaks_button_clicked)
         self.xfwm4_section.add_row(self.xfwm4_tweaks_button)
 
         self.compiz_section = page.add_section(_("Compiz settings"))
-        button = Gtk.Button(_("Configure Compiz"))
+        button = Gtk.Button(label=_("Configure Compiz"))
         button.connect("clicked", self.compiz_settings_button_clicked)
         self.compiz_section.add_row(button)
-        self.compiz_reset_button = Gtk.Button(_("Reset Compiz settings"))
+        self.compiz_reset_button = Gtk.Button(label=_("Reset Compiz settings"))
         self.compiz_reset_button.connect("clicked", self.compiz_reset_button_clicked)
         self.compiz_section.add_row(self.compiz_reset_button)
 
