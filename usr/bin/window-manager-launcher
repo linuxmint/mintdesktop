@@ -89,10 +89,9 @@ elif wm == "metacity-composite":
     settings.set_boolean("compositing-manager", True)
     subprocess.Popen(["metacity", "--replace"])
 elif wm == "metacity-compton":
-    settings = Gio.Settings("org.gnome.metacity")
-    settings.set_boolean("compositing-manager", False)
+    os.environ["META_COMPOSITOR"] = "external"
     subprocess.Popen(["metacity", "--replace"])
-    time.sleep(2)
+    time.sleep(0.1)
     subprocess.Popen(["compton", "--backend", "glx", "--vsync", "opengl-swc"])
 elif wm == "openbox":
     subprocess.Popen(["openbox", "--replace"])
