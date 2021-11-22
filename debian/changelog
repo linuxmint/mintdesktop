@@ -1,3 +1,13 @@
+mintdesktop (3.7.5) una; urgency=medium
+
+  [ Trần Xuân Thanh ]
+  * Use META_COMPOSITOR=external for metacity_compton
+
+  [ Musa Ünal ]
+  * Update README (#46)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 22 Nov 2021 12:54:25 +0000
+
 mintdesktop (3.7.4) uma; urgency=medium
 
   * Fix exception when mutter is not installed
