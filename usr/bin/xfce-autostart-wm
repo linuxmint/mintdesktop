@@ -31,6 +31,9 @@ if wm in ["xfwm4", "xfwm4-composite"]:
 elif wm == "xfwm4-compton":
     # start compton in addition to the already running xfwm4
     subprocess.Popen(["compton", "--backend", "glx", "--vsync", "opengl-swc"])
+elif wm == "xfwm4-picom":
+    # start picom in addition to the already running xfwm4
+    subprocess.Popen(["picom", "--backend", "glx", "--vsync"])
 else:
     # kill xfwm4 and start the selected wm
     subprocess.Popen(["window-manager-launcher"])

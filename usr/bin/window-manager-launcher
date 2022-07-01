@@ -34,7 +34,7 @@ else:
 p = subprocess.Popen(['ps', '-u', str(os.getuid())], stdout=subprocess.PIPE)
 out, err = p.communicate()
 processes_found = False
-for process in ['compton', "marco", "xfwm4", "compiz", "mutter", "metacity", "openbox", "awesome" ]:
+for process in ['compton', 'picom', "marco", "xfwm4", "compiz", "mutter", "metacity", "openbox", "awesome" ]:
     for line in out.splitlines():
         pname = line.decode('utf-8').split()[-1]
         if process in pname:
@@ -65,6 +65,12 @@ elif wm == "marco-compton":
     subprocess.Popen(["marco", "--no-composite", "--replace"])
     time.sleep(2)
     subprocess.Popen(["compton", "--backend", "glx", "--vsync", "opengl-swc"])
+elif wm == "marco-picom":
+    settings = Gio.Settings("org.mate.Marco.general")
+    settings.set_boolean("compositing-manager", False)
+    subprocess.Popen(["marco", "--no-composite", "--replace"])
+    time.sleep(2)
+    subprocess.Popen(["picom", "--backend", "glx", "--vsync"])
 elif wm == "xfwm4":
     subprocess.Popen(["xfconf-query", "-c", "xfwm4", "-p", "/general/use_compositing", "--set", "false"])
     subprocess.Popen(["xfwm4", "--compositor=off", "--replace"])
@@ -76,6 +82,11 @@ elif wm == "xfwm4-compton":
     subprocess.Popen(["xfwm4", "--compositor=off", "--replace"])
     time.sleep(2)
     subprocess.Popen(["compton", "--backend", "glx", "--vsync", "opengl-swc"])
+elif wm == "xfwm4-picom":
+    subprocess.Popen(["xfconf-query", "-c", "xfwm4", "-p", "/general/use_compositing", "--set", "false"])
+    subprocess.Popen(["xfwm4", "--compositor=off", "--replace"])
+    time.sleep(2)
+    subprocess.Popen(["picom", "--backend", "glx", "--vsync"])
 elif wm == "compiz":
     subprocess.Popen(["compiz", "--replace"])
 elif wm == "mutter":
@@ -93,12 +104,21 @@ elif wm == "metacity-compton":
     subprocess.Popen(["metacity", "--replace"])
     time.sleep(2)
     subprocess.Popen(["compton", "--backend", "glx", "--vsync", "opengl-swc"])
+elif wm == "metacity-picom":
+    os.environ["META_COMPOSITOR"] = "external"
+    subprocess.Popen(["metacity", "--replace"])
+    time.sleep(2)
+    subprocess.Popen(["picom", "--backend", "glx", "--vsync"])
 elif wm == "openbox":
     subprocess.Popen(["openbox", "--replace"])
 elif wm == "openbox-compton":
     subprocess.Popen(["openbox", "--replace"])
     time.sleep(2)
     subprocess.Popen(["compton", "--backend", "glx", "--vsync", "opengl-swc"])
+elif wm == "openbox-picom":
+    subprocess.Popen(["openbox", "--replace"])
+    time.sleep(2)
+    subprocess.Popen(["picom", "--backend", "glx", "--vsync"])
 elif wm == "awesome":
     # subprocess.call(["killall", "marco", "xfwm4", "compiz", "mutter", "metacity", "openbox", "awesome"]) # Kill all other window managers that might possibly still be running
     # time.sleep(0.1) # Wait some time until really all other window managers are killed otherwise awesome won't start up

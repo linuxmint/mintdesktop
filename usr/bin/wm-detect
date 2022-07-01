@@ -13,7 +13,7 @@ if "XDG_CURRENT_DESKTOP" in os.environ:
 wms = []
 p = subprocess.Popen(['ps', '-u', str(os.getuid())], stdout=subprocess.PIPE)
 out, err = p.communicate()
-for process in ['marco', 'metacity', 'xfwm4', 'mutter', 'compiz', 'openbox', 'compton']:
+for process in ['marco', 'metacity', 'xfwm4', 'mutter', 'compiz', 'openbox', 'compton', 'picom']:
     for line in out.splitlines():
         pname = line.decode('utf-8').split()[-1]
         if process in pname:

@@ -153,25 +153,34 @@ class MintDesktop:
             wm_key = "xfce-window-manager"
         options = []
         compton = os.path.exists("/usr/bin/compton")
+        picom = os.path.exists("/usr/bin/picom")
         if os.path.exists("/usr/bin/marco"):
             options.append(["marco", _("Marco")])
             options.append(["marco-composite", _("Marco + Compositing")])
             if compton:
                 options.append(["marco-compton", _("Marco + Compton")])
+            if picom:
+                options.append(["marco-picom", _("Marco + Picom")])
         if os.path.exists("/usr/bin/metacity"):
             options.append(["metacity", _("Metacity")])
             options.append(["metacity-composite", _("Metacity + Compositing")])
             if compton:
                 options.append(["metacity-compton", _("Metacity + Compton")])
+            if picom:
+                options.append(["metacity-picom", _("Metacity + Picom")])
         if os.path.exists("/usr/bin/xfwm4"):
             options.append(["xfwm4", _("Xfwm4")])
             options.append(["xfwm4-composite", _("Xfwm4 + Compositing")])
             if compton:
                 options.append(["xfwm4-compton", _("Xfwm4 + Compton")])
+            if picom:
+                options.append(["xfwm4-picom", _("Xfwm4 + Picom")])
         if os.path.exists("/usr/bin/openbox"):
             options.append(["openbox", _("Openbox")])
             if compton:
                 options.append(["openbox-compton", _("Openbox + Compton")])
+            if picom:
+                options.append(["openbox-picom", _("Openbox + Picom")])
         if os.path.exists("/usr/bin/mutter"):
             options.append(["mutter", _("Mutter")])
         if os.path.exists("/usr/bin/compiz"):
