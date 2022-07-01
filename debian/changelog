@@ -1,3 +1,10 @@
+mintdesktop (3.7.6) vanessa; urgency=medium
+
+  * Add support for picom
+  * l10n: Update POT
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 01 Jul 2022 14:09:56 +0200
+
 mintdesktop (3.7.5) una; urgency=medium
 
   [ Trần Xuân Thanh ]
