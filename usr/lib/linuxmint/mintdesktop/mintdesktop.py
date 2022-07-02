@@ -217,7 +217,6 @@ class MintDesktop:
 
         self.metacity_section = page.add_section(_("Metacity settings"))
         self.metacity_section.add_row(GSettingsSwitch(_("Use system font in titlebar"), "org.gnome.desktop.wm.preferences", "titlebar-uses-system-font"))
-        self.metacity_section.add_row(GSettingsSwitch(_("Don't show window content while dragging them"), "org.gnome.metacity", "reduced-resources"))
         self.metacity_section.add_row(GSettingsComboBox(_("Buttons layout:"), "org.gnome.desktop.wm.preferences", "button-layout", button_options, size_group=size_group))
 
         self.mutter_section = page.add_section(_("Mutter settings"))
