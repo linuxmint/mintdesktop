@@ -1,3 +1,9 @@
+mintdesktop (3.7.7) vanessa; urgency=medium
+
+  * Metacity: Remove obsolete setting
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 03 Jul 2022 00:33:58 +0200
+
 mintdesktop (3.7.6) vanessa; urgency=medium
 
   * Add support for picom
