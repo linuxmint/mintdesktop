@@ -1,3 +1,13 @@
+mintdesktop (3.7.8) victoria; urgency=medium
+
+  [ monsta ]
+  * remove configobj dependency
+
+  [ Clement Lefebvre ]
+  * compton: Use --xrender-sync and --xrender-sync-fence
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 19 Jan 2023 14:53:34 +0000
+
 mintdesktop (3.7.7) vanessa; urgency=medium
 
   * Metacity: Remove obsolete setting
