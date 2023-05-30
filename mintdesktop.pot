@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-01 14:07+0200\n"
+"POT-Creation-Date: 2023-05-30 13:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -369,6 +369,7 @@ msgstr ""
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:216
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:219
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:225
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:224
 msgid "Use system font in titlebar"
 msgstr ""
 
@@ -383,6 +384,7 @@ msgstr ""
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:220
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:221
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:229
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:228
 msgid "Buttons layout:"
 msgstr ""
 
@@ -398,111 +400,133 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:215
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:223
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:222
 msgid "Mutter settings"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:217
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:226
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:225
 msgid "Place new windows in the center of the screen"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:218
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:227
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:226
 msgid "Automatically maximize nearly screen sized windows"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:219
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:228
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:227
 msgid "Enable edge tiling when dropping windows on screen edges"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:222
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:231
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:230
 msgid "Xfwm4 settings"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:224
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:232
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:231
 msgid "Configure Xfwm4"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:228
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:235
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:234
 msgid "Tweak Xfwm4"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:232
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:239
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:238
 msgid "Compiz settings"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:234
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:240
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:239
 msgid "Configure Compiz"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:238
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:243
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:242
 msgid "Reset Compiz settings"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:255
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:260
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:259
 msgid "Icons"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:256
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:261
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:260
 msgid "Show icons on menus"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:257
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:262
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:261
 msgid "Show icons on buttons"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:259
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:264
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:263
 msgid "Toolbars"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:262
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:267
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:266
 msgid "Text below items"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:263
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:268
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:267
 msgid "Text beside items"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:264
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:269
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:268
 msgid "Icons only"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:265
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:270
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:269
 msgid "Text only"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:266
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:271
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:270
 msgid "Buttons labels:"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:269
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:274
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:273
 msgid "Small"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:270
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:275
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:274
 msgid "Large"
 msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:271
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:276
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:275
 msgid "Icon size:"
 msgstr ""
 
@@ -524,4 +548,28 @@ msgstr ""
 
 #: usr/lib/linuxmint/mintdesktop/mintdesktop.py:183
 msgid "Openbox + Picom"
+msgstr ""
+
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:97
+msgid "Applications"
+msgstr ""
+
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:297
+msgid "Let applications decide"
+msgstr ""
+
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:298
+msgid "Prefer light mode"
+msgstr ""
+
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:299
+msgid "Prefer dark mode"
+msgstr ""
+
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:300
+msgid "Dark mode"
+msgstr ""
+
+#: usr/lib/linuxmint/mintdesktop/mintdesktop.py:301
+msgid "This setting only affects applications which support dark mode"
 msgstr ""
