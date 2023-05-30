@@ -15,6 +15,7 @@ Depends: python3 (>= 3.3),
          mint-info,
          mintsystem,
          wmctrl,
-         dconf-cli
+         dconf-cli,
+         xapps-common (>= 2.5.0)
 Description: Desktop configuration tool
  Configures some aspects of the desktop.

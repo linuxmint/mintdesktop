@@ -94,16 +94,16 @@ class MintDesktop:
         side_desktop_options = SidePage(0, _("Desktop"), "user-desktop")
         side_windows = SidePage(1, _("Windows"), "preferences-system-windows")
         side_interface = SidePage(2, _("Interface"), "preferences-desktop")
+        side_applications = SidePage(3, _("Applications"), "applications-other")
 
         self.compiz_path = os.path.expanduser('~/.config/compiz-1')
 
         self.de_is_mate = False
         if os.getenv("XDG_CURRENT_DESKTOP") == "MATE":
             self.de_is_mate = True
-            self.sidePages = [side_desktop_options, side_windows, side_interface]
+            self.sidePages = [side_desktop_options, side_windows, side_interface, side_applications]
         else:
-            self.sidePages = [side_windows]
-            self.builder.get_object("frame3").hide()
+            self.sidePages = [side_windows, side_applications]
 
         # create the backing store for the side nav-view.
         theme = Gtk.IconTheme.get_default()
@@ -282,6 +282,26 @@ class MintDesktop:
             if source.lookup('org.mate.session.required-components', True):
                 settings = Gio.Settings("org.mate.session.required-components")
                 settings.set_string("windowmanager", "mint-window-manager")
+
+
+        # Applications page
+        size_group = Gtk.SizeGroup()
+        size_group.set_mode(Gtk.SizeGroupMode.HORIZONTAL)
+
+        vbox = self.builder.get_object("vbox_applications")
+        page = SettingsPage()
+        vbox.pack_start(page, True, True, 0)
+
+        section = page.add_section()
+
+        options = [("default", _("Let applications decide")),
+                   ("prefer-light", _("Prefer light mode")),
+                   ("prefer-dark", _("Prefer dark mode"))]
+        widget = GSettingsComboBox(_("Dark mode"), "org.x.apps.portal", "color-scheme", options, size_group=size_group)
+        widget.set_tooltip_text(_("This setting only affects applications which support dark mode"))
+        section.add_row(widget)
+
+        page.show_all()
 
         # Ensure Xfce loads the WM we set here
         legacy_xfce_path = os.path.expanduser('~/.config/autostart/Compiz.desktop')
